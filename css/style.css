@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "Epistolar";
+    src: url('../fonts/Epistolar/Epistolar.woff');
+    font-weight:400;
+}
+
+@font-face {
+    font-family: "1550";
+    src: url('../fonts/1550/1550.ttf');
+    font-weight:400;
+}
+
+@font-face {
+    font-family: "Fishfingers";
+    src: url('../fonts/fishfingers/Fishfingers.ttf');
+    font-weight:400;
+}
+
+@font-face {
+    font-family: "No_Color";
+    src: url('../fonts/no_color/No_Color.ttf');
+    font-weight:400;
+}
+
+body {
+	font-family: "1550", sans-serif;
+	background: url('../imgs/bg/bg_intro.jpg') 0% 20%;
+	color: #FFF;
+}
+
+h1 {
+	font-family: "Epistolar", sans-serif;
+	font-size: 5em;
+}
+
+h2 {
+	font-family: "No_Color", sans-serif;
+	font-size: 3em;
+}
+
+h3 {
+	font-family: "Fishfingers", sans-serif;
+	font-size: 3em;
+}
+
+.logo_intro {
+	font-size: 180%;
+	margin: 0 auto;
+	margin-top: 15%;
+	text-align: center;
+}
+.logo_intro h1 {
+	line-height: 0.8em;
+}
+
+.logo_intro h2 {
+	font-family: "Epistolar", sans-serif;
+	font-size: 5em;
+	line-height: 0.8em;
+	margin-left: 5%;
+}
