@@ -24,7 +24,7 @@
 
 body {
 	font-family: "1550", sans-serif;
-	color: #C1BE97;
+	color: #FFF;
 	background:
 	radial-gradient(black 15%, transparent 16%) 0 0,
 	radial-gradient(black 15%, transparent 16%) 8px 8px,
@@ -63,10 +63,13 @@ h3 {
 
 /*logo intro*/
 .logo_intro {
-	font-size: 180%;
+	font-size: 2.5em;
+	width: 100%;
 	margin: 0 auto;
-	margin-top: 15%;
+	margin-top: 30%;
 	text-align: center;
+	position: absolute;
+	z-index: 2;
 	text-shadow: -2px 3px 20px #FFFDF6;
 	-webkit-animation: cssAnimation 2.6416s 1 ease-in;
 	-moz-animation: cssAnimation 2.6416s 1 ease-in;
@@ -84,19 +87,25 @@ h3 {
 }
 
 .capa {
-	background: url('../imgs/bg/bg_orixas.png') 10% 20%;
+	/*background: url('../imgs/bg/bg_orixas.png') 10% 20%;*/
 	width: 100%;
 	height: 100%;
 	position: absolute;
 }
 
 .ifa {
-	background: url('../imgs/ifa.png') no-repeat -50% -33%;
+	/*background: url('../imgs/ifa.png') no-repeat 0% 0%;*/
 	width: 100%;
 	height: 100%;
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
+	z-index: 1;
+
+}
+
+.ifa img {
+	width: 100%;
 }
 
 
