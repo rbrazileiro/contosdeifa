@@ -1,0 +1,122 @@
+@font-face {
+    font-family: "Epistolar";
+    src: url('../fonts/Epistolar/Epistolar.woff');
+    font-weight:400;
+}
+
+@font-face {
+    font-family: "1550";
+    src: url('../fonts/1550/1550.ttf');
+    font-weight:400;
+}
+
+@font-face {
+    font-family: "Fishfingers";
+    src: url('../fonts/fishfingers/Fishfingers.ttf');
+    font-weight:400;
+}
+
+@font-face {
+    font-family: "No_Color";
+    src: url('../fonts/no_color/No_Color.ttf');
+    font-weight:400;
+}
+
+body {
+	font-family: "1550", sans-serif;
+	color: #FFF;
+	background: url("../imgs/bg/bg_capa.jpg") 0% 0%;
+	background-size: cover;
+
+}
+
+h1 {
+	font-family: "Epistolar", sans-serif;
+	font-size: 5em;
+}
+
+h2 {
+	font-family: "No_Color", sans-serif;
+	font-size: 3em;
+}
+
+h3 {
+	font-family: "Fishfingers", sans-serif;
+	font-size: 3em;
+}
+
+
+/* container capa */
+.moldura {
+/*	position: absolute;
+	width: 100%;
+	height: 100%;
+	-moz-box-shadow:inset -8px 1px 40px #FFFDF6;
+	-webkit-box-shadow:inset -8px 1px 40px #FFFDF6;
+	box-shadow:inset -8px 1px 40px #FFFDF6;*/
+}
+
+
+/*logo intro*/
+.logo_intro {
+	font-size: 2.5em;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 10%;
+	text-align: center;
+	position: absolute;
+	z-index: 2;
+	text-shadow: -2px 3px 20px #FFFDF6;
+	-webkit-animation: cssAnimation 2.6416s 1 ease-in;
+	-moz-animation: cssAnimation 2.6416s 1 ease-in;
+	-o-animation: cssAnimation 2.6416s 1 ease-in;
+}
+.logo_intro h1 {
+	line-height: 0.8em;
+}
+
+.logo_intro h2 {
+	font-family: "Epistolar", sans-serif;
+	font-size: 5em;
+	line-height: 0.8em;
+	margin-left: 5%;
+}
+
+.capa {
+	/*background: url('../imgs/bg/bg_orixas.png') 10% 20%;*/
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.ifa {
+	/*background: url('../imgs/ifa.png') no-repeat 0% 0%;*/
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	position: absolute;
+	top: 40%;
+	left: 0%;
+	z-index: 1;
+	text-align: center;
+
+}
+
+.ifa img {
+	width: 70%;
+}
+
+
+/* animations logo */
+@-webkit-keyframes cssAnimation {
+from { -webkit-transform: rotate(0deg) scale(0.5) skew(-180deg) translate(0px); }
+to { -webkit-transform: rotate(0deg) scale(1.0) skew(-180deg) translate(0px); }
+}
+@-moz-keyframes cssAnimation {
+from { -moz-transform: rotate(0deg) scale(0.5) skew(-180deg) translate(0px); }
+to { -moz-transform: rotate(0deg) scale(1.0) skew(-180deg) translate(0px); }
+}
+@-o-keyframes cssAnimation {
+from { -o-transform: rotate(0deg) scale(0.5) skew(-180deg) translate(0px); }
+to { -o-transform: rotate(0deg) scale(1.0) skew(-180deg) translate(0px); }
+}
