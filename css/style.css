@@ -1,4 +1,9 @@
 /***Contos de Ifá****/
+html, body {
+	line-height: 1;
+	min-height:100%;
+}
+
 /* tipos */
 @font-face {
     font-family: "Epistolar";
@@ -82,6 +87,21 @@ body {
 	margin-left: 5%;
 }
 
+/* animations logo */
+@-webkit-keyframes logoAnimation {
+from { -webkit-transform: rotate(0deg) scale(0.5) skew(-180deg) translate(0px); }
+to { -webkit-transform: rotate(0deg) scale(1.0) skew(-180deg) translate(0px); }
+}
+@-moz-keyframes logoAnimation {
+from { -moz-transform: rotate(0deg) scale(0.5) skew(-180deg) translate(0px); }
+to { -moz-transform: rotate(0deg) scale(1.0) skew(-180deg) translate(0px); }
+}
+@-o-keyframes logoAnimation {
+from { -o-transform: rotate(0deg) scale(0.5) skew(-180deg) translate(0px); }
+to { -o-transform: rotate(0deg) scale(1.0) skew(-180deg) translate(0px); }
+}
+
+
 .capa {
 	/*background: url('../imgs/bg/bg_orixas.png') 10% 20%;*/
 	width: 100%;
@@ -129,16 +149,54 @@ body {
 }
 
 
-/* animations logo */
-@-webkit-keyframes logoAnimation {
-from { -webkit-transform: rotate(0deg) scale(0.5) skew(-180deg) translate(0px); }
-to { -webkit-transform: rotate(0deg) scale(1.0) skew(-180deg) translate(0px); }
+/* intro */
+
+#bigbang_power {
+	width:100%;
+	height:100%;
 }
-@-moz-keyframes logoAnimation {
-from { -moz-transform: rotate(0deg) scale(0.5) skew(-180deg) translate(0px); }
-to { -moz-transform: rotate(0deg) scale(1.0) skew(-180deg) translate(0px); }
+
+#intro_ceu {
+	background-image: url('../imgs/intro/ceu.png');
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
-@-o-keyframes logoAnimation {
-from { -o-transform: rotate(0deg) scale(0.5) skew(-180deg) translate(0px); }
-to { -o-transform: rotate(0deg) scale(1.0) skew(-180deg) translate(0px); }
+
+#intro_raiz {
+	background-image: url('../imgs/intro/raiz.png');
+	background-repeat: no-repeat;
+	background-position: 0px 900px;
+	background-size: 100% auto;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#intro_baoba {
+	background-image: url('../imgs/intro/baoba.png');
+	background-repeat: no-repeat;
+	background-position: 0px 100px;
+	background-size: 100% auto;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#intro_nuvem1 {
+	background-image: url('../imgs/intro/nuvens.png');
+	background-repeat: no-repeat;
+	background-size: 20% auto;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
