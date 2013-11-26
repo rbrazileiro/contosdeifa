@@ -161,7 +161,7 @@ to { -o-transform: rotate(0deg) scale(1.0) skew(-180deg) translate(0px); }
 	background-image: url('../imgs/intro/ceu.png');
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: 0px 0px;
+	background-position: 0% 0%;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -172,9 +172,10 @@ to { -o-transform: rotate(0deg) scale(1.0) skew(-180deg) translate(0px); }
 #intro_raiz {
 	background-image: url('../imgs/intro/raiz.png');
 	background-repeat: no-repeat;
-	background-position: 0px 900px;
+	background-position: 0% -500%;
 	background-size: cover;
 	position: fixed;
+	z-index: 20;
 	bottom: 0;
 	left: 0;
 	width: 100%;
@@ -184,9 +185,10 @@ to { -o-transform: rotate(0deg) scale(1.0) skew(-180deg) translate(0px); }
 #intro_baoba {
 	background-image: url('../imgs/intro/baoba.png');
 	background-repeat: no-repeat;
-	background-position: 0px 375px;
+	background-position: 0% -300%;
 	background-size: cover;
 	position: fixed;
+	z-index: 20;
 	bottom: 0;
 	left: 0;
 	width: 100%;
@@ -196,9 +198,36 @@ to { -o-transform: rotate(0deg) scale(1.0) skew(-180deg) translate(0px); }
 #intro_nuvem1 {
 	background-image: url('../imgs/intro/nuvens.png');
 	background-repeat: no-repeat;
-	background-size: 20% auto;
-	top: 0;
+	background-size: 40%;
+	position: fixed;
+	z-index: 10;
+	top: 4%;
+	left: -30%;
+	width: 100%;
+	height: 100%;
+}
+
+#intro_nuvem2 {
+	background-image: url('../imgs/intro/nuvens1.png');
+	background-repeat: no-repeat;
+	background-size: 40%;
+	position: fixed;
+	z-index: 11;
+	top: 30%;
+	left: -40%;
+	width: 100%;
+	height: 100%;
+}
+
+#intro_horizonte {
+	background-image: url('../imgs/intro/chao_horizonte.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: 0% 300%;
+	position: fixed;
+	bottom: 0;
 	left: 0;
+	z-index: 15;
 	width: 100%;
 	height: 100%;
 }
