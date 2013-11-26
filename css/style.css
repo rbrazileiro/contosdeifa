@@ -173,7 +173,7 @@ to { -o-transform: rotate(0deg) scale(1.0) skew(-180deg) translate(0px); }
 	background-image: url('../imgs/intro/raiz.png');
 	background-repeat: no-repeat;
 	background-position: 0px 900px;
-	background-size: 100% auto;
+	background-size: cover;
 	position: fixed;
 	bottom: 0;
 	left: 0;
@@ -184,8 +184,8 @@ to { -o-transform: rotate(0deg) scale(1.0) skew(-180deg) translate(0px); }
 #intro_baoba {
 	background-image: url('../imgs/intro/baoba.png');
 	background-repeat: no-repeat;
-	background-position: 0px 100px;
-	background-size: 100% auto;
+	background-position: 0px 375px;
+	background-size: cover;
 	position: fixed;
 	bottom: 0;
 	left: 0;
