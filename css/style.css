@@ -1,4 +1,5 @@
 /***Contos de Ifá****/
+
 html, body {
 	line-height: 1;
 	min-height:100%;
@@ -136,11 +137,11 @@ body {
 #intro_raiz {
 	background-image: url('../imgs/intro/raiz.png');
 	background-repeat: no-repeat;
-	background-position: 0% -500%;
+	background-position: 0px 1000px;
 	background-size: cover;
 	position: fixed;
 	z-index: 20;
-	bottom: 0;
+	top: 1500px;
 	left: 0;
 	width: 100%;
 	height: 100%;
@@ -149,11 +150,11 @@ body {
 #intro_baoba {
 	background-image: url('../imgs/intro/baoba.png');
 	background-repeat: no-repeat;
-	background-position: 0% -300%;
+	background-position: 0px 500px;
 	background-size: cover;
 	position: fixed;
 	z-index: 20;
-	bottom: 0;
+	top: 1500px;
 	left: 0;
 	width: 100%;
 	height: 100%;
@@ -219,6 +220,31 @@ body {
 	font-size: 5em;
 	line-height: 0.8em;
 	margin-left: 5%;
+}
+
+#intro_breve {
+	font-size: 2.5em;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	position: fixed;
+	top: -1000px;
+	left: 0px;
+	background: #000;
+	z-index: 20;
+	text-shadow: -2px 3px 20px #FFFDF6;
+}
+
+#intro_breve h1 {
+	top: 20%;
+	position: relative;
+}
+
+#intro_breve h3 {
+	text-shadow: none;
+	font-size: 1em;
+	top: 20%;
+	position: relative;
 }
 
 /* animations logo */
