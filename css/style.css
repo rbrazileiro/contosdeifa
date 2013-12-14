@@ -1,4 +1,4 @@
-/***Contos de Ifá****/
+**Contos de Ifá****/
 
 html, body {
 	line-height: 1;
@@ -58,25 +58,25 @@ body {
 
 /* container e capa */
 .container { margin-left: -10px;}
-.capa {
+/*.capa {
 		background: url("../imgs/bg/bg2.jpg") 0% 0%;
 		background-size: cover;
 		min-height: 1383px;
-}
+}*/
 
 /*logo intro*/
 
 
 
-.capa {
-	/*background: url('../imgs/bg/bg_orixas.png') 10% 20%;*/
+/*.capa {
+	background: url('../imgs/bg/bg_orixas.png') 10% 20%;
 	width: 100%;
 	height: 100%;
 	position: absolute;
-}
-
+}*/
+/*
 .ifa {
-	/*background: url('../imgs/ifa.png') no-repeat 0% 0%;*/
+	background: url('../imgs/ifa.png') no-repeat 0% 0%;
 	width: 100%;
 	height: 100%;
 	margin: 0 auto;
@@ -85,7 +85,7 @@ body {
 	left: 30%;
 	z-index: 10;
 	text-align: center;
-}
+}*/
 
 
 .capitulo {
@@ -99,14 +99,14 @@ body {
 	padding-left: 20px;
 }
 
-.fundo_capitulo {
+/*.fundo_capitulo {
 	background: url('../imgs/bg/bg_jeje.jpg');
 	width:100%;
 	min-height: 130%;
 	z-index: 1;
 	position: absolute;
 	top:180%;
-}
+}*/
 
 /* imagens */
 
@@ -117,9 +117,25 @@ body {
 
 /* intro */
 
+#intro_setas {
+	background-image: url('../imgs/intro/setas.png');
+	background-repeat: no-repeat;
+	background-position: 50% 10%;
+	background-size: 15%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
 #bigbang_power {
 	width:100%;
 	height:100%;
+	background:
+		radial-gradient(circle at 0% 50%, rgba(96, 16, 48, 0) 9px, #723411 10px, rgba(96, 16, 48, 0) 11px) 0px 10px,
+		radial-gradient(at 100% 100%,     rgba(96, 16, 48, 0) 9px, #724113 10px, rgba(96, 16, 48, 0) 11px), #C1FD00;
+	background-size: 20px 20px;
 }
 
 #intro_ceu {
@@ -247,6 +263,60 @@ body {
 	position: relative;
 }
 
+/* Stage 1 - Exu */
+
+#pano_exu {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: -1000px;
+	left: 0px;
+	background-image: url('../imgs/bg/bg_exu.jpg');
+	background-repeat: repeat;
+	background-position: 0px 0px;
+	z-index: 20;
+}
+
+#ifa {
+	/*background-image: url('../imgs/ifa/ifa.png');*/
+	/*background-repeat: no-repeat;*/
+	/*background-position: 500px -13px;*/
+	position: fixed;
+	top: 0%;
+	left: 38%;
+	width: 100%;
+	height: 100%;
+	z-index: 30;
+	-webkit-transform: scale(1) rotate(0deg);
+}
+
+#ifa img, #ifa_exu img {
+	width: 100%;
+}
+#ifa_exu {
+/*	background-image: url('../imgs/ifa/ifa_exu.png');
+	background-repeat: no-repeat;
+	background-position: 50% 0%;*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 31;
+
+}
+
+#exu_txt {
+	font-size: 2.5em;
+	width: 50%;
+	margin: 0 auto;
+	top: 8%;
+	text-align: center;
+	position: fixed;
+	z-index: 20;
+	padding-left: 20px;
+}
+
 /* animations logo */
 /*@-webkit-keyframes logoAnimation {
 from { -webkit-transform: rotate(0deg) scale(0.5) skew(-180deg) translate(0px); }
@@ -259,4 +329,4 @@ to { -moz-transform: rotate(0deg) scale(1.0) skew(-180deg) translate(0px); }
 @-o-keyframes logoAnimation {
 from { -o-transform: rotate(0deg) scale(0.5) skew(-180deg) translate(0px); }
 to { -o-transform: rotate(0deg) scale(1.0) skew(-180deg) translate(0px); }
-}*/
+}
