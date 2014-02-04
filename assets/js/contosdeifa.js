@@ -135,8 +135,14 @@ $( document ).ready(function() {
         	$("#dsp_raiz").jPlayer("stop");
         }
 
-        if ($(window).scrollTop() > 12000){
+        if ($(window).scrollTop() > 10000){
+            $("#dsp_obami").jPlayer("volume", 0.4);
+        }
+        if ($(window).scrollTop() > 11000){
             $("#dsp_obami").jPlayer("volume", 0.2);
+        }
+        if ($(window).scrollTop() > 12000){
+            $("#dsp_obami").jPlayer("volume", 0.1);
         }
         if ($(window).scrollTop() > 12100){
             $("#dsp_exu").jPlayer("play");
