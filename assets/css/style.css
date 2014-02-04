@@ -40,11 +40,13 @@ h1 {
 h2 {
 	font-family: "No_Color", sans-serif;
 	font-size: 3em;
+	text-shadow: 8px 10px 15px #ff0000;
 }
 
 h3 {
 	font-family: "Fishfingers", sans-serif;
-	font-size: 3em;
+	font-size: 2em;
+	text-shadow: 3px 4px 6px #ff0000;
 }
 
 /* elementos */
