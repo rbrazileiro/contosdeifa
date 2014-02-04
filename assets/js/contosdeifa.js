@@ -142,11 +142,15 @@ $( document ).ready(function() {
             $("#dsp_exu").jPlayer("play");
         }
         if ($(window).scrollTop() > 13000){
-            $("#dsp_obami").jPlayer("stop");
+            $("#dsp_obami").jPlayer("volume", 0.05);
         }
         if ($(window).scrollTop() > 13000){
             $("#dsp_exu").jPlayer("volume", 0.8);
         }
+        if ($(window).scrollTop() > 15000){
+            $("#dsp_obami").jPlayer("stop");
+        }
+
 
 
     });
