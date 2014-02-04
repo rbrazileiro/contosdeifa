@@ -51,10 +51,11 @@ h3 {
 
 #exu_txt h2 {
 	text-shadow: 8px 10px 15px #ff0000;
+	margin-top: 0.5em;
 }
 
 #exu_txt h3 {
-	text-shadow: 3px 4px 6px #ff0000;
+	text-shadow: 2px 2px 23px #ffffff;
 }
 
 /* elementos */
