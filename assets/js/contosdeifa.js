@@ -64,6 +64,19 @@ $( document ).ready(function() {
         swfPath: "/js",
         supplied: "mp3, oga"
     });
+    $("#dsp_exu").jPlayer({
+        ready: function(event) {
+            $(this).jPlayer("setMedia", {
+                mp3: "audio/exu/toqueexu.mp3"
+            });
+        },
+        ended: function() { // The $.jPlayer.event.ended event
+            $(this).jPlayer("play");
+
+        },
+        swfPath: "/js",
+        supplied: "mp3, oga"
+    });
 
 	// Big Bang using Particles.js
 
@@ -120,6 +133,19 @@ $( document ).ready(function() {
         }
         if ($(window).scrollTop() > 4500){
         	$("#dsp_raiz").jPlayer("stop");
+        }
+
+        if ($(window).scrollTop() > 12000){
+            $("#dsp_obami").jPlayer("volume", 0.2);
+        }
+        if ($(window).scrollTop() > 12100){
+            $("#dsp_exu").jPlayer("play");
+        }
+        if ($(window).scrollTop() > 13000){
+            $("#dsp_obami").jPlayer("stop");
+        }
+        if ($(window).scrollTop() > 13000){
+            $("#dsp_exu").jPlayer("volume", 0.8);
         }
 
 
