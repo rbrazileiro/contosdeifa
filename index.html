@@ -100,7 +100,7 @@
   <div id="exu_arvore1" data-0="display:none;" data-24000="display:block;left:-40%;" data-28000="left:0%;" data-33100="" data-34000="left:-40%;"></div>
   <div id="exu_arvore2" data-0="display:none;" data-24000="display:block;right:-100%;" data-28000="right:-70%;" data-33300="" data-34000="right:-100%;"></div>
   <div id="exu_nuvens" data-0="display:none;" data-24000="display:block; opacity:0; left:-50%;" data-30000="opacity:1; left:130%"></div>
-  <div id="esu" data-0="display:none;" data-24000="display:block;background-position:0% -1000%;" data-30000="background-position:0% -80%;" data-42000="" data-44000="background-position:90% -80%;" data-44100="-webkit-transform:scaleX(1);-moz-transform:scaleX(1);-ms-transform:scaleX(1);-o-transform:scaleX(1);transform:scaleX(1);background-position:10% -80%;" data-44200="-webkit-transform:scaleX(-1);-moz-transform:scaleX(-1);-ms-transform:scaleX(-1);-o-transform:scaleX(-1);transform:scaleX(-1);"></div>
+  <div id="esu" data-0="display:none;" data-24000="display:block;background-position:0% -1000%;" data-30000="background-position:0% -80%;" data-42000="" data-44000="background-position:90% -80%;" data-44100="-webkit-transform:scaleX(1);-moz-transform:scaleX(1);-ms-transform:scaleX(1);-o-transform:scaleX(1);transform:scaleX(1);background-position:10% -80%;" data-44200="-webkit-transform:scaleX(-1);-moz-transform:scaleX(-1);-ms-transform:scaleX(-1);-o-transform:scaleX(-1);transform:scaleX(-1);" data-48000="" data-48100="-webkit-transform:scaleX(1);-moz-transform:scaleX(1);-ms-transform:scaleX(1);-o-transform:scaleX(1);transform:scaleX(1);" ></div>
   <!-- Personagens -->
   <div id="exu_cavalo" data-0="display:none;" data-28000="display:block;background-position:0% 500%;" data-30500="background-position:0% 100%;" data-31000="background-position:10% 110%;" data-31500="background-position:30% 100%;" data-32000="background-position:90% 110%;"></div>
   <div id="exu_familia" data-0="display:none;" data-28000="display:block;background-position:0% 500%;" data-30500="background-position:0% 100%;" data-31000="background-position:10% 105%;" data-31600="background-position:30% 100%;" data-32100="background-position:70% 110%;"></div>
@@ -154,8 +154,28 @@
     </h4>
   </div>
 
-  <!-- Game Exu -->
+  <!-- Okaran Meji Game -->
   <div id="exu_game" data-0="display:none;" data-45800="display:block;top:-100%;" data-48000="" data-48010="top:0%;">
+  </div>
+  <div id="exu_stat" data-0="display:none;" data-48100="display:block; opacity:0;" data-48200="opacity:1;">
+        <span id="hit">0 Dendes</span>
+        &nbsp;
+        <!-- <span id="miss">0 Ovos</span> -->
+        <!-- &nbsp; -->
+        <a id="btnstart" href="javascript://">Xirê &darr;</a>
+  </div>
+  <div id="exu_container" data-0="display:none;" data-48100="display:block; opacity:1;" data-48200="">
+        <div id="char1" class="character ovo ovo1"></div>
+        <div id="char2" class="character ovo ovo2"></div>
+        <div id="char3" class="character dende dende1"></div>
+        <div id="char4" class="character dende dende2"></div>
+        <div id="char5" class="character dende dende3"></div>
+  </div>
+  <div id="exu_message" data-48000="display:none">
+        Exu precisa coletar 16 cocos de dende, tente outra vez.
+  </div>
+  <div id="exu_dende" data-48000="display:none" data-48300="display:none" >
+        Exu coletou os 16 cocos de dende...
   </div>
 
 
@@ -188,5 +208,6 @@
   <script src="js/jquery.jplayer.min.js"></script>
   <script src="js/skrollr.min.js"></script>
   <script src="js/contosdeifa.js"></script>
+  <script src="js/okaranmeji.js"></script>
 </body>
 </html>

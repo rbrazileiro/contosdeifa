@@ -4,6 +4,7 @@ html, body {
 	line-height: 1;
 	min-height:100%;
 	overflow: hidden;
+	cursor: auto;
 }
 
 /* tipos */
@@ -771,6 +772,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0px 0px;
+	cursor: url('../imgs/exu/mao.gif'), pointer;
 	z-index: 26;
 }
 
@@ -787,6 +789,132 @@ body {
 	text-shadow: 2px 2px 23px #000000;
 }
 
+/* Okaran Meji Game*/
+
+#exu_stat {
+	/*background: #ffffff url("img/trentaquattro.gif") repeat top right;*/
+	margin: 0 auto;
+	/*border: 5px solid #999999;*/
+	width: 600px;
+	padding: 20px 50px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	position: fixed;
+	bottom: 0%;
+	right: 0%;
+	-webkit-border-radius: .5em;
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	text-align: center;
+	z-index: 29;
+}
+#exu_stat span, #exu_stat a {
+	text-decoration: none;
+	font-size: 28px;
+	background: #d3d3d3;
+	padding: 2px 10px;
+	color: #333333;
+	-webkit-border-radius: .2em;
+	-moz-border-radius: .2em;
+	border-radius: .2em;
+	opacity: 0.8;
+	filter:alpha(opacity=80);
+	z-index: 29;
+}
+#exu_stat a:hover {
+    background: #999999;
+    z-index: 29;
+}
+
+#exu_container {
+	/*background: #ffffff url("img/trentaquattro.gif") repeat top right;*/
+	margin: 0 auto;
+	/*border: 5px solid #999999;*/
+	width: 800px;
+	height: 600px;
+	/*position: fixed;*/
+	/*top: 0%;*/
+	padding: 20px 50px;
+	cursor: url('../imgs/exu/mao.gif'), pointer;
+	/*-webkit-border-radius: .5em;*/
+	/*-moz-border-radius: .5em;*/
+	/*border-radius: .5em;*/
+	z-index: 28;
+}
+
+#exu_message {
+	font-size: 2.5em;
+	width: 100%;
+	margin: 0 auto;
+	top: 8%;
+	right: 0%;
+	text-align: center;
+	position: fixed;
+	color: #FFF;
+	padding-left: 0px;
+	text-shadow: 2px 2px 23px #000000;
+	display: none;
+	z-index: 28;
+}
+
+#exu_dende {
+	font-size: 2.5em;
+	width: 100%;
+	margin: 0 auto;
+	top: 8%;
+	right: 0%;
+	text-align: center;
+	position: fixed;
+	color: #FFF;
+	padding-left: 0px;
+	text-shadow: 2px 2px 23px #000000;
+	display: none;
+	z-index: 28;
+}
+
+.character {
+	/*border: 2px solid #f3f3f3;*/
+	width: 95px;
+	height: 95px;
+	position: absolute;
+	display: none;
+	/*-webkit-border-radius: .5em;*/
+	/*-moz-border-radius: .5em;*/
+	/*border-radius: .5em;*/
+	cursor: url("../imgs/exu/mao.gif"), pointer;
+	z-index: 28;
+}
+.character:hover {
+	opacity: 0.6;
+	filter:alpha(opacity=60);
+}
+.ovo1, .ovo2 {
+	background: url("../imgs/exu/ovo.png");
+	background-size: 70%;
+	background-repeat: no-repeat;
+	z-index: 28;
+}
+
+.dende1 {
+	background: url("../imgs/exu/coco01.png");
+	background-repeat: no-repeat;
+	background-size: 70%;
+	z-index: 28;
+}
+
+.dende2 {
+	background: url("../imgs/exu/coco02.png");
+	background-repeat: no-repeat;
+	background-size: 70%;
+	z-index: 28;
+}
+
+.dende3 {
+	background: url("../imgs/exu/coco03.png");
+	background-repeat: no-repeat;
+	background-size: 70%;
+	z-index: 28;
+}
 /* animations logo */
 /*@-webkit-keyframes logoAnimation {
 from { -webkit-transform: rotate(0deg) scale(0.5) skew(-180deg) translate(0px); }

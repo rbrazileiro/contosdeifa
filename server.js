@@ -8,7 +8,7 @@ app.get('/', function (req, res) {
 });
 
 
-app.get('/*.(js|css|png|jpg|mp3|woff|ttf)', function(req, res){
+app.get('/*.(js|css|png|jpg|mp3|woff|ttf|gif)', function(req, res){
   res.sendfile(__dirname + '/assets'+req.url);
 });
 Syslog.init("node-syslog-test", Syslog.LOG_PID | Syslog.LOG_ODELAY, Syslog.LOG_LOCAL0);
