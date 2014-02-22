@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 	// Skrollr
-	var s = skrollr.init();
+	var s = skrollr.init({forceHeight: true});
 
 	// Trilha Sonora
 
@@ -156,6 +156,13 @@ $( document ).ready(function() {
         if ($(window).scrollTop() > 15000){
             $("#dsp_obami").jPlayer("stop");
         }
+
+
+
+        // Stops skrollr
+        // if ($(window).scrollTop() > 48200){
+        //     $('body').css({'overflow':'hidden'});
+        // }
 
 
 

@@ -4,10 +4,16 @@
   <title>Contos de Ifá</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Bootstrap -->
+  <!-- Bootstrap styles -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <!-- Preloader -->
+  <script src="js/jquery.queryloader2.js" type="text/javascript"></script>
+  <script src="js/vacuo.js" type="text/javascript"></script>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,6 +25,17 @@
   <script type="text/javascript" src="js/particle.js"></script>
 </head>
 <body>
+  <!-- Facebook Like -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1&appId=511616418947615";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Começo dos trabalhos -->
   <!-- Setas -->
   <div id="intro_setas" data-0="display:block; opacity:1;" data-20="opacity:0;" data-250="display:none;"> </div>
   <!-- Big Bang -->
@@ -100,7 +117,7 @@
   <div id="exu_arvore1" data-0="display:none;" data-24000="display:block;left:-40%;" data-28000="left:0%;" data-33100="" data-34000="left:-40%;"></div>
   <div id="exu_arvore2" data-0="display:none;" data-24000="display:block;right:-100%;" data-28000="right:-70%;" data-33300="" data-34000="right:-100%;"></div>
   <div id="exu_nuvens" data-0="display:none;" data-24000="display:block; opacity:0; left:-50%;" data-30000="opacity:1; left:130%"></div>
-  <div id="esu" data-0="display:none;" data-24000="display:block;background-position:0% -1500%;" data-30000="background-position:0% -80%;" data-42000="" data-44000="background-position:90% -80%;" data-44100="-webkit-transform:scaleX(1);-moz-transform:scaleX(1);-ms-transform:scaleX(1);-o-transform:scaleX(1);transform:scaleX(1);background-position:10% -80%;" data-44200="-webkit-transform:scaleX(-1);-moz-transform:scaleX(-1);-ms-transform:scaleX(-1);-o-transform:scaleX(-1);transform:scaleX(-1);" data-48000="" data-48100="-webkit-transform:scaleX(1);-moz-transform:scaleX(1);-ms-transform:scaleX(1);-o-transform:scaleX(1);transform:scaleX(1);" ></div>
+  <div id="esu" data-0="display:none;" data-24000="display:block;background-position:0% -1500%;" data-30000="background-position:0% -80%;" data-42000="" data-44000="background-position:90% -80%;" data-44100="-webkit-transform:scaleX(1);-moz-transform:scaleX(1);-ms-transform:scaleX(1);-o-transform:scaleX(1);transform:scaleX(1);background-position:10% -80%;" data-44200="-webkit-transform:scaleX(-1);-moz-transform:scaleX(-1);-ms-transform:scaleX(-1);-o-transform:scaleX(-1);transform:scaleX(-1);" data-48000="" data-48100="-webkit-transform:scaleX(1);-moz-transform:scaleX(1);-ms-transform:scaleX(1);-o-transform:scaleX(1);transform:scaleX(1);" data-48900="background-position:10% -180%;"></div>
   <!-- Personagens -->
   <div id="exu_cavalo" data-0="display:none;" data-28000="display:block;background-position:0% 500%;" data-30500="background-position:0% 100%;" data-31000="background-position:10% 110%;" data-31500="background-position:30% 100%;" data-32000="background-position:90% 110%;"></div>
   <div id="exu_familia" data-0="display:none;" data-28000="display:block;background-position:0% 500%;" data-30500="background-position:0% 100%;" data-31000="background-position:10% 105%;" data-31600="background-position:30% 100%;" data-32100="background-position:70% 110%;"></div>
@@ -108,7 +125,7 @@
   <div id="exu_prego" data-0="display:none;" data-28000="display:block;background-position:0% 500%;" data-30500="background-position:0% 120%;" data-31300="background-position:10% 130%;" data-31900="background-position:30% 120%;" data-32800="background-position:70% 125%;"></div>
   <!-- Textos -->
   <div id="exu_questiona" data-0="display:none;" data-28000="display:block;right:-100%" data-32800="right:100%">
-    <h4> Exu andava preocupado, as pessoas não ofereciam mais seus sacrifícios aos deuses... </h4>
+    <h4> Exu andava preocupado, as pessoas não ofereciam mais seus sacrifícios aos Orixás... </h4>
   </div>
   <div id="exu_resposta" data-0="display:none;" data-32000="display:block;right:-100%" data-34800="right:100%">
     <h4> Exu foi em busca de respostas... </h4>
@@ -143,28 +160,28 @@
   </div>
   <div id="orunga_fala" data-0="display:none;" data-45800="display:block;top:100%" data-48000="top:-150%">
     <h4>
-      Eu sei o que procuras. </br>
-      Os dezesseis Orixás têm fome. </br>
-      Dê às pessoas </br>
-      Alguma coisa que eles gostem. <br>
-      Isso é feito de caroços de dendê. <br>
-      Pegue os cocos do dendezeiro </br>
-      Entenda seu significado </br>
-      E assim poderá reconquistar os humanos.
+      Eu sei o que procuras: </br>
+      os dezesseis Orixás têm fome. </br>
+      Você precisa dar às pessoas </br>
+      alguma coisa que elas gostem.</br>
+      Eu sei de uma coisa feita </br>
+      com caroços de dendê. <br><br>
+      Pegue os cocos e </br>
+      entenda seu significado. </br>
     </h4>
   </div>
 
   <!-- Okaran Meji Game -->
   <div id="exu_game" data-0="display:none;" data-45800="display:block;top:-100%;" data-48000="" data-48010="top:0%;">
   </div>
-  <div id="exu_stat" data-0="display:none;" data-48100="display:block; opacity:0;" data-48150="" data-48200="opacity:1;">
+  <div id="exu_stat" data-0="display:none;" data-48010="display:block; opacity:1;">
         <span id="hit">0 Dendes</span>
         &nbsp;
         <!-- <span id="miss">0 Ovos</span> -->
         <!-- &nbsp; -->
         <a id="btnstart" href="javascript://">Iniciar &#9658;</a>
   </div>
-  <div id="exu_container" data-0="display:none;" data-48100="display:block; opacity:1;">
+  <div id="exu_container" data-0="display:none;" data-48010="display:block">
         <div id="char1" class="character ovo ovo1"></div>
         <div id="char2" class="character ovo ovo2"></div>
         <div id="char3" class="character dende dende1"></div>
@@ -174,11 +191,14 @@
   <div id="exu_message" data-48000="display:none">
         Exu precisa coletar 16 cocos de dende, tente outra vez.
   </div>
-  <div id="exu_dende" data-48000="display:none" data-48200="display:none" >
+  <div id="exu_dende" data-48010="display:none">
         Exu coletou os 16 cocos de dende...
   </div>
+  <div id="exu_social" class="fb-like" data-48010="display:none" data-href="http://contosdeifa.com" data-width="300" data-layout="button_count" data-action="recommend" data-show-faces="true" data-share="true"></div>
 
-
+  <div id="exu_continuar">
+        <a href="ogun"> Continuar... </a>
+  </div>
 
 
 <!--   <div id="exu1" data-0="display:none;" data-23000="display:block; opacity:1;">
@@ -189,20 +209,17 @@
 
 
   <!-- Trilha -->
-  <div id="dsp_machado"></div>
-  <div id="dsp_metal"></div>
-  <div id="dsp_cocos"></div>
-  <div id="dsp_raiz"></div>
-  <div id="dsp_obami"></div>
-  <div id="dsp_exu"></div>
+  <div id="dsp_machado" class="audio"></div>
+  <div id="dsp_metal" class="audio"></div>
+  <div id="dsp_cocos" class="audio"></div>
+  <div id="dsp_raiz" class="audio"></div>
+  <div id="dsp_obami" class="audio"></div>
+  <div id="dsp_exu" class="audio"></div>
 
 
 
 
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-
+ 
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery.jplayer.min.js"></script>

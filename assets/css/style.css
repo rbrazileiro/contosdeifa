@@ -1,9 +1,11 @@
 /** Contos de Ifá****/
-
+html {
+	overflow-y: hidden;
+}
 html, body {
 	line-height: 1;
 	min-height:100%;
-	overflow: hidden;
+	overflow: visible;
 	cursor: auto;
 }
 
@@ -64,6 +66,9 @@ body {
 	background-color: #000;
 }
 
+.audio {
+	display: none;
+}
 
 /* container e capa */
 .container { margin-left: -10px;}
@@ -927,6 +932,44 @@ body {
 	background: url("../imgs/exu/coco03.png");
 	background-repeat: no-repeat;
 	background-size: 70%;
+	z-index: 28;
+}
+
+#exu_share {
+
+}
+
+#exu_continuar {
+	font-size: 2.5em;
+	width: 100%;
+	margin: 0 auto;
+	top: 35%;
+	right: 0%;
+	text-align: center;
+	position: fixed;
+	color: #CF0000;
+	padding-left: 0px;
+	text-shadow: 2px 2px 23px #000000;
+	display: none;
+	z-index: 28;
+}
+
+#exu_continuar a {
+	color: #CF0000;
+	text-decoration: none;
+}
+
+#exu_social {
+	width: 100%;
+	margin: 0 auto;
+	top: 25%;
+	right: 0%;
+	position: fixed;
+	text-align: center;
+	color: #FF0000;
+	padding-left: 0px;
+	text-shadow: 2px 2px 23px #000000;
+	display: none;
 	z-index: 28;
 }
 /* animations logo */

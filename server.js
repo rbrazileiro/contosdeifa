@@ -15,6 +15,9 @@ app.get('/', function (req, res) {
   res.sendfile(__dirname + '/index.html');
 });
 
+app.get('/ogun', function (req, res) {
+  res.sendfile(__dirname + '/index.html');
+});
 
 app.get('/*.(js|css|png|jpg|mp3|woff|ttf|gif)', function(req, res){
   res.sendfile(__dirname + '/assets'+req.url);
