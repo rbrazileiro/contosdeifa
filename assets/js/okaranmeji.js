@@ -37,6 +37,7 @@ $( document ).ready(function() {
 
             setTimeout(function() {
                 clearInterval(play);
+                clearInterval(timer);
                 $("#btnstart").css("color", "#333333");
                 $("#btnstart").bind("click", startplay);
 
