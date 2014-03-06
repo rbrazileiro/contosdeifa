@@ -624,10 +624,10 @@ body {
 }
 #yemanja_fala {
 	font-size: 2.5em;
-	width: 300%;
+	width: 50%;
 	margin: 0 auto;
-	top: 8%;
-	right: -100%;
+	top: 100%;
+	right: 24%;
 	text-align: center;
 	position: fixed;
 	z-index: 21;
