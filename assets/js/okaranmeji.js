@@ -8,6 +8,7 @@ $( document ).ready(function() {
         var hit = 0;
 
         var play;
+        var sec;
 
         $("#btnstart").click(function(){
             startplay();
@@ -25,6 +26,15 @@ $( document ).ready(function() {
             $("#btnstart").unbind("click");
             $('body').css( 'cursor', 'url(../imgs/exu/mao.gif), pointer' );
             play = setInterval(scramble, 1800);
+            sec = 60;
+            var timer = setInterval(function() { 
+                $('#timer').html(sec--);
+                    if (sec == -1) {
+                        $('#timer').fadeOut('fast');
+                        clearInterval(timer);
+                } 
+            }, 1000);
+
             setTimeout(function() {
                 clearInterval(play);
                 $("#btnstart").css("color", "#333333");
