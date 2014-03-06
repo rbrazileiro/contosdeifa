@@ -813,7 +813,7 @@ body {
 	text-align: center;
 	z-index: 29;
 }
-#exu_stat span #hit {
+#hit {
 	text-decoration: none;
 	font-size: 28px;
 	background: #d3d3d3;
@@ -829,7 +829,7 @@ body {
 	top: 5%;
 	left: 20%;
 }
-#exu_stat span #time {
+#timer {
 	text-decoration: none;
 	font-size: 40px;
 	background: #d3d3d3;
