@@ -825,6 +825,9 @@ body {
 	opacity: 0.8;
 	filter:alpha(opacity=80);
 	z-index: 29;
+	position: fixed;
+	top: 5%;
+	left: 20%;
 }
 #exu_stat a {
 	text-decoration: none;
@@ -838,6 +841,9 @@ body {
 	opacity: 0.8;
 	filter:alpha(opacity=80);
 	z-index: 29;
+	position: fixed;
+	top: 5%;
+	right: 20%;
 }
 
 #exu_stat a:hover {
