@@ -11,6 +11,7 @@ $( document ).ready(function() {
 
         $("#btnstart").click(function(){
             startplay();
+            $("html, body").animate({ scrollTop: $(document).height() }, 10);
             $('body').css({'overflow':'hidden'});
         });
 
@@ -61,20 +62,22 @@ $( document ).ready(function() {
                 hit++;
                 $("#hit").html(hit + " Dendes");
                 if (hit == 16) {
-                    $("#exu_dende").fadeIn('slow');
+                    $("#exu_dende").fadeIn(1000);
+                    $("#exu_social").fadeIn(1000);
+                    $("#exu_continuar").fadeIn(1000);
                     $(".character").fadeOut('slow');
                     $("#exu_message").css("z-index", "1");
                     clearInterval(play);
                     $("#btnstart").css("color", "#333333");
                     $("#btnstart").bind("click", startplay);
-                    $('body').css({'overflow':'visible'});
+                    // $('body').css({'overflow':'visible'});
                     $("#exu_stat").fadeOut('slow');
                     $("#exu_stat").css("z-index", "1");
                     // $("#esu").animate({
                     //     'background-position-x': '10%',
                     //     'background-position-y': '20%'
                     // }, 10000, 'linear');
-                    $("#esu").css("z-index", "28");
+                    // $("#esu").css("z-index", "28");
                     $('body').css( 'cursor', 'pointer' );
                 }
             }
