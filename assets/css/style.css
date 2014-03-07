@@ -877,7 +877,7 @@ body {
 	/*position: fixed;*/
 	/*top: 0%;*/
 	padding: 20px 50px;
-	cursor: url('../imgs/exu/mao.gif'), pointer;
+	cursor: url('../imgs/exu/mao.gif') 25 31, pointer;
 	/*-webkit-border-radius: .5em;*/
 	/*-moz-border-radius: .5em;*/
 	/*border-radius: .5em;*/
