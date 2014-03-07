@@ -72,7 +72,7 @@ $( document ).ready(function() {
                 $(this).effect("explode", 500);
                 hit++;
                 $("#hit").html(hit + " Dendes");
-                if (hit == 16) {
+                if (hit == 3) {
                     $("#exu_dende").fadeIn(1000);
                     $("#exu_social").fadeIn(1000);
                     $("#exu_continuar").fadeIn(1000);
