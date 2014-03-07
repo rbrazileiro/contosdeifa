@@ -38,13 +38,13 @@ $( document ).ready(function() {
 
             setTimeout(function() {
                 clearInterval(play);
-                clearInterval(timer);
                 $("#btnstart").css("color", "#333333");
                 $("#btnstart").bind("click", startplay);
 
                 // show the final message
                 var containerPos = $('#exu_container').offset();
                 $("#exu_message").fadeIn('slow');
+                clearInterval(timer);
                 // $("#exu_message").animate({
                 //     top: containerPos.top,
                 //     left: containerPos.left

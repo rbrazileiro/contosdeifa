@@ -815,10 +815,10 @@ body {
 }
 #hit {
 	text-decoration: none;
-	font-size: 28px;
-	background: #d3d3d3;
+	font-size: 30px;
+	background: #FFF;
 	padding: 2px 10px;
-	color: #333333;
+	color: #FF0000;
 	-webkit-border-radius: .2em;
 	-moz-border-radius: .2em;
 	border-radius: .2em;
