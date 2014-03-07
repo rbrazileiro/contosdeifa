@@ -916,8 +916,8 @@ body {
 
 .character {
 	/*border: 2px solid #f3f3f3;*/
-	width: auto;
-	height: auto;
+	width: 200px;
+	height: 200px;
 	position: absolute;
 	display: none;
 	/*-webkit-border-radius: .5em;*/
