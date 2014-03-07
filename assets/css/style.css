@@ -777,7 +777,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0px 0px;
-	cursor: url('../imgs/exu/mao.gif'), pointer;
+	cursor: url('../imgs/exu/mao.gif'), auto;
 	z-index: 26;
 }
 
@@ -877,7 +877,7 @@ body {
 	/*position: fixed;*/
 	/*top: 0%;*/
 	padding: 20px 50px;
-	cursor: url('../imgs/exu/mao.gif') 25 31, pointer;
+	cursor: url('../imgs/exu/mao.gif') 25 31, auto;
 	/*-webkit-border-radius: .5em;*/
 	/*-moz-border-radius: .5em;*/
 	/*border-radius: .5em;*/
@@ -916,14 +916,14 @@ body {
 
 .character {
 	/*border: 2px solid #f3f3f3;*/
-	width: 200px;
-	height: 200px;
+	width: 95px;
+	height: 95px;
 	position: absolute;
 	display: none;
 	/*-webkit-border-radius: .5em;*/
 	/*-moz-border-radius: .5em;*/
 	/*border-radius: .5em;*/
-	cursor: url("../imgs/exu/mao.gif") 25 31, pointer;
+	cursor: url("../imgs/exu/mao.gif") 25 31, auto;
 	z-index: 28;
 }
 .character:hover {
