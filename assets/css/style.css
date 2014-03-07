@@ -916,14 +916,14 @@ body {
 
 .character {
 	/*border: 2px solid #f3f3f3;*/
-	width: 95px;
-	height: 95px;
+	width: auto;
+	height: auto;
 	position: absolute;
 	display: none;
 	/*-webkit-border-radius: .5em;*/
 	/*-moz-border-radius: .5em;*/
 	/*border-radius: .5em;*/
-	cursor: url("../imgs/exu/mao.gif"), pointer;
+	cursor: url("../imgs/exu/mao.gif") 25 31, pointer;
 	z-index: 28;
 }
 .character:hover {
