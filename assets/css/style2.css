@@ -165,9 +165,9 @@ body {
 	text-align: center;
 	position: fixed;
 	z-index: 1;
-	color: #1D0000;
+	color: #E6E9E9;
 	padding-left: 0px;
-	text-shadow: 2px 2px 23px #333;
+	text-shadow: 2px 2px 23px #000;
 }
 
 #saida_exu {
