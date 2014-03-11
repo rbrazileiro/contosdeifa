@@ -277,3 +277,22 @@ body {
 	background-position: 0px 0px;
 	z-index: 2;
 }
+
+#ogun_txt {
+	font-size: 2.5em;
+	width: 50%;
+	margin: 0 auto;
+	top: 8%;
+	text-align: center;
+	position: fixed;
+	z-index: 21;
+	padding-left: 20px;
+}
+#ogun_txt h2 {
+	text-shadow: 8px 10px 15px #2000b9;
+	margin-top: 0.5em;
+}
+
+#ogun_txt h3 {
+	text-shadow: 2px 2px 23px #ffffff;
+}
