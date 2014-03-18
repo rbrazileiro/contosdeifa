@@ -285,7 +285,7 @@ body {
 	top: 8%;
 	text-align: center;
 	position: fixed;
-	z-index: 21;
+	z-index: 4;
 	padding-left: 20px;
 }
 #ogun_txt h2 {
@@ -295,4 +295,157 @@ body {
 
 #ogun_txt h3 {
 	text-shadow: 2px 2px 23px #ffffff;
+}
+
+#ogum_meji {
+	font-size: 3em;
+	width: 50%;
+	margin: 0 auto;
+	top: 8%;
+	text-align: center;
+	position: fixed;
+	z-index: 21;
+	padding-left: 20px;
+}
+
+#ogum_meji h4 {
+	text-shadow: 2px 2px 23px #000000;
+}
+
+#ogun_game {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	background-image: url('../imgs/ogum/bgum.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0px 0px;
+	/*cursor: url('../imgs/exu/mao.gif'), auto;*/
+	z-index: 1;
+}
+
+#lagoa1 {
+	background-image: url('../imgs/ogum/lagoa_dir.png');
+	background-repeat: no-repeat;
+	background-size: 37%;
+	position: fixed;
+	z-index: 3;
+	top: 62%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+}
+
+#lagoa2 {
+	background-image: url('../imgs/ogum/lagoa_esq.png');
+	background-repeat: no-repeat;
+	background-size: 37%;
+	position: fixed;
+	z-index: 4;
+	top: 60%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+}
+
+#cachoeira {
+	background-image: url('../imgs/ogum/cachoeira.png');
+	background-repeat: no-repeat;
+	background-size: 29%;
+	position: fixed;
+	z-index: 4;
+	top: 40%;
+	left: 71%;
+	width: 100%;
+	height: 100%;
+}
+#grama1 {
+	background-image: url('../imgs/ogum/grama1.png');
+	background-repeat: no-repeat;
+	background-position: 0% 0%;
+	background-size: 100%;
+	position: fixed;
+	z-index: 4;
+	top:0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+}
+#grama2 {
+	background-image: url('../imgs/ogum/grama2.png');
+	background-repeat: no-repeat;
+	background-position: 0% 0%;
+	background-size: 45%;
+	position: fixed;
+	z-index: 4;
+	top:0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+}
+#man1 {
+	background-image: url('../imgs/ogum/man01.png');
+	background-repeat: no-repeat;
+	background-position: 0% 0%;
+	background-size: 10%;
+	position: fixed;
+	z-index: 4;
+	top:0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+}
+#man2 {
+	background-image: url('../imgs/ogum/man02.png');
+	background-repeat: no-repeat;
+	background-position: 0% 0%;
+	background-size: 10%;
+	position: fixed;
+	z-index: 4;
+	top:0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+}
+
+#cabaca {
+	background-image: url('../imgs/ogum/cabaca.png');
+	background-repeat: no-repeat;
+	background-position: 0% 0%;
+	background-size: 10%;
+	position: fixed;
+	z-index: 2;
+	top:0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+}
+
+
+#peixe {
+	background-image: url('../imgs/ogum/peixe_principal.png');
+	background-repeat: no-repeat;
+	background-position: 0% 0%;
+	background-size: 22%;
+	position: fixed;
+	z-index: 2;
+	top:0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+}
+
+#ogum {
+	background-image: url('../imgs/ogum/ogum.png');
+	background-repeat: no-repeat;
+	background-position: 0% 0%;
+	background-size: 34%;
+	position: fixed;
+	z-index: 2;
+	top:0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
 }
