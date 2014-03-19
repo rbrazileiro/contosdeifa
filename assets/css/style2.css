@@ -318,7 +318,7 @@ body {
 	position: fixed;
 	top: 0%;
 	left: 0%;
-	background-image: url('../imgs/ogum/bgum.jpg');
+	background-image: url('../imgs/ogum/bg_ogum.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0px 0px;
@@ -438,7 +438,7 @@ body {
 }
 
 #ogum {
-	background-image: url('../imgs/ogum/ogum.png');
+	background-image: url('../imgs/ogum/ogum_.png');
 	background-repeat: no-repeat;
 	background-position: 0% 0%;
 	background-size: 34%;
