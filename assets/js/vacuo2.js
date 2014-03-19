@@ -5,7 +5,6 @@ $(document).ready(function () {
         percentage: true,
         barHeight: 1,
         completeAnimation: "grow",
-        minimumTime: 100,
-        onComplete: function() {initSkrollr();}
+        minimumTime: 100
     });
 });
