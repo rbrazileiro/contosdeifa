@@ -449,3 +449,63 @@ body {
 	width: 100%;
 	height: 100%;
 }
+
+#humanos_no_lago, #ogum_pergunta {
+	font-size: 2.5em;
+	width: 100%;
+	margin: 0 auto;
+	top: 8%;
+	right: -100%;
+	text-align: center;
+	position: fixed;
+	z-index: 4;
+	padding-left: 0px;
+	text-shadow: 2px 2px 23px #000000;
+}
+
+#humanos_no_lago2 {
+	font-size: 2.5em;
+	width: 200%;
+	margin: 0 auto;
+	top: 8%;
+	right: -200%;
+	text-align: center;
+	position: fixed;
+	z-index: 4;
+	padding-left: 0px;
+	text-shadow: 2px 2px 23px #000000;
+}
+
+#humanos_no_lago3 {
+	font-size: 2.5em;
+	width: 200%;
+	margin: 0 auto;
+	top: 8%;
+	right: -200%;
+	text-align: center;
+	position: fixed;
+	z-index: 4;
+	padding-left: 0px;
+	text-shadow: 2px 2px 23px #000000;
+}
+
+#ogum_fala {
+	font-size: 2.5em;
+	width: 50%;
+	margin: 0 auto;
+	top: 100%;
+	right: 24%;
+	text-align: center;
+	position: fixed;
+	z-index: 21;
+	color: #2000b9;
+	padding-left: 0px;
+	text-shadow: 2px 2px 23px #00F0F0;
+}
+
+#game {
+	position: fixed;
+	top: 14%;
+	left: 25%;
+	z-index: 4;
+}
