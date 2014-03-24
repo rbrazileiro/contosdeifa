@@ -490,7 +490,7 @@ body {
 	text-shadow: 2px 2px 23px #000000;
 }
 
-#ogum_fala {
+#ogum_fala, #ogum_fala2 {
 	font-size: 2.5em;
 	width: 50%;
 	margin: 0 auto;
@@ -503,6 +503,21 @@ body {
 	padding-left: 0px;
 	text-shadow: 2px 2px 23px #00F0F0;
 }
+
+#ogum_fala2 {
+	font-size: 2.5em;
+	width: 50%;
+	margin: 0 auto;
+	top: 100%;
+	right: 24%;
+	text-align: center;
+	position: fixed;
+	z-index: 21;
+	color: #FFF;
+	padding-left: 0px;
+	text-shadow: 2px 2px 23px #00F0F0;
+}
+
 
 #game {
 	position: fixed;
