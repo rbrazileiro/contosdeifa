@@ -220,10 +220,10 @@ body {
 	-webkit-transform: scale(1) rotate(0deg);
 }
 
-#ifa img, #ifa_exu img, #ifa_ogun img {
+#ifa img, #ifa_exu img, #ifa_ogun img, #ifa_oxossi img {
 	width: 100%;
 }
-#ifa_exu {
+#ifa_exu, #ifa_ogum, #ifa_oxossi {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -232,15 +232,7 @@ body {
 	z-index: 4;
 	-webkit-transform: scale(1) rotate(0deg);
 }
-#ifa_ogun {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 4;
-	-webkit-transform: scale(1) rotate(0deg);
-}
+
 #final_okaranmeji {
 	font-size: 3.5em;
 	width: 130%;
