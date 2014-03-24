@@ -223,7 +223,7 @@ body {
 #ifa img, #ifa_exu img, #ifa_ogun img, #ifa_oxossi img {
 	width: 100%;
 }
-#ifa_exu, #ifa_ogum, #ifa_oxossi {
+#ifa_exu, #ifa_ogun, #ifa_oxossi {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -540,7 +540,7 @@ body {
 	position: fixed;
 	top: -100%;
 	left: 0px;
-	background-image: url('../imgs/bg/bg_ogun.jpg');
+	background-image: url('../imgs/bg/bg_oxossi.jpg');
 	background-repeat: repeat;
 	background-position: 0px 0px;
 	z-index: 2;
