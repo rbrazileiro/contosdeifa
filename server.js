@@ -15,6 +15,10 @@ app.get('/', function (req, res) {
   res.sendfile(__dirname + '/index.html');
 });
 
+app.get('/main', function (req, res) {
+  res.sendfile(__dirname + '/main/index.html');
+});
+
 app.get('/exu', function (req, res) {
   res.sendfile(__dirname + '/exu_01.html');
 });
