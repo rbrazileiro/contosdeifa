@@ -1,0 +1,547 @@
+/** Contos de Ifá****/
+html {
+	overflow-y: hidden;
+}
+html, body {
+	line-height: 1;
+	min-height:100%;
+	overflow: visible;
+	cursor: auto;
+}
+
+/* tipos */
+@font-face {
+    font-family: "Epistolar";
+    src: url('../fonts/Epistolar/Epistolar.woff');
+    font-weight:400;
+}
+
+@font-face {
+    font-family: "1550";
+    src: url('../fonts/1550/1550.ttf');
+    font-weight:400;
+}
+
+@font-face {
+    font-family: "Fishfingers";
+    src: url('../fonts/fishfingers/Fishfingers.ttf');
+    font-weight:400;
+}
+
+@font-face {
+    font-family: "No_Color";
+    src: url('../fonts/no_color/No_Color.ttf');
+    font-weight:400;
+}
+
+/* formatação */
+h1 {
+	font-family: "Epistolar", sans-serif;
+	font-size: 5em;
+}
+
+h2 {
+	font-family: "No_Color", sans-serif;
+	font-size: 3em;
+	
+}
+
+h3 {
+	font-family: "Fishfingers", sans-serif;
+	font-size: 2em;
+	
+}
+
+h4 {
+	font-family: "1550", sans-serif;
+	font-size: 1em;
+	
+}
+
+/* elementos */
+body {
+	font-family: "1550", sans-serif;
+	color: #FFF;
+	background-size: cover;
+	background-color: #000;
+}
+
+.audio {
+	display: none;
+}
+
+/* container e capa */
+.container { margin-left: -10px;}
+
+
+/* imagens */
+
+.ifa img {
+	width: 130%;
+}
+
+
+/* intro */
+
+#intro_setas {
+	background-image: url('../imgs/intro/setas.png');
+	background-repeat: no-repeat;
+	background-position: 50% 95%;
+	background-size: 15%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 4;
+}
+#intro_africa {
+	background-image: url('../imgs/exu/mapa_africa.jpg');
+	background-repeat: no-repeat;
+	background-size: 200%;
+	background-position: 0% 0%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+#esu {
+	background-image: url('../imgs/exu/esu.png');
+	background-repeat: no-repeat;
+	background-position: 0% 0%;
+	background-size: 14%;
+	position: fixed;
+	z-index: 3;
+	/*top:0%;
+	left: 7%;*/
+	width: 100%;
+	height: 100%;
+	-webkit-transform:scaleX(1);
+    -moz-transform:scaleX(1);
+    -ms-transform:scaleX(1);
+    -o-transform:scaleX(1);
+    transform:scaleX(1);
+}
+
+#macaco {
+	background-image: url('../imgs/exu/macaco.png');
+	background-repeat: no-repeat;
+	background-position: 0% 0%;
+	background-size: 10%;
+	position: fixed;
+	z-index: 2;
+	/*top:0%;
+	left: 7%;*/
+	width: 100%;
+	height: 100%;
+	-webkit-transform:scaleX(-1);
+    -moz-transform:scaleX(-1);
+    -ms-transform:scaleX(-1);
+    -o-transform:scaleX(-1);
+    transform:scaleX(-1);
+}
+
+#chamada_macaco {
+	font-size: 2.5em;
+	width: 100%;
+	margin: 0 auto;
+	top: 8%;
+	right: -100%;
+	text-align: center;
+	position: fixed;
+	z-index: 2;
+	padding-left: 20px;
+	text-shadow: 2px 2px 23px #000000;
+}
+
+#fala_macaco {
+	font-size: 2.5em;
+	width: 50%;
+	margin: 0 auto;
+	top: 100%;
+	right: 24%;
+	text-align: center;
+	position: fixed;
+	z-index: 1;
+	color: #E6E9E9;
+	padding-left: 0px;
+	text-shadow: 2px 2px 23px #000;
+}
+
+#saida_exu {
+	font-size: 2.5em;
+	width: 100%;
+	margin: 0 auto;
+	top: 8%;
+	right: -100%;
+	text-align: center;
+	position: fixed;
+	z-index: 2;
+	padding-left: 20px;
+	text-shadow: 2px 2px 23px #000000;
+}
+
+#final_exu {
+	font-size: 2.5em;
+	width: 130%;
+	margin: 0 auto;
+	top: 18%;
+	right: -130%;
+	text-align: center;
+	position: fixed;
+	z-index: 2;
+	padding-left: 20px;
+	text-shadow: 2px 2px 23px #000000;
+}
+
+#recado_orixas {
+	font-size: 2.5em;
+	width: 50%;
+	margin: 0 auto;
+	top: 100%;
+	right: 24%;
+	text-align: center;
+	position: fixed;
+	z-index: 1;
+	color: #F2F2F2;
+	padding-left: 0px;
+	text-shadow: 2px 2px 23px #333;
+}
+#ifa {
+	position: fixed;
+	top: 0%;
+	left: 38%;
+	width: 100%;
+	height: 100%;
+	z-index: 6;
+	-webkit-transform: scale(1) rotate(0deg);
+}
+
+#ifa img, #ifa_exu img, #ifa_ogun img, #ifa_oxossi img {
+	width: 100%;
+}
+#ifa_exu, #ifa_ogun, #ifa_oxossi {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 7;
+	-webkit-transform: scale(1) rotate(0deg);
+}
+
+#final_okaranmeji {
+	font-size: 3.5em;
+	width: 130%;
+	margin: 0 auto;
+	top: 20%;
+	right: -130%;
+	text-align: center;
+	position: fixed;
+	z-index: 4;
+	padding-left: 20px;
+	text-shadow: 2px 2px 23px #000000;
+}
+
+#okaranmeji {
+	background-image: url('../imgs/exu/okaran_meji.png');
+	background-repeat: no-repeat;
+	background-position: 0% 0%;
+	background-size: 10%;
+	position: fixed;
+	z-index: 4;
+	/*top:0%;
+	left: 7%;*/
+	width: 100%;
+	height: 100%;
+}
+
+#pano_ogun {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: -100%;
+	left: 0px;
+	background-image: url('../imgs/bg/bg_ogun.jpg');
+	background-repeat: repeat;
+	background-position: 0px 0px;
+	z-index: 2;
+}
+
+#ogun_txt {
+	font-size: 2.5em;
+	width: 50%;
+	margin: 0 auto;
+	top: 8%;
+	text-align: center;
+	position: fixed;
+	z-index: 4;
+	padding-left: 20px;
+}
+#ogun_txt h2 {
+	text-shadow: 8px 10px 15px #2000b9;
+	margin-top: 0.5em;
+}
+
+#ogun_txt h3 {
+	text-shadow: 2px 2px 23px #ffffff;
+}
+
+#ogum_meji {
+	font-size: 3em;
+	width: 50%;
+	margin: 0 auto;
+	top: 8%;
+	text-align: center;
+	position: fixed;
+	z-index: 21;
+	padding-left: 20px;
+}
+
+#ogum_meji h4 {
+	text-shadow: 2px 2px 23px #000000;
+}
+
+#ogun_game {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	background-image: url('../imgs/ogum/bg_ogum.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0px 0px;
+	/*cursor: url('../imgs/exu/mao.gif'), auto;*/
+	z-index: 1;
+}
+
+#lagoa1 {
+	background-image: url('../imgs/ogum/lagoa_dir.png');
+	background-repeat: no-repeat;
+	background-size: 37%;
+	position: fixed;
+	z-index: 3;
+	top: 62%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+}
+
+#lagoa2 {
+	background-image: url('../imgs/ogum/lagoa_esq.png');
+	background-repeat: no-repeat;
+	background-size: 37%;
+	position: fixed;
+	z-index: 4;
+	top: 60%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+}
+
+#cachoeira {
+	background-image: url('../imgs/ogum/cachoeira.png');
+	background-repeat: no-repeat;
+	background-size: 29%;
+	position: fixed;
+	z-index: 4;
+	top: 40%;
+	left: 71%;
+	width: 100%;
+	height: 100%;
+}
+#grama1 {
+	background-image: url('../imgs/ogum/grama1.png');
+	background-repeat: no-repeat;
+	background-position: 0% 0%;
+	background-size: 100%;
+	position: fixed;
+	z-index: 4;
+	top:0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+}
+#grama2 {
+	background-image: url('../imgs/ogum/grama2.png');
+	background-repeat: no-repeat;
+	background-position: 0% 0%;
+	background-size: 45%;
+	position: fixed;
+	z-index: 4;
+	top:0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+}
+#man1 {
+	background-image: url('../imgs/ogum/man01.png');
+	background-repeat: no-repeat;
+	background-position: 0% 0%;
+	background-size: 10%;
+	position: fixed;
+	z-index: 4;
+	top:0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+}
+#man2 {
+	background-image: url('../imgs/ogum/man02.png');
+	background-repeat: no-repeat;
+	background-position: 0% 0%;
+	background-size: 10%;
+	position: fixed;
+	z-index: 4;
+	top:0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+}
+
+#cabaca {
+	background-image: url('../imgs/ogum/cabaca.png');
+	background-repeat: no-repeat;
+	background-position: 0% 0%;
+	background-size: 10%;
+	position: fixed;
+	z-index: 2;
+	top:0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+}
+
+
+#peixe {
+	background-image: url('../imgs/ogum/peixe_principal.png');
+	background-repeat: no-repeat;
+	background-position: 0% 0%;
+	background-size: 22%;
+	position: fixed;
+	z-index: 2;
+	top:0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+}
+
+#ogum {
+	background-image: url('../imgs/ogum/ogum_.png');
+	background-repeat: no-repeat;
+	background-position: 0% 0%;
+	background-size: 34%;
+	position: fixed;
+	z-index: 2;
+	top:0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+}
+
+#humanos_no_lago, #ogum_pergunta {
+	font-size: 2.5em;
+	width: 100%;
+	margin: 0 auto;
+	top: 8%;
+	right: -100%;
+	text-align: center;
+	position: fixed;
+	z-index: 4;
+	padding-left: 0px;
+	text-shadow: 2px 2px 23px #000000;
+}
+
+#humanos_no_lago2 {
+	font-size: 2.5em;
+	width: 200%;
+	margin: 0 auto;
+	top: 8%;
+	right: -200%;
+	text-align: center;
+	position: fixed;
+	z-index: 4;
+	padding-left: 0px;
+	text-shadow: 2px 2px 23px #000000;
+}
+
+#humanos_no_lago3 {
+	font-size: 2.5em;
+	width: 200%;
+	margin: 0 auto;
+	top: 8%;
+	right: -200%;
+	text-align: center;
+	position: fixed;
+	z-index: 4;
+	padding-left: 0px;
+	text-shadow: 2px 2px 23px #000000;
+}
+
+#ogum_fala, #ogum_fala2 {
+	font-size: 2.5em;
+	width: 50%;
+	margin: 0 auto;
+	top: 100%;
+	right: 24%;
+	text-align: center;
+	position: fixed;
+	z-index: 21;
+	color: #2000b9;
+	padding-left: 0px;
+	text-shadow: 2px 2px 23px #00F0F0;
+}
+
+#ogum_fala2 {
+	font-size: 2.5em;
+	width: 50%;
+	margin: 0 auto;
+	top: 100%;
+	right: 24%;
+	text-align: center;
+	position: fixed;
+	z-index: 21;
+	color: #FFF;
+	padding-left: 0px;
+	text-shadow: 2px 2px 23px #00F0F0;
+}
+
+
+#game {
+	position: fixed;
+	top: 14%;
+	left: 25%;
+	z-index: 4;
+}
+
+#ogum_social {
+	width: 100%;
+	margin: 0 auto;
+	top: 25%;
+	right: 0%;
+	position: fixed;
+	text-align: center;
+	color: #FF0000;
+	padding-left: 0px;
+	text-shadow: 2px 2px 23px #000000;
+	display: none;
+	z-index: 5;
+}
+
+/* Oxossi */
+
+#pano_oxossi {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: -100%;
+	left: 0px;
+	background-image: url('../imgs/bg/bg_oxossi.jpg');
+	background-repeat: repeat;
+	background-position: 0px 0px;
+	z-index: 5;
+}
