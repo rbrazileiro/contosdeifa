@@ -15,7 +15,11 @@ app.get('/', function (req, res) {
   res.sendfile(__dirname + '/index.html');
 });
 
-app.get('/ogum', function (req, res) {
+app.get('/exu', function (req, res) {
+  res.sendfile(__dirname + '/exu_01.html');
+});
+
+app.get('/ogun', function (req, res) {
   res.sendfile(__dirname + '/index2.html');
 });
 
