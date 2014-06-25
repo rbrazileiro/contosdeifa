@@ -43,18 +43,17 @@ h3 {
 
 h4 {
   font-family: "1550", sans-serif;
-  font-size: 1em;
+  font-size: 1.6em;
 }
 
 /* elementos */
 body {
   font-family: "1550", sans-serif;
-  color: #FFF;
 }
 
 .btn-lg {
     font-size: 2.3em;
-    color: rgba(99, 71, 24, 1);
+    color: rgba(188, 123, 15, 1);
 }
 
 html,
@@ -69,6 +68,7 @@ body {
   margin: 2% auto 4%;;
   text-align: center;
   text-shadow: -2px 3px 20px #FFFDF6;
+    color: #FFF;
   /*-webkit-animation: logoAnimation 2.6416s 1 ease-in;
   -moz-animation: logoAnimation 2.6416s 1 ease-in;
   -o-animation: logoAnimation 2.6416s 1 ease-in;*/
@@ -106,7 +106,7 @@ body {
   width: 60px;
   background: #000;
   position: fixed;
-  height: 100%;
+  height: 103%;
   overflow-y: auto;
   z-index: 1000;
   -webkit-transition: all 0.4s ease 0s;
@@ -208,10 +208,17 @@ body {
   padding: 50px 0;
 }
 
+.lead {
+  font-size: 2.4em;
+}
+
+.container h2 {
+  font-size: 5em;
+}
 /* Services */
 
 .services {
-  background: #7fbbda;
+  background: rgba(99, 71, 24, 1);
   padding: 50px 0;
   color: #ffffff;
 }
@@ -237,7 +244,7 @@ i.service-icon {
 .callout {
   color: #ffffff;
   display: table;
-  height: 400px;
+  height: 470px;
   width: 100%;
   background: url(../img/callout.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -249,7 +256,12 @@ i.service-icon {
 /* Portfolio */
 
 .portfolio {
-  padding: 50px 0;
+  padding: 70px 0;
+  background: url(../img/bg2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .portfolio-item {
