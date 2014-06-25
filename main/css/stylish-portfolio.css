@@ -227,6 +227,10 @@ body {
   margin-bottom: 15px;
 }
 
+.service-item p {
+  font-size: 1.25em;
+}
+
 i.service-icon {
   border: 3px solid #ffffff;
   border-radius: 50%;
