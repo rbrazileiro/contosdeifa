@@ -34,6 +34,7 @@ h1 {
 h2 {
   font-family: "No_Color", sans-serif;
   font-size: 3em; 
+  color: rgba(99, 71, 24, 1);
 }
 
 h3 {
@@ -83,6 +84,7 @@ body {
   font-size: 7em;
   line-height: 0.8em;
   margin-left: 5%;
+  color: white;
 }
 
 .vert-text {
