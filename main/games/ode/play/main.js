@@ -329,7 +329,7 @@ function setupScene() {
 }
 
 var ai = [];
-var aiGeo = new t.CubeGeometry(30, 30, 30);
+var aiGeo = new t.CubeGeometry(40, 40, 40);
 function setupAI() {
 	for (var i = 0; i < NUMAI; i++) {
 		addAI();
