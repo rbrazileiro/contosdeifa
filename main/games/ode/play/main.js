@@ -89,7 +89,7 @@ function init() {
 	renderer.setSize(WIDTH, HEIGHT);
 	
 	// Add the canvas to the document
-	renderer.domElement.style.backgroundColor = '#D6F1FF'; // easier to see
+	renderer.domElement.style.background="url('images/sky.jpg') no-repeat right top"; // easier to see
 	document.body.appendChild(renderer.domElement);
 	
 	// Track mouse position so we know where to shoot
@@ -285,7 +285,7 @@ function setupScene() {
 			new t.MeshLambertMaterial({/*color: 0xEDCBA0,*/map: t.ImageUtils.loadTexture('images/floor-1.jpg')})
 	);
 	scene.add(floor);
-	
+
 	// Geometry: walls	
 	var cube = new t.CubeGeometry(UNITSIZE, WALLHEIGHT, UNITSIZE);
 	var materials = [
