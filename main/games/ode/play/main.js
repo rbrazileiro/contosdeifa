@@ -282,7 +282,7 @@ function setupScene() {
 	// Geometry: floor
 	var floor = new t.Mesh(
 			new t.CubeGeometry(units * UNITSIZE, 10, units * UNITSIZE),
-			new t.MeshLambertMaterial({color: 0xEDCBA0,/*map: t.ImageUtils.loadTexture('images/floor-1.jpg')*/})
+			new t.MeshLambertMaterial({/*color: 0xEDCBA0,*/map: t.ImageUtils.loadTexture('images/floor-1.jpg')})
 	);
 	scene.add(floor);
 	
@@ -314,11 +314,11 @@ function setupScene() {
 	scene.add(healthcube);
 	
 	// Lighting
-	var directionalLight1 = new t.DirectionalLight( 0xF7EFBE, 0.7 );
-	directionalLight1.position.set( 0.5, 1, 0.5 );
+	var directionalLight1 = new t.DirectionalLight( 0xFFFFFF, 2 );
+	directionalLight1.position.set( 1, 1, 1 );
 	scene.add( directionalLight1 );
-	var directionalLight2 = new t.DirectionalLight( 0xF7EFBE, 0.5 );
-	directionalLight2.position.set( -0.5, -1, -0.5 );
+	var directionalLight2 = new t.DirectionalLight( 0xFFFFFF, 1 );
+	directionalLight2.position.set( -1, -1, -1 );
 	scene.add( directionalLight2 );
 }
 
