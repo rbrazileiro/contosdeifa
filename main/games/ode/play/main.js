@@ -313,7 +313,7 @@ function setupScene() {
 	
 	// Health cube
 	healthcube = new t.Mesh(
-			new t.CubeGeometry(30, 30, 30),
+			new t.CubeGeometry(15, 15, 15),
 			new t.MeshBasicMaterial({map: t.ImageUtils.loadTexture('images/health.png')})
 	);
 	healthcube.position.set(-UNITSIZE-15, 35, -UNITSIZE-15);
@@ -321,10 +321,10 @@ function setupScene() {
 	
 	// Lighting
 	var directionalLight1 = new t.DirectionalLight( 0xFFFFFF, 2 );
-	directionalLight1.position.set( 1, 1, 1 );
+	directionalLight1.position.set( 0.7, 1, 0.7 );
 	scene.add( directionalLight1 );
 	var directionalLight2 = new t.DirectionalLight( 0xFFFFFF, 1 );
-	directionalLight2.position.set( -1, -1, -1 );
+	directionalLight2.position.set( -0.5, -1, -0.5 );
 	scene.add( directionalLight2 );
 }
 
