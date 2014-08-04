@@ -287,9 +287,15 @@ function setupScene() {
 	scene.add(floor);
 	
 	// Geometry: walls
+	var wall1 = t.ImageUtils.loadTexture('images/wall-1.jpg');
+		// texture.repeat.set(10, 10);
+		texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
+		texture.anisotropy = 16;
+		texture.needsUpdate = true;
 	var cube = new t.CubeGeometry(UNITSIZE, WALLHEIGHT, UNITSIZE);
 	var materials = [
-	                 new t.MeshLambertMaterial({/*color: 0x00CCAA,*/map: t.ImageUtils.loadTexture('images/wall-1.jpg')}),
+	                 // new t.MeshLambertMaterial({/*color: 0x00CCAA,*/map: t.ImageUtils.loadTexture('images/wall-1.jpg')}),
+	                 new t.MeshLambertMaterial({/*color: 0x00CCAA,*/map: wall1}),
 	                 new t.MeshLambertMaterial({/*color: 0xC5EDA0,*/map: t.ImageUtils.loadTexture('images/wall-2.jpg')}),
 	                 new t.MeshLambertMaterial({color: 0xFBEBCD}),
 	                 ];
