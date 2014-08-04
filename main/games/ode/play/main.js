@@ -321,7 +321,7 @@ function setupScene() {
 	
 	// Lighting
 	var directionalLight1 = new t.DirectionalLight( 0xFFFFFF, 2 );
-	directionalLight1.position.set( 0.7, 1, 0.7 );
+	directionalLight1.position.set( 0.5, 1, 0.5 );
 	scene.add( directionalLight1 );
 	var directionalLight2 = new t.DirectionalLight( 0xFFFFFF, 1 );
 	directionalLight2.position.set( -0.5, -1, -0.5 );
@@ -329,7 +329,7 @@ function setupScene() {
 }
 
 var ai = [];
-var aiGeo = new t.CubeGeometry(40, 40, 40);
+var aiGeo = new t.CubeGeometry(30, 30, 30);
 function setupAI() {
 	for (var i = 0; i < NUMAI; i++) {
 		addAI();
