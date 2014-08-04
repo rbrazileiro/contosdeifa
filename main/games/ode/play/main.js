@@ -289,9 +289,9 @@ function setupScene() {
 	// Geometry: walls
 	var wall1 = t.ImageUtils.loadTexture('images/wall-1.jpg');
 		// texture.repeat.set(10, 10);
-		texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
-		texture.anisotropy = 16;
-		texture.needsUpdate = true;
+		wall1.wrapS = texture.wrapT = THREE.RepeatWrapping;
+		wall1.anisotropy = 16;
+		wall1.needsUpdate = true;
 	var cube = new t.CubeGeometry(UNITSIZE, WALLHEIGHT, UNITSIZE);
 	var materials = [
 	                 // new t.MeshLambertMaterial({/*color: 0x00CCAA,*/map: t.ImageUtils.loadTexture('images/wall-1.jpg')}),
