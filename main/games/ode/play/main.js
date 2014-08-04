@@ -286,12 +286,7 @@ function setupScene() {
 	);
 	scene.add(floor);
 	
-<<<<<<< HEAD
 	// Geometry: walls	
-=======
-	// Geometry: walls
-		
->>>>>>> 856b75730306777cef659ec2e6b0518f120778a9
 	var cube = new t.CubeGeometry(UNITSIZE, WALLHEIGHT, UNITSIZE);
 	var materials = [
 	                 new t.MeshLambertMaterial({/*color: 0x00CCAA,*/map: t.ImageUtils.loadTexture('images/wall-1.jpg')}),
