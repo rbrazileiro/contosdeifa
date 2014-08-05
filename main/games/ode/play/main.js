@@ -5,16 +5,16 @@
  */
 
 var map = [ // 1  2  3  4  5  6  7  8  9
-           [1, 1, 1, 1, 1, 1, 1, 1, 1, 1,], // 0
-           [1, 1, 0, 0, 0, 0, 0, 1, 0, 1,], // 1
-           [1, 1, 0, 1, 2, 2, 0, 0, 0, 1,], // 2
-           [1, 1, 0, 0, 0, 0, 0, 1, 0, 1,], // 3
-           [1, 0, 0, 2, 0, 1, 2, 1, 0, 1,], // 4
-           [1, 0, 2, 0, 0, 0, 0, 0, 0, 1,], // 5
-           [1, 0, 1, 0, 2, 0, 0, 1, 1, 1,], // 6
-           [1, 0, 0, 0, 0, 1, 0, 0, 0, 1,], // 7
-           [1, 0, 1, 1, 0, 0, 0, 0, 1, 1,], // 8
-           [1, 1, 1, 1, 1, 1, 1, 1, 1, 1,], // 9
+           [1, 1, 1, 1, 1, 1, 1, 1, 1, 2,], // 0
+           [1, 2, 0, 0, 0, 0, 0, 1, 0, 2,], // 1
+           [1, 2, 0, 2, 2, 2, 0, 0, 0, 2,], // 2
+           [1, 2, 0, 0, 0, 0, 0, 1, 0, 2,], // 3
+           [1, 0, 0, 2, 0, 1, 1, 1, 0, 2,], // 4
+           [1, 0, 2, 0, 0, 0, 0, 0, 0, 2,], // 5
+           [1, 0, 2, 0, 2, 0, 0, 2, 2, 2,], // 6
+           [1, 0, 0, 0, 0, 1, 0, 0, 0, 2,], // 7
+           [1, 0, 1, 1, 0, 0, 0, 0, 2, 2,], // 8
+           [1, 1, 1, 1, 1, 1, 1, 1, 1, 2,], // 9
            ], mapW = map.length, mapH = map[0].length;
 
 // Semi-constants
@@ -22,8 +22,8 @@ var WIDTH = window.innerWidth,
 	HEIGHT = window.innerHeight,
 	ASPECT = WIDTH / HEIGHT,
 	UNITSIZE = 250,
-	WALLHEIGHT = UNITSIZE / 1,
-	MOVESPEED = 200,
+	WALLHEIGHT = UNITSIZE / 0.5,
+	MOVESPEED = 150,
 	LOOKSPEED = 0.075,
 	BULLETMOVESPEED = MOVESPEED * 5,
 	NUMAI = 1,
@@ -105,8 +105,8 @@ function init() {
 	
 	// Display HUD
 	$('body').append('<canvas id="radar" width="200" height="200"></canvas>');
-	$('body').append('<div id="hud"><p>Health: <span id="health">100</span><br />Score: <span id="score">0</span></p></div>');
-	$('body').append('<div id="credits"><p>Created by <a href="http://www.isaacsukin.com/">Isaac Sukin</a> using <a href="http://mrdoob.github.com/three.js/">Three.js</a><br />WASD to move, mouse to look, click to shoot</p></div>');
+	$('body').append('<div id="hud"><p>Axe: <span id="health">100</span><br />Pontos: <span id="score">0</span></p></div>');
+	// $('body').append('<div id="credits"><p>Created by <a href="http://www.isaacsukin.com/">Isaac Sukin</a> using <a href="http://mrdoob.github.com/three.js/">Three.js</a><br />WASD to move, mouse to look, click to shoot</p></div>');
 	
 	// Set up "hurt" flash
 	$('body').append('<div id="hurt"></div>');
@@ -423,7 +423,7 @@ function drawRadar() {
 				}
 			}
 			if (i == c.x && j == c.z && d == 0) {
-				context.fillStyle = '#0000FF';
+				context.fillStyle = '#7EBD91';
 				context.fillRect(i * 20, j * 20, (i+1)*20, (j+1)*20);
 			}
 			else if (i == c.x && j == c.z) {
@@ -439,11 +439,11 @@ function drawRadar() {
 				context.fillText(''+d, i*20+8, j*20+12);
 			}
 			else if (map[i][j] > 0) {
-				context.fillStyle = '#666666';
+				context.fillStyle = '#003F13';
 				context.fillRect(i * 20, j * 20, (i+1)*20, (j+1)*20);
 			}
 			else {
-				context.fillStyle = '#CCCCCC';
+				context.fillStyle = '#2A7E43';
 				context.fillRect(i * 20, j * 20, (i+1)*20, (j+1)*20);
 			}
 		}
@@ -451,7 +451,7 @@ function drawRadar() {
 }
 
 var bullets = [];
-var sphereMaterial = new t.MeshBasicMaterial({color: 0x333333});
+var sphereMaterial = new t.MeshBasicMaterial({color: 0xE9B91B});
 var sphereGeo = new t.SphereGeometry(1, 3, 3);
 function createBullet(obj) {
 	if (obj === undefined) {
