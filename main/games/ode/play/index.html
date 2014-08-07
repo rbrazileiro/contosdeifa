@@ -1,75 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>WebGL FPS - AngelHack SV 2012 - Isaac Sukin</title>
-  <style>
-    body {
-      background-image: url('images/screenshot.jpg');
-      cursor: crosshair;
-      font-family: Georgia, Helvetica, sans-serif;
-      font-weight: bold;
-      margin: 0;
-      overflow: hidden;
-      padding: 0;
-      -webkit-touch-callout: none;
-      -webkit-user-select: none;
-      -khtml-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
-    #hud {
-      bottom: 10px;
-      position: absolute;
-      right: 10px;
-      z-index: 100;
-    }
-    #hud p {
-      display: inline-block;
-      margin: 0px;
-      padding: 5px;
-      font-family: Helvetica;
-      font-size: 2em;
-      color: #FFF;
-    }
-    #credits {
-      font-size: 12px;
-      position: absolute;
-      text-align: center;
-      top: 10px;
-      width: 100%;
-      z-index: 100;
-    }
-    #radar {
-      background-color: #EEEEEE;
-      /*border: 1px solid black;*/
-      bottom: 10px;
-      left: 10px;
-      position: absolute;
-      z-index: 100;
-    }
-    #intro {
-      background-color: #000000;
-      color: #FFFFFF;
-      cursor: pointer;
-      font-size: 32px;
-      opacity: 0.7;
-      padding: 120px;
-      text-align: center;
-      z-index: 1001;
-    }
-    #hurt {
-      background-color: red;
-      display: none;
-      left: 0;
-      opacity: 0.15;
-      pointer-events: none;
-      position: absolute;
-      top: 0;
-      z-index: 1002;
-    }
-  </style>
-  <script src="jquery-1.7.2.min.js"></script>
+  <title>Contos de Ifá: Oxossi | Odé </title>
+  
+  <!-- abertura -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap styles -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style2.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <!-- Preloader -->
+   <script src="js/jquery.queryloader2.js" type="text/javascript"></script>
+   <script src="js/vacuo3.js" type="text/javascript"></script>
+   <!-- final abertura -->
+
+  <!-- // <script src="jquery-1.7.2.min.js"></script> -->
   <!-- <script src="PointerLock.js"></script> --> <!-- Insufficient browser support, interferes with other mouse events -->
   <!-- <script src="Pathfinder.js"></script> -->
   <script src="Three.js"></script>
@@ -78,5 +27,36 @@
   <script src="main.js"></script>
 </head>
 <body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1&appId=511616418947615";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  <!-- Começo dos trabalhos -->
+  <!-- Setas -->
+  <div id="intro_setas" data-0p="display:block; opacity:1;" data-20p="opacity:0;" data-50p="display:none;"></div>
+  <!-- Mata -->
+  <div id="intro_mata" data-0p="display:none;" data-30p="display:block; opacity:0;" data-40p="opacity:1;"></div>
+  <!-- Plantas -->
+  <div id="planta01" data-0p="display:none;" data-40p="display:block; background-position: 0% 200%;" data-50p="background-position: 0% 180%;" data-60p="background-position: 0% 200%;" data-65p="background-position: 0% 190%;" data-75p="background-position: 0% 210%;" data-90p="background-position: 0% 180%;" data-100p="background-position: 0% 200%;" data-105p="background-position: 0% 210%;" data-115p="background-position: 0% 190%;" data-125p="background-position: 0% 200%;" data-130p="background-position: 0% 210%;" ></div>
+  <div id="planta02" data-0p="display:none;" data-40p="display:block; background-position: 21% 350%;" data-45p="background-position: 21% 390%;" data-60p="background-position: 21% 350%;" data-70p="background-position: 21% 370%;" data-75p="background-position: 21% 340%;" data-80p="background-position: 21% 350%;" data-95p="background-position: 21% 320%;" data-105p="background-position: 21% 370%;" data-110p="background-position: 21% 340%;" data-120p="background-position: 21% 350%;" data-130p="background-position: 21% 330%;"></div>
+  <div id="planta03" data-0p="display:none;" data-40p="display:block; background-position: 81% 350%;" data-55p="background-position: 81% 320%;" data-70p="background-position: 81% 350%;" data-85p="background-position: 81% 310%;" data-95p="background-position: 81% 350%;" data-105p="background-position: 81% 330%;" data-120p="background-position: 81% 310%;" data-130p="background-position: 81% 350%;"></div>
+  <div id="planta04" data-0p="display:none;" data-40p="display:block; background-position: 91% 300%;" data-58p="background-position: 91% 320%;" data-70p="background-position: 91% 300%;" data-80p="background-position: 91% 330%;" data-85p="background-position: 91% 290%;" data-100p="background-position: 91% 330%;" data-110p="background-position: 91% 300%;" data-120p="background-position: 91% 340%;" data-130p="background-position: 91% 290%;" ></div>
+  <div id="planta05" data-0p="display:none;" data-40p="display:block; background-position: 110% 100%;" data-48p="background-position: 115% 100%;" data-70p="background-position: 110% 100%;" data-75p="background-position: 112% 100%;" data-85p="background-position: 105% 100%;" data-95p="background-position: 110% 100%;" data-105p="background-position: 111% 100%;" data-115p="background-position: 105% 100%;" data-130p="background-position: 110% 100%;"></div>
+  <div id="planta06" data-0p="display:none;" data-40p="display:block; background-position: -10% 100%;" data-48p="background-position: -12% 100%;" data-70p="background-position: -10% 100%;" data-73p="background-position: -11% 100%;" data-80p="background-position: -9% 100%;" data-88p="background-position: -11% 100%;" data-99p="background-position: -10% 100%;" data-110p="background-position: -11% 100%;" data-130p="background-position: -9% 100%;"></div>
+  <!-- Oxossi -->
+  <div id="oxossi" data-0p="display:none;" data-80p="display:block; background-position: 150% 60%;" data-90p="background-position: 120% 60%;" data-100p="background-position: 100% 60%;" data-110p="background-position: 95% 55%;" data-120p="background-position: 90% 60%;" data-125p="background-position: 85% 57%;" data-130p="background-position: 80% 60%;"></div>
+
+
+
+  
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.jplayer.min.js"></script>
+  <script src="js/skrollr.min.js"></script>
+  <script src="js/contosdeifa-ode.js"></script>
+
 </body>
 </html>

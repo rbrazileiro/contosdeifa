@@ -40,9 +40,17 @@ var finder = new PF.AStarFinder({ // Defaults to Manhattan heuristic
 
 // Initialize and run on document ready
 $(document).ready(function() {
-	$('body').append('<div id="intro">Click to start</div>');
+	// $('body').append('<div id="intro">Click to start</div>');
+	// $.get("../ode.html", function(data){
+ //    	$('this').children("div:first").html(data);
+	// });
+		// $("body").load("../ode.html",function(){
+  //   		$(this).clone().appendTo("body").remove();
+  //   	});
+
 	$('#intro').css({width: WIDTH, height: HEIGHT}).one('click', function(e) {
 		e.preventDefault();
+		window.scrollTo(0,0);
 		$(this).fadeOut();
 		init();
 		setInterval(drawRadar, 1000);
