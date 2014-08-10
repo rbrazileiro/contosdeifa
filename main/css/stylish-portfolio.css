@@ -75,9 +75,9 @@ body {
 #intro_logo {
   font-size: 2.5em;
   width: 100%;
-  margin: 2% auto 4%;;
+  margin: 6% auto 4%;;
   text-align: center;
-  text-shadow: 6px 6px 13px #9B2C00;
+  text-shadow: 2px 2px 27px #FFE3A1;
   color: #FFF;
   -webkit-animation: logoAnimation 2.6416s 1 ease-in;
   -moz-animation: logoAnimation 2.6416s 1 ease-in;
@@ -86,17 +86,19 @@ body {
 
 #intro_logo h1 {
   line-height: 0.8em;
-  font-size: 6em;
-  color: #FE9100;
+  font-size: 3.5em;
+  color: #2E1300;
+  font-weight: bolder;
 }
 
 #intro_logo h2 {
   font-family: "Epistolar", sans-serif;
-  font-size: 7em;
+  font-size: 8em;
   line-height: 0.8em;
   margin-left: 2%;
-  color: #FE9100;
-  margin-bottom: 1%;
+  color: #2E1300;
+  margin-bottom: 3%;
+  font-weight: bolder;
 }
 
 .vert-text {
@@ -223,7 +225,7 @@ body {
 }
 
 .lead {
-  font-size: 2.4em;
+  font-size: 2.1em;
 }
 
 .container h2 {
@@ -289,7 +291,7 @@ i.service-icon {
 .img-portfolio {
   margin: 0 auto;
   margin: 0px auto;
-background-color: rgba(250, 235, 215, 0.7);
+/*background-color: rgba(250, 235, 215, 0.7);*/
 border-radius: 17px;
    -webkit-animation: logoAnimation 2.6416s 2 ease-in;
   -moz-animation: logoAnimation 2.6416s 2 ease-in;
@@ -297,7 +299,7 @@ border-radius: 17px;
 }
 
 .img-portfolio:hover {
-  background-color: rgba(250, 235, 215, 1);
+  background-color: rgba(250, 235, 215, 0.7);
    -webkit-animation: logoAnimation 2.6416s 2 ease-in;
   -moz-animation: logoAnimation 2.6416s 2 ease-in;
   -o-animation: logoAnimation 2.6416s 2 ease-in;
