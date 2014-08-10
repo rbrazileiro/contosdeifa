@@ -1,6 +1,13 @@
 $( document ).ready(function() {
 	// Skrollr
-	var s = skrollr.init({forceHeight: true});
+	var s = skrollr.init({
+        forceHeight: true,
+         constants: {
+            exu: 100,
+            exus: 1000
+        }
+
+    });
 
 	// Trilha Sonora
 
