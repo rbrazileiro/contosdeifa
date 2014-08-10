@@ -77,8 +77,8 @@ body {
   width: 100%;
   margin: 2% auto 4%;;
   text-align: center;
-  text-shadow: 5px 5px 6px #9b5900;
-  color: #FFBC63;
+  text-shadow: 6px 6px 13px #9B2C00;
+  color: #FFF;
   -webkit-animation: logoAnimation 2.6416s 1 ease-in;
   -moz-animation: logoAnimation 2.6416s 1 ease-in;
   -o-animation: logoAnimation 2.6416s 1 ease-in;
@@ -96,6 +96,7 @@ body {
   line-height: 0.8em;
   margin-left: 2%;
   color: #FE9100;
+  margin-bottom: 1%;
 }
 
 .vert-text {
