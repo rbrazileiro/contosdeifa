@@ -216,13 +216,14 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  -webkit-box-shadow: 3px 3px 36px 3px rgba(0,0,0,0.75);
+  -moz-box-shadow:  3px 3px 36px 3px rgba(0,0,0,0.75);
+  box-shadow:  3px 3px 36px 3px rgba(0,0,0,0.75);
 }
 
 /* Intro */
 
 .intro {
-  padding: 50px 0;
-  background-color: #ff0000;
 }
 
 .lead {
