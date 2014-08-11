@@ -259,22 +259,6 @@ body {
 	height: 100%;
 }
 
-#exu_social {
-	width: 100%;
-	margin: 0 auto;
-	top: 25%;
-	right: 0%;
-	position: fixed;
-	text-align: center;
-	color: #FF0000;
-	padding-left: 0px;
-	text-shadow: 2px 2px 23px #000000;
-	/*display: none;*/
-	display: block;
-	z-index: 6;
-}
-
-
 #pano_exu {
 	width: 100%;
 	height: 100%;
