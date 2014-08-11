@@ -181,6 +181,16 @@ $( document ).ready(function() {
  //    	size: 36, velocity: 500, decay: 5000, rate: 100
  //    });
 
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
 
 
 
