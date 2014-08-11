@@ -1109,8 +1109,8 @@ body {
   top: 0px;
   right: 0px;
   position: fixed;
-  z-index: 1;
-  color: #FE9100;
+  z-index: 9999;
+  color: #FFF;
   font-size: 3em;
 }
 
