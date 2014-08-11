@@ -184,11 +184,13 @@ $( document ).ready(function() {
     $("#menu-close").click(function(e) {
         e.preventDefault();
         $("#sidebar-wrapper").toggleClass("active");
+        $("#menu-toggle").fadeIn();
     });
 
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $("#sidebar-wrapper").toggleClass("active");
+        $(this).fadeOut();
     });
 
 

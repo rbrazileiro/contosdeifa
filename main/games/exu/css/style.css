@@ -1035,7 +1035,7 @@ body {
 
 .btn-lg {
     font-size: 2.3em;
-    color: #FE9100;
+    color: #FFF;
 }
 
 /* Side Menu */
@@ -1044,11 +1044,12 @@ body {
   margin-right: -60px;
   right: 0;
   width: 60px;
-  background: #000;
+  /*background: #000;*/
+  background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.22);
   position: fixed;
   height: 103%;
   overflow-y: auto;
-  z-index: 1000;
+  z-index: 9999;
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
   -ms-transition: all 0.4s ease 0s;
@@ -1109,7 +1110,7 @@ body {
   top: 0px;
   right: 0px;
   position: fixed;
-  z-index: 9999;
+  z-index: 9998;
   color: #FFF;
   font-size: 3em;
 }
