@@ -1024,9 +1024,9 @@ body {
 	width: 100%;
 	margin: 0 auto;
 	top: 25%;
-	right: 0%;
+	left: 75%;
 	position: fixed;
-	text-align: center;
+	/*text-align: center;*/
 	color: #FF0000;
 	padding-left: 0px;
 	text-shadow: 2px 2px 23px #000000;
