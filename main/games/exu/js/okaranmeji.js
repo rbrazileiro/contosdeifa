@@ -12,6 +12,7 @@ $( document ).ready(function() {
 
         $("#btnstart").click(function(){
             startplay();
+            $("#timer").fadeIn('fast');
             $("html, body").animate({ scrollTop: $(document).height() }, 10);
             $('body').css({'overflow':'hidden'});
         });
