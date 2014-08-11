@@ -1030,8 +1030,7 @@ body {
 	color: #FF0000;
 	padding-left: 0px;
 	text-shadow: 2px 2px 23px #000000;
-	display: block;
-	z-index: 28;
+	z-index: 22;
 }
 
 .btn-lg {
