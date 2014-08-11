@@ -42,7 +42,7 @@ $( document ).ready(function() {
                 $("#btnstart").bind("click", startplay);
 
                 // show the final message
-                var containerPos = $('#exu_container').offset();
+                // var containerPos = $('#exu_container').offset();
                 $("#exu_message").fadeIn('slow');
                 clearInterval(timer);
                 // $("#exu_message").animate({
@@ -67,6 +67,7 @@ $( document ).ready(function() {
                 miss++;
                 hit--;
                 $("#hit").html(hit + " Dendes");
+                //$("this").fadeIn();
                 // $("#miss").html(miss + " Ovos");
             } else {
                 $(this).effect("explode", 500);
@@ -74,8 +75,10 @@ $( document ).ready(function() {
                 $("#hit").html(hit + " Dendes");
                 if (hit == 16) {
                     $("#exu_dende").fadeIn(1000);
+                    $("#intro_setas").fadeIn(1000);
                     $("#exu_social").fadeIn(1000);
                     $("#exu_continuar").fadeIn(1000);
+                    $("#exu_continua").css({'z-index': '26'});
                     $(".character").fadeOut('slow');
                     $("#exu_message").css("z-index", "1");
                     clearInterval(play);
@@ -89,7 +92,8 @@ $( document ).ready(function() {
                     //     'background-position-y': '20%'
                     // }, 10000, 'linear');
                     // $("#esu").css("z-index", "28");
-                    $('body').css( 'cursor', 'pointer' );
+                    // $('body').css( 'cursor', 'pointer' );
+                    $('body').css({'overflow':'visible', 'cursor': 'pointer'});
                 }
             }
             

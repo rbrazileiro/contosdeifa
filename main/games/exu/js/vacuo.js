@@ -1,9 +1,9 @@
 $(document).ready(function () {
     $('body').queryLoader2({
-        barColor: "#6e6d73",
-        backgroundColor: "#000",
+        barColor: "#000",
+        backgroundColor: "#FF0000",
         percentage: true,
-        barHeight: 1,
+        barHeight: 10,
         completeAnimation: "grow",
         minimumTime: 100
     });

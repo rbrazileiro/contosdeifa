@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contos de Ifá: Exu</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap styles -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <!-- Preloader -->
+  <script src="js/jquery.queryloader2.js" type="text/javascript"></script>
+  <script src="js/vacuo.js" type="text/javascript"></script>
+
+    <!-- Fast Click -->
+  <!-- // <script src="js/fastclick.js" type="text/javascript"></script> -->
+
+  
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <!-- Fast Click -->
+  <script>
+  // $(function() {
+  //     FastClick.attach(document.body);
+  // });
+  </script>
+  <!-- Facebook Like -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1&appId=511616418947615";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+<!-- Começo dos trabalhos -->
+  <!-- Okaran Meji Game -->
+  <div id="exu_game" data-0p="display:block;">
+  </div>
+  <div id="exu_stat" data-0p="display:block;">
+        <span id="hit">0 Dendes</span>
+        &nbsp;
+        <span id="timer"> </span>
+        <!-- <span id="miss">0 Ovos</span> -->
+        <!-- &nbsp; -->
+        <a id="btnstart" href="javascript://">Iniciar &#9658;</a>
+  </div>
+  <div id="exu_container" data-0p="display:block;">
+        <div id="char1" class="character ovo ovo1"></div>
+        <div id="char2" class="character ovo ovo2"></div>
+        <div id="char3" class="character dende dende1"></div>
+        <div id="char4" class="character dende dende2"></div>
+        <div id="char5" class="character dende dende3"></div>
+  </div>
+  <div id="exu_message">
+        Exu precisa coletar 16 cocos de dende, tente outra vez.
+  </div>
+  <div id="exu_dende">
+        Exu coletou os 16 cocos de dende...
+  </div>
+  <div id="exu_continuar">
+    <a href="final.html"> <h2> Continuar </h2> </a>
+  </div>
+  <!-- Trilha -->
+<!--   <div id="dsp_machado" class="audio"></div>
+  <div id="dsp_metal" class="audio"></div>
+  <div id="dsp_cocos" class="audio"></div>
+  <div id="dsp_raiz" class="audio"></div>
+  <div id="dsp_obami" class="audio"></div>
+  <div id="dsp_exu" class="audio"></div> -->
+
+ 
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.jplayer.min.js"></script>
+  <script src="js/skrollr.min.js"></script>
+  <script src="js/contosdeifa.js"></script>
+  <script src="js/okaranmeji.js"></script>
+</body>
+</html>
