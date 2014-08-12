@@ -63,7 +63,7 @@ body {
 	font-family: "1550", sans-serif;
 	color: #FFF;
 	background-size: cover;
-	background-color: #000;
+	background-color: #2000b9;
 }
 
 .audio {
@@ -319,6 +319,36 @@ body {
 	z-index: 1;
 }
 
+#ogun_play {
+	font-size: 2.5em;
+	width: 100%;
+	margin: 0 auto;
+	top: 35%;
+	right: 0%;
+	text-align: center;
+	position: fixed;
+	color: #CF0000;
+	padding-left: 0px;
+	text-shadow: 2px 2px 23px #000000;
+	display: none;
+	z-index: 28;
+}
+#exu_play a {
+	color: #CF0000;
+	text-decoration: none;
+}
+
+.desc {
+	font-size: 1.5em;
+}
+
+.play {
+	color: #2000b9;
+}
+
+.play:hover {
+	color: #FFF;
+}
 #lagoa1 {
 	background-image: url('../imgs/ogum/lagoa_dir.png');
 	background-repeat: no-repeat;
