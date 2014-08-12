@@ -995,6 +995,8 @@ body {
 	display: none;
 	z-index: 28;
 }
+
+
 /* animations logo */
 /*@-webkit-keyframes logoAnimation {
 from { -webkit-transform: rotate(0deg) scale(0.5) skew(-180deg) translate(0px); }
