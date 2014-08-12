@@ -302,8 +302,7 @@ i.service-icon {
   margin: 0 auto;
   margin: 0px auto;
 /*background-color: rgba(250, 235, 215, 0.7);*/
-border-radius: 14px;
-   -webkit-animation: logoAnimation 2.6416s 2 ease-in;
+  -webkit-animation: logoAnimation 2.6416s 2 ease-in;
   -moz-animation: logoAnimation 2.6416s 2 ease-in;
   -o-animation: logoAnimation 2.6416s 2 ease-in;
 }
@@ -325,11 +324,12 @@ border-radius: 14px;
 
 .map {
   height: 500px;
-  background: url(../img/logos.png) no-repeat center center fixed; 
+  background: url(../img/logos.png) no-repeat -35px center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-color: #000;
 }
 
 /* Footer */
