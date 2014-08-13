@@ -165,8 +165,8 @@ body {
 	right: 24%;
 	text-align: center;
 	position: fixed;
-	z-index: 1;
-	color: #E6E9E9;
+	z-index: 2;
+	color: #FF0000;
 	padding-left: 0px;
 	text-shadow: 2px 2px 23px #000;
 }
@@ -205,10 +205,10 @@ body {
 	right: 24%;
 	text-align: center;
 	position: fixed;
-	z-index: 1;
-	color: #F2F2F2;
+	z-index: 100;
+	color: #FF0000;
 	padding-left: 0px;
-	text-shadow: 2px 2px 23px #333;
+	text-shadow: 2px 2px 23px #000;
 }
 #ifa {
 	position: fixed;
@@ -235,14 +235,12 @@ body {
 
 #final_okaranmeji {
 	font-size: 3.5em;
-	width: 130%;
+	width: 100%;
 	margin: 0 auto;
-	top: 20%;
-	left: 0%;
-	text-align: center;
+	top: 49%;
+	left: 25%;
 	position: fixed;
 	z-index: 22;
-	padding-left: 20px;
 	text-shadow: 2px 2px 23px #000000;
 }
 
