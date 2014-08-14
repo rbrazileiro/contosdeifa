@@ -41,12 +41,6 @@ var finder = new PF.AStarFinder({ // Defaults to Manhattan heuristic
 // Initialize and run on document ready
 $(document).ready(function() {
 	// $('body').append('<div id="intro">Click to start</div>');
-	// $.get("../ode.html", function(data){
- //    	$('this').children("div:first").html(data);
-	// });
-		// $("body").load("../ode.html",function(){
-  //   		$(this).clone().appendTo("body").remove();
-  //   	});
 
 	$('#intro').css({width: WIDTH, height: HEIGHT}).one('click', function(e) {
 		e.preventDefault();
@@ -209,6 +203,7 @@ function render() {
 			scene.remove(a);
 			kills++;
 			$('#score').html(kills * 100);
+			$('#continuar').fadeIn();
 			addAI();
 		}
 		// Move AI
@@ -262,7 +257,7 @@ function render() {
 		$(renderer.domElement).fadeOut();
 		$('#radar, #hud, #credits').fadeOut();
 		$('#intro').fadeIn();
-		$('#intro').html('Ouch! Click to restart...');
+		// $('#intro').html('Ouch! Click to restart...');
 		$('#intro').one('click', function() {
 			location = location;
 			/*
