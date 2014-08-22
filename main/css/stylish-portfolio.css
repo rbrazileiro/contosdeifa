@@ -120,8 +120,8 @@ body {
   margin-right: -60px;
   right: 60px;
   width: 60px;
-  background: url("../img/help.png") no-repeat center bottom #000;
-  background-position: -2em 10px;
+  background: url('../img/help.png') no-repeat scroll 40% 95% #000;
+  /*background-position: 40% 95%;*/
   position: fixed;
   height: 103%;
   overflow-y: auto;

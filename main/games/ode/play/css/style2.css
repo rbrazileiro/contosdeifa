@@ -64,18 +64,20 @@ h4 {
 
 /* game */
 #hud {
-  bottom: 10px;
-  position: absolute;
-  right: 10px;
+  /*bottom: 10px;*/
+  position: fixed;
+  bottom: 2em;
+  right: 3em;
+  /*right: 10px;*/
   z-index: 100;
 }
 #hud p {
   display: inline-block;
   margin: 0px;
   padding: 5px;
-  font-family: Helvetica;
-  font-size: 2em;
-  color: #FFF;
+  font-family: "No_Color", sans-serif;
+  font-size: 3em;
+  color: rgba(255, 234, 0, 1)
 }
 #credits {
   font-size: 12px;
@@ -126,7 +128,8 @@ h4 {
   right: 0;
   width: 60px;
   /*background: #000;*/
-  background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.22);
+  /*background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.22);*/
+    background: url('../../../../img/help.png') no-repeat scroll 40% 95% rgba(0, 0, 0, 0.22);
   position: fixed;
   height: 103%;
   overflow-y: auto;
