@@ -248,7 +248,9 @@ body {
 }
 
 .service-item p {
-  font-size: 1.45em;
+  font-size: 1.5em;
+  font-family: georgia;
+  font-style: italic;
 }
 
 i.service-icon {
