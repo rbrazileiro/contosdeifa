@@ -179,9 +179,8 @@ function render() {
 		}
 		// Bullet hits player
 		if (distance(p.x, p.z, cam.position.x, cam.position.z) < 25 && b.owner != cam) {
-			// $('#hurt').fadeIn(75);
-			$('#hurt').fadeOut(350);
-			health -= 100;
+			$('#hurt').fadeIn(75);
+			health -= 10;
 			if (health < 0) health = 0;
 			val = health < 25 ? '<span style="color: darkRed">' + health + '</span>' : health;
 			$('#health').html(val);
