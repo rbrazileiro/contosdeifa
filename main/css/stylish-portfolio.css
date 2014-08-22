@@ -120,7 +120,7 @@ body {
 
 #sidebar-wrapper {
   margin-right: -60px;
-  right: 0;
+  right: 60px;
   width: 60px;
   background: #000;
   position: fixed;
@@ -193,7 +193,7 @@ body {
 }
 
 #sidebar-wrapper.active {
-  right: 60px;
+  right: 0px;
   width: 60px;
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
