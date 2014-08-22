@@ -50,11 +50,9 @@ h4 {
 }
 
 .portfolio-item h4 {
-  font-size: 2.6em;
+  font-size: 2.0em;
   color: #fff;
   margin-top: -49px;
-  text-align: right;
-  padding-right: 0.2em;
   text-shadow: 3px 2px 3px #222;
 }
 
@@ -305,16 +303,7 @@ i.service-icon {
 }
 
 .img-portfolio:hover {
-  background: -moz-linear-gradient(top,  rgba(255,48,25,0) 0%, rgba(234,4,4,0.46) 25%, rgba(234,4,4,0.55) 30%, rgba(234,4,4,1) 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,48,25,0)), color-stop(25%,rgba(234,4,4,0.46)), color-stop(30%,rgba(234,4,4,0.55)), color-stop(100%,rgba(234,4,4,1)));
-  background: -webkit-linear-gradient(top,  rgba(255,48,25,0) 0%,rgba(234,4,4,0.46) 25%,rgba(234,4,4,0.55) 30%,rgba(234,4,4,1) 100%);
-  background: -o-linear-gradient(top,  rgba(255,48,25,0) 0%,rgba(234,4,4,0.46) 25%,rgba(234,4,4,0.55) 30%,rgba(234,4,4,1) 100%);
-  background: -ms-linear-gradient(top,  rgba(255,48,25,0) 0%,rgba(234,4,4,0.46) 25%,rgba(234,4,4,0.55) 30%,rgba(234,4,4,1) 100%);
-  background: linear-gradient(to bottom,  rgba(255,48,25,0) 0%,rgba(234,4,4,0.46) 25%,rgba(234,4,4,0.55) 30%,rgba(234,4,4,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ff3019', endColorstr='#ea0404',GradientType=0 );
-   -webkit-animation: logoAnimation 2.6416s 2 ease-in;
-  -moz-animation: logoAnimation 2.6416s 2 ease-in;
-  -o-animation: logoAnimation 2.6416s 2 ease-in;
+ text-decoration: underline;
 }
 
 /* Map */
