@@ -344,7 +344,7 @@ function addAI() {
 	x = Math.floor(x - mapW/2) * UNITSIZE;
 	z = Math.floor(z - mapW/2) * UNITSIZE;
 	o.position.set(x, UNITSIZE * 0.15, z);
-	o.health = 100;
+	o.health = 10;
 	//o.path = getAIpath(o);
 	o.pathPos = 1;
 	o.lastRandomX = Math.random();
