@@ -283,10 +283,14 @@ i.service-icon {
 
 .portfolio {
   padding: 70px 0;
-  background: url(../img/bg2.jpg) repeat center center fixed;
+  background: url(../img/ifa2.jpg) no-repeat repeat center center fixed;
   -webkit-box-shadow: -3px -3px 36px -3px rgba(0,0,0,0.75);
   -moz-box-shadow:  -3px -3px 36px -3px rgba(0,0,0,0.75);
   box-shadow:  -3px -3px 36px -3px rgba(0,0,0,0.75);
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .portfolio-item {
