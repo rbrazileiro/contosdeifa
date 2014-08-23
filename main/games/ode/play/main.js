@@ -42,14 +42,18 @@ var finder = new PF.AStarFinder({ // Defaults to Manhattan heuristic
 $(document).ready(function() {
 	// $('body').append('<div id="intro">Click to start</div>');
 
-	$('#intro').css({width: WIDTH, height: HEIGHT}).one('click', function(e) {
-		e.preventDefault();
-		window.scrollTo(0,0);
-		$(this).fadeOut();
-		init();
-		setInterval(drawRadar, 1000);
-		animate();
-	});
+	// $('#intro').css({width: WIDTH, height: HEIGHT}).one('click', function(e) {
+	// 	e.preventDefault();
+	// 	window.scrollTo(0,0);
+	// 	$(this).fadeOut();
+	// 	init();
+	// 	setInterval(drawRadar, 1000);
+	// 	animate();
+	// });
+
+	init();
+	setInterval(drawRadar, 1000);
+	animate();
 	/*
 	new t.ColladaLoader().load('models/Yoshi/Yoshi.dae', function(collada) {
 		model = collada.scene;
