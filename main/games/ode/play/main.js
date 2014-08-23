@@ -111,7 +111,7 @@ function init() {
 	
 	// Display HUD
 	$('body').append('<canvas id="radar" width="200" height="200"></canvas>');
-	$('body').append('<div id="hud"><p>Axe: <span id="health">100</span><br />Pontos: <span id="score">0</span></p></div>');
+	$('body').append('<div id="hud"><p>Axe: <span id="health">100</span><br />Pássaros: <span id="score">0</span></p></div>');
 	// $('body').append('<div id="credits"><p>Created by <a href="http://www.isaacsukin.com/">Isaac Sukin</a> using <a href="http://mrdoob.github.com/three.js/">Three.js</a><br />WASD to move, mouse to look, click to shoot</p></div>');
 	
 	// Set up "hurt" flash
@@ -206,7 +206,7 @@ function render() {
 			ai.splice(i, 1);
 			scene.remove(a);
 			kills++;
-			$('#score').html(kills * 100);
+			$('#score').html(kills * 1);
 			$('#continuar').fadeIn();
 			addAI();
 		}
