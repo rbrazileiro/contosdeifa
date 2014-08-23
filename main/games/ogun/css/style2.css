@@ -474,7 +474,7 @@ body {
 }
 
 #humanos_no_lago, #ogum_pergunta {
-	font-size: 2.5em;
+	font-size: 3.5em;
 	width: 100%;
 	margin: 0 auto;
 	top: 8%;
@@ -483,11 +483,11 @@ body {
 	position: fixed;
 	z-index: 4;
 	padding-left: 0px;
-	text-shadow: 2px 2px 23px #000000;
+	text-shadow: 2px 2px 23px #0000FF;
 }
 
 #humanos_no_lago2 {
-	font-size: 2.5em;
+	font-size: 3.5em;
 	width: 200%;
 	margin: 0 auto;
 	top: 8%;
@@ -496,11 +496,11 @@ body {
 	position: fixed;
 	z-index: 4;
 	padding-left: 0px;
-	text-shadow: 2px 2px 23px #000000;
+	text-shadow: 2px 2px 23px #0000FF;
 }
 
 #humanos_no_lago3 {
-	font-size: 2.5em;
+	font-size: 3.5em;
 	width: 200%;
 	margin: 0 auto;
 	top: 8%;
@@ -509,11 +509,11 @@ body {
 	position: fixed;
 	z-index: 4;
 	padding-left: 0px;
-	text-shadow: 2px 2px 23px #000000;
+	text-shadow: 2px 2px 23px #0000FF;
 }
 
 #ogum_fala, #ogum_fala2 {
-	font-size: 2.5em;
+	font-size: 3.5em;
 	width: 50%;
 	margin: 0 auto;
 	top: 100%;
@@ -527,7 +527,7 @@ body {
 }
 
 #ogum_fala2 {
-	font-size: 2.5em;
+	font-size: 3.5em;
 	width: 50%;
 	margin: 0 auto;
 	top: 100%;
