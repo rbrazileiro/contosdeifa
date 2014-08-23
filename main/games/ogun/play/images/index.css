@@ -86,7 +86,7 @@ h4 {
 }
 
 #extra{
-	background: #000;
+	background: url("background.jpg");
 }
 
 #extra .layer{
@@ -111,16 +111,7 @@ h4 {
 }
 
 #desc{
-	width: 100%;
-	position: absolute;
-	left: 0;
-	top: 50%;
-	height: 80px;
-	color: #ccc;
-	line-height: 40px;
-	margin-top: 200px;
-	text-align: center;
-	font-size: 14px;
+	display: none;
 }
 
 #desc a{
