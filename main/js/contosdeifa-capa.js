@@ -25,22 +25,10 @@ $( document ).ready(function() {
 
 	// Trilha Sonora
 
-    $("#dsp_machado").jPlayer({
+    $("#dsp_abertura").jPlayer({
         ready: function(event) {
             $(this).jPlayer("setMedia", {
-                mp3: "audio/intro/machado.mp3"
-            });
-        },
-        ended: function() { // The $.jPlayer.event.ended event
-        },
-        swfPath: "/js",
-        supplied: "mp3, oga"
-    });
-
-    $("#dsp_metal").jPlayer({
-        ready: function(event) {
-            $(this).jPlayer("setMedia", {
-                mp3: "audio/intro/metal.mp3"
+                mp3: "audio/abertura.mp3"
             });
         },
         ended: function() { // The $.jPlayer.event.ended event
@@ -51,7 +39,7 @@ $( document ).ready(function() {
     $("#dsp_cocos").jPlayer({
         ready: function(event) {
             $(this).jPlayer("setMedia", {
-                mp3: "audio/intro/cocos.mp3"
+                mp3: "audio/cocos.mp3"
             });
         },
         ended: function() { // The $.jPlayer.event.ended event
@@ -60,142 +48,46 @@ $( document ).ready(function() {
         swfPath: "/js",
         supplied: "mp3, oga"
     });
-    $("#dsp_raiz").jPlayer({
-        ready: function(event) {
-            $(this).jPlayer("setMedia", {
-                mp3: "audio/intro/raiz.mp3"
-            });
-        },
-        ended: function() { // The $.jPlayer.event.ended event
-
-        },
-        swfPath: "/js",
-        supplied: "mp3, oga"
-    });
-    $("#dsp_obami").jPlayer({
-        ready: function(event) {
-            $(this).jPlayer("setMedia", {
-                mp3: "audio/intro/obami.mp3"
-            });
-        },
-        ended: function() { // The $.jPlayer.event.ended event
-        	$(this).jPlayer("play");
-
-        },
-        swfPath: "/js",
-        supplied: "mp3, oga"
-    });
-    $("#dsp_exu").jPlayer({
-        ready: function(event) {
-            $(this).jPlayer("setMedia", {
-                mp3: "audio/exu/toqueexu.mp3"
-            });
-        },
-        ended: function() { // The $.jPlayer.event.ended event
-            $(this).jPlayer("play");
-
-        },
-        swfPath: "/js",
-        supplied: "mp3, oga"
-    });
-
-	// Big Bang using Particles.js
 
 	$(window).scroll(function(){
-		if ($(window).scrollTop() == 0){
-			$("#dsp_cocos").jPlayer("stop");
-			$("#dsp_machado").jPlayer("stop");
+		if ($(window).scrollTop() > 0){
+			$("#dsp_abertura").jPlayer("play");
+			$("#dsp_toque").jPlayer("stop");
 
             // bigbang.stop();
         }
         if ($(window).scrollTop() < 10){
             $("#intro_setas").fadeIn(2000).fadeOut(500).fadeIn(1000).fadeOut(500).fadeIn(1000);
         }
-        if ($(window).scrollTop() > 10){
-        	$("#dsp_machado").jPlayer("play");
+        if ($(window).scrollTop() < 10){
+			$("#dsp_abertura").jPlayer("volume", 0.5);
         }
+
+        if ($(window).scrollTop() > 20){
+			$("#dsp_abertura").jPlayer("volume", 0.6);
+        }
+
         if ($(window).scrollTop() > 50){
-        	$("#dsp_metal").jPlayer("play");
-        	$("#dsp_cocos").jPlayer("play");
-            // bigbang.start();
-        }
-        if ($(window).scrollTop() > 250){
-        	$("#dsp_machado").jPlayer("stop");
-        	$("#dsp_metal").jPlayer("stop");
-        	$("#dsp_cocos").jPlayer("stop");
-            // bigbang.stop();
+			$("#dsp_abertura").jPlayer("volume", 0.7);
         }
 
-		if ($(window).scrollTop() > 300){
-			$("#dsp_obami").jPlayer("volume", 0.0001);
-        	$("#dsp_obami").jPlayer("play");
-        }
-
-        if ($(window).scrollTop() > 400){
-			$("#dsp_obami").jPlayer("volume", 0.001);
-        }
-
-        if ($(window).scrollTop() > 500){
-			$("#dsp_obami").jPlayer("volume", 0.01);
-        }
-
-        if ($(window).scrollTop() > 700){
-			$("#dsp_obami").jPlayer("volume", 0.1);
-        }
-
-        if ($(window).scrollTop() > 1000){
-			$("#dsp_obami").jPlayer("volume", 0.4);
-        }
-
-        if ($(window).scrollTop() > 3000){
-			$("#dsp_obami").jPlayer("volume", 0.8);
-        }        
-
-        if ($(window).scrollTop() > 4000){
-        	$("#dsp_raiz").jPlayer("play");
-        }
-        if ($(window).scrollTop() > 4500){
-        	$("#dsp_raiz").jPlayer("stop");
-        }
-
-        if ($(window).scrollTop() > 10000){
-            $("#dsp_obami").jPlayer("volume", 0.4);
-        }
-        if ($(window).scrollTop() > 11000){
-            $("#dsp_obami").jPlayer("volume", 0.2);
-        }
-        if ($(window).scrollTop() > 12000){
-            $("#dsp_obami").jPlayer("volume", 0.1);
-        }
-        if ($(window).scrollTop() > 12100){
-            $("#dsp_exu").jPlayer("play");
-        }
-        if ($(window).scrollTop() > 13000){
-            $("#dsp_obami").jPlayer("volume", 0.05);
-        }
-        if ($(window).scrollTop() > 13000){
-            $("#dsp_exu").jPlayer("volume", 0.8);
-        }
-        if ($(window).scrollTop() > 15000){
-            $("#dsp_obami").jPlayer("stop");
-        }
-
-
-
-        // Stops skrollr
-        // if ($(window).scrollTop() > 48200){
-        //     $('body').css({'overflow':'hidden'});
-        // }
-
-
+        if ($(window).scrollTop() > 100){
+			$("#dsp_abertura").jPlayer("volume", 0.9);
+        }      
 
     });
 
-	// var bigbang = new particle_emitter({
- //    	image: ['imgs/intro/dende.png'],
- //    	center: ['50%', '60%'], offset: [0, 0], radius: 0,
- //    	size: 36, velocity: 500, decay: 5000, rate: 100
- //    });
+    $( ".portfolio-item" ).mouseenter(function() {
+        $("#dsp_cocos").jPlayer("play");
+    });
+
+    $('.portfolio-item').hover(function() {
+        $(this).animate({"color":"#FBCD06","font-size":"2em"}, 1000);
+    }, function() {
+        $(this).animate({"color":"#FFF","font-size":"1em"}, 1000);
+    });
+
+
 
     $("#menu-close").click(function(e) {
         e.preventDefault();
