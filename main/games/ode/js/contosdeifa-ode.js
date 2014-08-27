@@ -8,7 +8,15 @@ $( document ).ready(function() {
         }
 
     });
-
+    $(function() {          
+            $("img.lazy").lazyload({
+                event : "sporty"
+            });
+        });
+     
+    $(window).bind("load", function() { 
+        var timeout = setTimeout(function() { $("img.lazy").trigger("sporty") }, 1000);
+    });      
 
 	$("#menu-close").click(function(e) {
         e.preventDefault();
