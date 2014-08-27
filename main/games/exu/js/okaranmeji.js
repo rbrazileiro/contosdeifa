@@ -26,7 +26,7 @@ $( document ).ready(function() {
             hit = 0;
             $("#btnstart").css("color", "#e3e3e3");
             $("#btnstart").unbind("click");
-            $('body').css( 'cursor', 'url(../imgs/exu/mao.gif), pointer' );
+            // $('body').css( 'cursor', 'url(../imgs/exu/mao.gif), pointer' );
             play = setInterval(scramble, 1800);
             sec = 58;
             var timer = setInterval(function() { 
