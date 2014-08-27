@@ -26,6 +26,14 @@
 </head>
 
 <body>
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=530218697097793&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <!-- Fast Click -->
   <script>
   $(function() {
@@ -56,7 +64,7 @@
 
     <!-- Full Page Image Header Area -->
     <!-- Setas -->
-    <div id="intro_setas" data-0p="display:block; opacity:1;" data-20p="opacity:0;display:none;"> </div>
+    <div id="intro_setas" data-0p="display:block;opacity:1;" data-20p="opacity:0;display:none;"> </div>
     <div id="top" data-0p="display:block;background-position:0% -300%;" data-100p="background-position:0% 40%;"></div>
 
      <div id="about" class="intro">
@@ -171,18 +179,19 @@
     <!-- /Map -->
 
     <!-- Footer -->
+    <div class="fb-like-box" data-href="https://www.facebook.com/contosdeifa" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center">
-                    <ul class="list-inline">
+                    <!-- <ul class="list-inline">
                         <li><i class="fa fa-facebook fa-3x"></i>
                         </li>
                         <li><i class="fa fa-twitter fa-3x"></i>
                         </li>
                         <li><i class="fa fa-google-plus fa-3x"></i>
                         </li>
-                    </ul>
+                    </ul> -->
                     <div class="top-scroll">
                         <a href="#top"><i class="fa fa-circle-arrow-up scroll fa-4x"></i></a>
                     </div>
