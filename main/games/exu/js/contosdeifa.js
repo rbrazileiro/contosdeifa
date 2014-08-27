@@ -9,6 +9,10 @@ $( document ).ready(function() {
 
     });
 
+    
+
+
+
 	// Trilha Sonora
 
     $("#dsp_machado").jPlayer({
@@ -91,13 +95,13 @@ $( document ).ready(function() {
 		if ($(window).scrollTop() == 0){
 			$("#dsp_cocos").jPlayer("stop");
 			$("#dsp_machado").jPlayer("stop");
+
             // bigbang.stop();
         }
-
         if ($(window).scrollTop() > 10){
         	$("#dsp_machado").jPlayer("play");
+            $("#intro_setas").fadeIn(300).fadeOut(300).fadeIn(300).fadeIn(400).fadeOut(500).fadeIn(300);
         }
-
         if ($(window).scrollTop() > 50){
         	$("#dsp_metal").jPlayer("play");
         	$("#dsp_cocos").jPlayer("play");
