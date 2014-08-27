@@ -207,7 +207,8 @@ function render() {
 			scene.remove(a);
 			kills++;
 			$('#score').html(kills * 1);
-			$('#continuar').fadeIn();
+			// $('#continuar').fadeIn();
+			animateFinal();
 			addAI();
 		}
 		// Move AI
@@ -535,5 +536,8 @@ function getRandBetween(lo, hi) {
  return parseInt(Math.floor(Math.random()*(hi-lo+1))+lo, 10);
 }
 
+function animateFinal() {
+      $('#menu-final').animate({'color':'#000'},2000).animate({'color':'#FFF'},1000, animateFinal); 
+    }
 
 
