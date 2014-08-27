@@ -206,11 +206,11 @@ body {
 #intro_baoba {
 	background-image: url('../imgs/intro/baoba.png');
 	background-repeat: no-repeat;
-	background-position: 0px 500px;
+	background-position: 0px 0px;
 	background-size: cover;
 	position: fixed;
 	z-index: 20;
-	top: 1500px;
+	top: 100px;
 	left: 0;
 	width: 100%;
 	height: 100%;
@@ -347,14 +347,14 @@ body {
 }
 
 #exu_txt {
-	font-size: 2.5em;
-	width: 50%;
-	margin: 0 auto;
-	top: 8%;
-	text-align: center;
-	position: fixed;
-	z-index: 21;
-	padding-left: 20px;
+    font-size: 2.5em;
+    width: 75%;
+    margin: 0px auto;
+    top: 8%;
+    text-align: center;
+    position: fixed;
+    z-index: 30;
+    padding-left: 20px;
 }
 
 #exu_txt h2 {
@@ -363,7 +363,7 @@ body {
 }
 
 #exu_txt h3 {
-	text-shadow: 2px 2px 23px #ffffff;
+	text-shadow: 2px 2px 23px #F00;
 }
 
 #exu_meji {
@@ -406,27 +406,27 @@ body {
 	height: 100%;
 }
 #exu_casa2 {
-	background-image: url('../imgs/exu/casa_frente.png');
-	background-repeat: no-repeat;
-	background-position: 0% 0%;
-	background-size: 81%;
-	position: fixed;
-	z-index: 21;
-	top:0%;
-	left: 24%;
-	width: 100%;
-	height: 100%;
+    background-image: url('../imgs/exu/casa_frente.png');
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+    background-size: 81% auto;
+    position: fixed;
+    z-index: 20;
+    top: 21%;
+    left: 24%;
+    width: 100%;
+    height: 100%;
 }
 #exu_arvore1 {
-	background-image: url('../imgs/exu/arvore1.png');
-	background-repeat: no-repeat;
-	background-size: 37%;
-	position: fixed;
-	z-index: 21;
-	top: 0%;
-	left: -40%;
-	width: 100%;
-	height: 100%;
+    background-image: url('../imgs/exu/arvore1.png');
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    position: fixed;
+    z-index: 21;
+    left: -40%;
+    width: 100%;
+    height: 100%;
+    bottom: 0%;
 }
 #exu_arvore2 {
 	background-image: url('../imgs/exu/arvore2.png');
@@ -460,7 +460,6 @@ body {
 	position: fixed;
 	z-index: 25;
 	top:0%;
-	left: 7%;
 	width: 100%;
 	height: 100%;
 	-webkit-transform:scaleX(1);
@@ -520,7 +519,7 @@ body {
 }
 
 #exu_questiona {
-	font-size: 2.5em;
+	font-size: 3.5em;
 	width: 100%;
 	margin: 0 auto;
 	top: 8%;
@@ -533,7 +532,7 @@ body {
 }
 
 #exu_resposta {
-	font-size: 2.5em;
+	font-size: 3.5em;
 	width: 100%;
 	margin: 0 auto;
 	top: 20%;
@@ -637,8 +636,8 @@ body {
 }
 
 #exu_encontra_yemanja {
-	font-size: 2.5em;
-	width: 200%;
+	font-size: 3.5em;
+	width: 100%;
 	margin: 0 auto;
 	top: 8%;
 	right: -100%;
@@ -649,17 +648,17 @@ body {
 	text-shadow: 2px 2px 23px #000000;
 }
 #yemanja_fala {
-	font-size: 2.5em;
-	width: 50%;
-	margin: 0 auto;
-	top: 100%;
-	right: 24%;
-	text-align: center;
-	position: fixed;
-	z-index: 21;
-	color: #7FD4D4;
-	padding-left: 0px;
-	text-shadow: 2px 2px 23px #000000;
+    font-size: 3.5em;
+    width: 75%;
+    margin: 0px auto;
+    top: 100%;
+    right: 15%;
+    text-align: center;
+    position: fixed;
+    z-index: 25;
+    color: #7FD4D4;
+    padding-left: 0px;
+    text-shadow: 2px 2px 23px #000;
 }
 
 #exu_vermelho1 {
@@ -780,17 +779,17 @@ body {
 }
 
 #orunga_fala {
-	font-size: 2.5em;
-	width: 50%;
-	margin: 0 auto;
-	top: 100%;
-	right: 24%;
-	color: #d13328;
-	text-align: center;
-	position: fixed;
-	z-index: 27;
-	padding-left: 0px;
-	text-shadow: 2px 2px 23px #000000;
+    font-size: 3.5em;
+    width: 75%;
+    margin: 0px auto;
+    top: 100%;
+    right: 15%;
+    color: #D13328;
+    text-align: center;
+    position: fixed;
+    z-index: 27;
+    padding-left: 0px;
+    text-shadow: 2px 2px 23px #000;
 }
 
 #exu_game {
@@ -808,7 +807,7 @@ body {
 }
 
 #orunga_conselho {
-	font-size: 2.5em;
+	font-size: 3.5em;
 	width: auto;
 	margin: 0 auto;
 	top: 8%;
@@ -1050,7 +1049,7 @@ body {
   width: 60px;
   /*background: #000;*/
   /*background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.22);*/
-  background: url('../../../img/help.png') no-repeat scroll 40% 95% rgba(0, 0, 0, 0.22);
+  background: url('../../../img/help.png') no-repeat scroll 40% 93% rgba(0, 0, 0, 0.22);
   /*background-position: 40% 95%;*/
   position: fixed;
   height: 103%;
