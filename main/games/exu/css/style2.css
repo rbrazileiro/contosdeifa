@@ -199,14 +199,14 @@ body {
 
 #recado_orixas {
 	font-size: 3.5em;
-	width: 50%;
-	margin: 0 auto;
+	width: 70%;
+	margin: 0px auto;
 	top: 100%;
-	right: 24%;
+	right: 17%;
 	text-align: center;
 	position: fixed;
 	z-index: 100;
-	color: #FF0000;
+	color: #F00;
 	padding-left: 0px;
 	text-shadow: 2px 2px 23px #F51111;
 }
