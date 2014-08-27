@@ -98,9 +98,11 @@ $( document ).ready(function() {
 
             // bigbang.stop();
         }
+        if ($(window).scrollTop() < 10){
+            $("#intro_setas").fadeIn(300).fadeOut(300).fadeIn(300).fadeIn(400).fadeOut(500).fadeIn(300);
+        }
         if ($(window).scrollTop() > 10){
         	$("#dsp_machado").jPlayer("play");
-            $("#intro_setas").fadeIn(300).fadeOut(300).fadeIn(300).fadeIn(400).fadeOut(500).fadeIn(300);
         }
         if ($(window).scrollTop() > 50){
         	$("#dsp_metal").jPlayer("play");
