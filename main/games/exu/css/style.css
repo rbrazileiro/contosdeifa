@@ -456,7 +456,7 @@ body {
 	background-image: url('../imgs/exu/esu.png');
 	background-repeat: no-repeat;
 	background-position: 0% 0%;
-	background-size: 20%;
+	/*background-size: 20%;*/
 	position: fixed;
 	z-index: 25;
 	top:0%;
