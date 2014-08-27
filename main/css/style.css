@@ -375,3 +375,8 @@ i.scroll:hover {
     bottom: 0px;
     background-position: 50% 105%;
 }
+
+.fb-like-box {
+  position: absolute;
+  left: 44%;
+}
