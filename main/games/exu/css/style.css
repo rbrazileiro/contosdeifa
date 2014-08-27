@@ -1119,6 +1119,7 @@ body {
   z-index: 9998;
   color: #FFF;
   font-size: 3em;
+  display: none;
 }
 
 #sidebar-wrapper.active {
