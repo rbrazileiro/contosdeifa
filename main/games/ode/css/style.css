@@ -84,15 +84,15 @@ body {
 /* intro */
 
 #intro_setas {
-	background-image: url('../imgs/intro/setas.png');
-	background-repeat: no-repeat;
-	background-position: 50% 95%;
-	background-size: 15%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+    background-image: url('../imgs/intro/scroll.png');
+    background-repeat: no-repeat;
+    position: fixed;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-size: auto auto;
+    bottom: 0px;
+    background-position: 50% 105%;
 	z-index: 4;
 }
 #intro_mata {
