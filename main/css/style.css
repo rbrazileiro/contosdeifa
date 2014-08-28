@@ -392,5 +392,5 @@ i.scroll:hover {
     background-size: auto auto;
     top: 0px;
     background-position: 0% 0%;
-    z-index: 9995;
+    /*z-index: 9995;*/
 }
