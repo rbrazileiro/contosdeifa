@@ -30,13 +30,8 @@
 </head>
 <body>
   <script>
-    $(function() {          
-      $("img.lazy").lazyload({
-          event : "sporty"
-      });
-    });
-    $(window).bind("load", function() { 
-      var timeout = setTimeout(function() { $("img.lazy").trigger("sporty") }, 100);
+    $(function() {
+      $("img.lazy").lazyload();
     });
   </script>
   <!-- Fast Click -->
