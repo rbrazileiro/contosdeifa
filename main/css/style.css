@@ -396,3 +396,7 @@ i.scroll:hover {
     background-position: 0% 0%;
     /*z-index: 9995;*/
 }
+
+#facebook {
+  padding-top: 10px;
+}
