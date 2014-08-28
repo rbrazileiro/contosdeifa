@@ -317,18 +317,18 @@ i.service-icon {
 .map {
   /*height: 500px;*/
   height: 27%;
-  background: url(../img/logos.jpg) no-repeat -35px center fixed; 
-  -webkit-background-size: cover;
+  background: url(../img/logos.jpg) no-repeat -35px 0% fixed; 
+  /*-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover;*/
   background-color: #000;
 }
 
 /* Footer */
 
 footer {
-  padding: 350px 0;
+  padding: 109px 0;
 }
 
 .top-scroll {
