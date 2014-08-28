@@ -126,7 +126,7 @@ body {
   position: fixed;
   height: 103%;
   overflow-y: auto;
-  z-index: 1000;
+  z-index: 9999;
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
   -ms-transition: all 0.4s ease 0s;
@@ -190,6 +190,7 @@ body {
   z-index: 1;
   color: #FFF;
   font-size: 3em;
+  z-index: 9998;
 }
 
 #sidebar-wrapper.active {
@@ -390,5 +391,5 @@ i.scroll:hover {
     background-size: auto auto;
     top: 0px;
     background-position: 0% 0%;
-    z-index: 9999;
+    z-index: 9995;
 }
