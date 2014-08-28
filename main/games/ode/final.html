@@ -38,7 +38,7 @@
             <a id="menu-close" href="play/index.html" class="btn btn-lg pull-right toggle"><i class="fa fa-gamepad"></i></a>
             <a id="menu-close" href="index.html" class="btn btn-lg pull-right toggle"><i class="fa fa-file-text-o"></i></a>
             <a id="menu-close" href="final.html" class="btn btn-lg pull-right toggle"><i class="fa fa-sign-in"></i></a>
-            <a id="menu-close" href="../../index.html#portfolio" class="btn btn-lg pull-right toggle"><i class="fa fa-home"></i></a>
+            <a id="menu-home" href="../../index.html#portfolio" class="btn btn-lg pull-right toggle"><i class="fa fa-home"></i></a>
            </div>
         </ul>
     </div>
@@ -71,7 +71,16 @@
   <div id="pano_oxossi" data-0p="display:none;" data-_ode-700p="display:block;top:-100%;" data-_ode-800p="top:0%;">
   </div>
 
+<script>
+  $(document).ready(function() {   
+    function animateFinal() {
+      $('#menu-home').animate({'color':'#0000FF'},3000).animate({'color':'#FFF'},1000, animateFinal); 
+    }
 
+    animateFinal();
+  }); 
+
+  </script>
 
 
   
