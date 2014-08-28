@@ -317,7 +317,7 @@ i.service-icon {
 .map {
   /*height: 500px;*/
   height: 32%;
-  background: url(../img/logos.jpg) no-repeat -35px 0% fixed; 
+  background: url(../img/logos.jpg) no-repeat -35px 100% fixed; 
   /*-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -327,8 +327,9 @@ i.service-icon {
 
 /* Footer */
 
-footer {
+#quemsomos {
   padding: 30px 0;
+  height: 48%;
 }
 
 .top-scroll {
