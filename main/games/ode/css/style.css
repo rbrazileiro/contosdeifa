@@ -9,6 +9,16 @@ html, body {
 	cursor: auto;
 }
 
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+	background-color:#fff; /* change if the mask should have another color then white */
+    z-index:9999; /* makes sure it stays on top */
+}
+
 /* tipos */
 @font-face {
     font-family: "Epistolar";
@@ -345,7 +355,7 @@ body {
 	top: 0;
 	text-align: center;
 	position: fixed;
-	z-index: 6;
+	z-index: 7;
 	padding-left: 20px;
 }
 #ode_txt h2 {
