@@ -7,16 +7,6 @@ $( document ).ready(function() {
             exus: 1000
         }
 
-    });
-
-    $(function() {          
-        $("img.lazy").lazyload({
-            event : "sporty"
-        });
-    });
- 
-    $(window).bind("load", function() { 
-        var timeout = setTimeout(function() { $("img.lazy").trigger("sporty") }, 1000);
     });      
 
     
