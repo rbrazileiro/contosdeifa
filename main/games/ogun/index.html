@@ -30,7 +30,10 @@
 <body>
   <script>
     $(function() {
-      $("img.lazy").lazyload();
+      $("img.lazy").lazyload({
+      threshold : 500,
+      effect : "fadeIn"
+      });
     });
   </script>
   <!-- Fast Click -->
