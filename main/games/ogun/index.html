@@ -30,10 +30,11 @@
 <body>
   <script>
     $(function() {
-    $("img.lazy").lazyload();          
-      // $("img.lazy").lazyload({
-      //     event : "sporty"
-      // });
+      // $("img.lazy").lazyload();
+      $("img.lazy").lazyload({
+        effect : "fadeIn"
+      });          
+    
     });
     // $(window).bind("load", function() { 
     //   var timeout = setTimeout(function() { $("img.lazy").trigger("sporty") }, 100);
