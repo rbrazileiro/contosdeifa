@@ -125,7 +125,7 @@ h4 {
 
 #sidebar-wrapper {
   margin-right: -60px;
-  right: 0;
+  right: 60px;
   width: 60px;
   /*background: #000;*/
   /*background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.22);*/
@@ -197,6 +197,7 @@ h4 {
   z-index: 9998;
   color: #FFF;
   font-size: 3em;
+  display: none;
 }
 
 #sidebar-wrapper.active {
