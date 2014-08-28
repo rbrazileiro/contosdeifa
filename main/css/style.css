@@ -316,8 +316,8 @@ i.service-icon {
 
 .map {
   /*height: 500px;*/
-  height: 32%;
-  background: url(../img/logos.jpg) no-repeat -35px 100% fixed; 
+  height: 46%;
+  background: url(../img/logos.jpg) no-repeat -35px 58% fixed; 
   /*-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
