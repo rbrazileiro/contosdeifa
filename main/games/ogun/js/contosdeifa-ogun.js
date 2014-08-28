@@ -7,16 +7,7 @@ $( document ).ready(function() {
             oguns: 1000
         }
 	});
-
-    $(function() {          
-        $("img.lazy").lazyload({
-            event : "sporty"
-        });
-    });
- 
-    $(window).bind("load", function() { 
-        var timeout = setTimeout(function() { $("img.lazy").trigger("sporty") }, 1000);
-    });      
+    $("#preloader").hide();
 
 	$("#menu-close").click(function(e) {
         e.preventDefault();

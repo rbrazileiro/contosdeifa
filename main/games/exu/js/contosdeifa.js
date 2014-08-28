@@ -7,12 +7,8 @@ $( document ).ready(function() {
             exus: 1000
         }
 
-    });      
-
-    
-
-
-
+    });
+    $("#preloader").hide();      
 	// Trilha Sonora
 
     $("#dsp_machado").jPlayer({
