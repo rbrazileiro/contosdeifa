@@ -313,7 +313,7 @@ i.service-icon {
 
 .map {
   height: 500px;
-  background: url(../img/logos.png) no-repeat -35px center fixed; 
+  background: url(../img/logos.jpg) no-repeat -35px center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
