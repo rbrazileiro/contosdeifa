@@ -232,6 +232,9 @@ h4 {
 	margin: 0 auto;
 
 }
+#entrada h2 {
+  color: #21048f;
+}
 #continuar {
 	position: fixed;
 	bottom: 2em;
