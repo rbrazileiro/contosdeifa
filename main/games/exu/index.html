@@ -30,14 +30,17 @@
 </head>
 <body>
   <script>
-    $(function() {          
-      $("img.lazy").lazyload({
-          event : "sporty"
-      });
-    });
-    $(window).bind("load", function() { 
-      var timeout = setTimeout(function() { $("img.lazy").trigger("sporty") }, 2000);
-    });
+    // $(function() {          
+    //   $("img.lazy").lazyload({
+    //       event : "sporty"
+    //   });
+    // });
+    // $(window).bind("load", function() { 
+    //   var timeout = setTimeout(function() { $("img.lazy").trigger("sporty") }, 2000);
+    // });
+  $("img.lazy").lazyload({
+    effect : "fadeIn"
+  });
   </script>
   <!-- Fast Click -->
   <script>
