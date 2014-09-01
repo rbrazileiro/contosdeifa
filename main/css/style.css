@@ -270,6 +270,16 @@ i.service-icon {
   text-align: center;
 }
 
+.service-item a {
+  color: #fff;
+}
+.service-item a:hover {
+    color: #FFC419;
+    border-color: #FFC419;
+}
+i.service-icon:hover {
+    border-color: #FFC419;
+}
 /* Callout */
 
 .callout {
@@ -318,11 +328,11 @@ i.service-icon {
 .map {
   /*height: 500px;*/
   height: 46%;
-  background: url(../img/logos.jpg) no-repeat -35px 80% fixed; 
-  /*-webkit-background-size: cover;
+  background: url(../img/logos.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;*/
+  background-size: cover;
   background-color: #000;
 }
 
@@ -350,6 +360,7 @@ i.scroll {
 i.scroll:hover {
   color: #0a5175;
 }
+
 /* Responsive */
 
 @media (max-width: 768px) {
