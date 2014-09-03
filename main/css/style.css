@@ -390,7 +390,6 @@ i.scroll:hover {
     background-size: auto auto;
     bottom: 0px;
     background-position: 50% 105%;
-    z-index: 9998;
 }
 
 #scrolldown {
