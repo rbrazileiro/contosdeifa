@@ -6,21 +6,19 @@ $( document ).ready(function() {
             exu: 100,
             exus: 1000
         }
-
     });
-
-    $(function() {          
-        $("img.lazy").lazyload({
-            event : "sporty"
-        });
-    });
- 
-    $(window).bind("load", function() { 
-        var timeout = setTimeout(function() { $("img.lazy").trigger("sporty") }, 1000);
-    });      
-
     
-
+    
+    $("#scrolldown").mouseenter(function(){
+        var steps = $(document).scrollTop();
+        steps+=200;
+        s.animateTo(steps);
+    });
+    $("#scrollup").mouseenter(function(){
+        var steps = $(document).scrollTop();
+        steps-=200;
+        s.animateTo(steps);
+    });
 
 
 	// Trilha Sonora

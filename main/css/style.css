@@ -390,6 +390,30 @@ i.scroll:hover {
     background-size: auto auto;
     bottom: 0px;
     background-position: 50% 105%;
+    z-index: 9998;
+}
+
+#scrolldown {
+    position: fixed;
+    left: 47.5%;
+    width: auto;
+    height: auto;
+    background-size: auto auto;
+    bottom: 8%;
+    background-position: 50% 105%;
+    z-index: 9999;
+}
+
+#scrollup {
+    position: fixed;
+    width: auto;
+    height: auto;
+    background-size: auto auto;
+    bottom: 0px;
+    background-position: 50% 105%;
+    z-index: 9999;
+    left: 47.3%;
+    padding-bottom: 5.5%;
 }
 
 .fb-like-box {
