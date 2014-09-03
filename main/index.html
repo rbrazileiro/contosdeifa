@@ -45,20 +45,25 @@
    $("#intro_setas").fadeIn(2000).fadeOut(500).fadeIn(1000).fadeOut(500).fadeIn(1000);
     });
   </script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $('[data-toggle=tooltip]').tooltip();
+    }); 
+  </script>
   <div id="beta"></div>
 
     <!-- Side Menu -->
-    <a id="menu-toggle" href="#" class="btn btn-lg toggle"><i class="fa fa-chevron-circle-left fa-6x"></i></a>
+    <a id="menu-toggle" href="#" class="btn btn-lg toggle" data-toggle="tooltip" data-placement="left" title="Menu"><i class="fa fa-chevron-circle-left fa-6x"></i></a>
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <div class="btn-group-vertical">
-            <a id="menu-close" href="#" class="btn btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <a id="menu-close" href="#" class="btn btn-lg pull-right toggle" data-toggle="tooltip" data-placement="bottom" title="Fechar"><i class="fa fa-times"></i></a>
             <!-- <a id="menu-close" href="#about" class="btn btn-lg pull-right toggle"><i class="fa fa-file-text-o"></i></a> -->
-            <a id="menu-close" href="#jogos" class="btn btn-lg pull-right toggle"><i class="fa fa-gamepad"></i></a>
-            <a id="menu-close" href="#sobre" class="btn btn-lg pull-right toggle"><i class="fa fa-info-circle"></i></a>
-            <a id="menu-close" href="#apoio" class="btn btn-lg pull-right toggle"><i class="fa fa-link"></i></a>
-            <a id="menu-close" href="#quemsomos" class="btn btn-lg pull-right toggle"><i class="fa fa-group"></i></a>
-            <a id="menu-close" href="#top" class="btn btn-lg pull-right toggle"><i class="fa fa-home"></i></a>
+            <a id="menu-close" href="#jogos" class="btn btn-lg pull-right toggle" data-toggle="tooltip" data-placement="top" title="Jogos"><i class="fa fa-gamepad"></i></a>
+            <a id="menu-close" href="#sobre" class="btn btn-lg pull-right toggle" data-toggle="tooltip" data-placement="top" title="Conheça"><i class="fa fa-info-circle"></i></a>
+            <a id="menu-close" href="#apoio" class="btn btn-lg pull-right toggle" data-toggle="tooltip" data-placement="top" title="Apoio"><i class="fa fa-link"></i></a>
+            <a id="menu-close" href="#quemsomos" class="btn btn-lg pull-right toggle" data-toggle="tooltip" data-placement="top" title="Equipe"><i class="fa fa-group"></i></a>
+            <a id="menu-close" href="#top" class="btn btn-lg pull-right toggle" data-toggle="tooltip" data-placement="top" title="Início"><i class="fa fa-home"></i></a>
            </div>
         </ul>
     </div>
