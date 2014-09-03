@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contos de Ifá: Exu</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap styles -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <!-- Preloader -->
+  <script src="js/jquery.lazyload.js" type="text/javascript"></script>
+  <script src="js/jquery.queryloader2.js" type="text/javascript"></script>
+  <script src="js/vacuo.js" type="text/javascript"></script>
+
+  <!-- Fast Click -->
+  <script src="js/fastclick.js" type="text/javascript"></script>
+
+  
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+  <div id="skrollr-body"> 
+  <div id="preloader"></div>
+  <script>
+    $(window).load(function() {
+     $("#intro_setas").fadeIn(2000).fadeOut(500).fadeIn(1000).fadeOut(500).fadeIn(1000);
+      });
+  </script>
+  <!-- Fast Click -->
+  <script>
+  $(function() {
+      FastClick.attach(document.body);
+  });
+  </script>
+  <!-- Facebook Like -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1&appId=511616418947615";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- Side Menu -->
+    <a id="menu-toggle" href="#" class="btn btn-lg toggle"><i class="fa fa-chevron-circle-left fa-6x"></i></a>
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <div class="btn-group-vertical">
+            <a id="menu-close" href="#" class="btn btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <a id="menu-close" href="index.html" class="btn btn-lg pull-right toggle"><i class="fa fa-file-text-o"></i></a>
+            <a id="menu-close" href="play.html" class="btn btn-lg pull-right toggle"><i class="fa fa-gamepad"></i></a>
+            <a id="menu-close" href="final.html" class="btn btn-lg pull-right toggle"><i class="fa fa-sign-in"></i></a>
+            <a id="menu-close" href="../../index.html" class="btn btn-lg pull-right toggle"><i class="fa fa-home"></i></a>
+           </div>
+        </ul>
+    </div>
+    <!-- /Side Menu -->
+
+<!-- Começo dos trabalhos -->
+  <!-- Setas -->
+  <div id="intro_setas" data-0p="display:block; opacity:1;" data-200p="opacity:0.5;"></div>
+
+  <!-- Intro Ceu -->
+  <div id="intro_ceu" data-0p="display:none;" data-_exu--70p="display:block; opacity:0;" data-_exu--30p="opacity:1; background-position:0% 0%;" data-_exu-0p="background-position:0% 100%;"></div>
+
+  <!-- Intro Baoba -->
+  <!-- <div id="intro_baoba" data-0p="display:none; opacity:0;" data-_exu-0p="display:block; top:100%; opacity:30%;" data-_exu-100p=" background-position:0% 500%; top:0%;" data-_exu-300p="background-position:0px 10%; opacity:1;" data-_exu-350p="background-position:0% 100%; left:0%;" data-_exu-400p="" data-_exu-900p="background-position:0% -700%; opacity:0;"></div> -->
+  <div id="intro_baoba" data-0p="display:none; opacity:0;" data-_exu-0p="display:block; top:100%; opacity:30%;" data-_exu-100p="top:0%;opacity:1;" data-_exu-400p="" data-_exu-900p="opacity:0;"></div>
+
+  <!-- Intro Nuvens -->
+  <div id="intro_nuvem1" data-0p="display:none;" data-_exu-100p="display:block; opacity:0; left:-30%;" data-_exu-300p="opacity:1; left:130%"></div>
+
+  <div id="intro_nuvem2" data-0p="display:none;" data-_exu-130p="display:block; opacity:0; left:-40%;" data-_exu-400p="opacity:1; left:150%"></div>
+
+  <!-- Intro Exu -->
+
+  <div id="pano_exu" data-0p="display:none;" data-_exu-400p="display:block;" data-_exu-410p="top:-100%;" data-_exu-500p="top:0%;" data-_exu-700p="" data-_exu-1000p="top: -100%">
+  </div>
+
+  <div id="ifa" data-0p="display:none;" data-_exu-500p="display:block; transform:scale(1) rotate(0deg);left:-100%;" data-_exu-600p="left:38%;transform:scale(1) rotate(267deg);" data-_exu-700p="" data-_exu-1100p="left:100%;">
+    <!-- <img class="lazy" data-original="imgs/ifa/ifa.png" /> -->
+    <img src="imgs/ifa/ifa.png" />
+  </div>
+  <div id="ifa_exu" data-0p="display:none;" data-_exu-600p="display:block; opacity:0; left:38%; transform:scale(1) rotate(267deg);" data-_exu-650p="opacity:1;" data-_exu-700p="" data-_exu-1100p="left:100%;">
+    <!-- <img class="lazy" data-original="imgs/ifa/ifa_exu.png" /> -->
+    <img src="imgs/ifa/ifa_exu.png" />
+  </div>
+  <!-- Orakan Meji -->
+  <div id="exu_txt" data-0p="display:none;" data-_exu-600p="display:block; opacity:0; top:8%;" data-_exu-650p="display:block; opacity:1;" data-_exu-700p="" data-_exu-900p="top:-100%;">
+    <h2> Laroiê! </h2>
+    <h3> Exu entrega aos homens o oráculo de Ifá</h3>
+  </div>
+  <!-- Exu Meji Yoruba -->
+  <div id="exu_meji" data-0p="display:none;" data-_exu-700p="display:block; opacity:0; top:100%;" data-_exu-750p="display:block; opacity:1; top:50%;" data-_exu-900p="top:-150%;opacity:0;">
+  <!-- <h4>
+    Òkànràn kan níhìín </br>
+    Òkànràn kan lóhùún </br>
+    Òkànràn di Méjì o se ìdí jàwàlá </br>
+    A díá fún Jìngbìnní </br>
+    Èyí ti n lo rèé fowo araa rèé bèso </br>
+    Owó òun le te ire? </br>
+    Wón ní kó rúbo </br>
+    Ó sì gbébo nbè </br>
+    Ó rúbo </br>
+    Owóo rè tó tutù </br>
+    Owóo rè tó ajé </br>
+    Òkànràn kan níhìín </br>
+    Òkànràn kan lóhùún </br>
+    Òkànràn di Méjì o se ìdí jàwàlá </br>
+    A díá fún Jìngbìnní </br>
+    Èyí ti n lo rèé fowo araa rèé bèso </br>
+    Jìngbìnní mòmò dé o awoo re </br>
+    Owó mi tó tutù jé ó bàjé </br>
+    Jìngbìnní dé ò awoo re </br>
+    Owó tó tutù jé ó bajé </br>
+  </h4> -->
+  <h4>
+    Exubê, Exubá,</br>
+    Baraô Bakansé,</br>
+    Kangarodo, Aparabá,</br>
+    Alobatá, Amulambê,</br>
+    Apãm Di, Exu Amojiba,</br>
+    Elejikui
+  </h4>
+  </div>
+  <!-- Exu Casas e Árvores-->
+  <div id="exu_casa1" data-0p="display:none;" data-_exus--100p="display:block;background-position:0% 500%;" data-_exus-100p="background-position:0% 100%;" data-_exus-810p="" data-_exus-1010p="background-position:0% 600%;"></div>
+  <div id="exu_casa2" data-0p="display:none;opacity:1;" data-_exus--100p="display:block;background-position:0% 500%;" data-_exus-120p="background-position:0% 100%;" data-_exus-800p="" data-_exus-1000p="background-position:0% 600%;opacity:0;"></div>
+  <div id="exu_arvore1" data-0p="display:none;" data-_exus--100p="display:block;left:-40%;" data-_exus-200p="left:0%;" data-_exus-840p="" data-_exus-1010p="left:-100%;"></div>
+  <div id="exu_arvore2" data-0p="display:none;" data-_exus-0p="display:block;right:-200%;" data-_exus-200p="right:-70%;" data-_exus-810p="" data-_exus-950p="right:-200%;"></div>
+  <div id="exu_nuvens" data-0p="display:none;" data-_exus--100p="display:block; opacity:0; left:-50%;" data-_exus-1000p="opacity:1; left:130%"></div>
+  <div id="esu" data-0p="display:none;" data-_exus--100p="display:block;background-position:-30% 12em;" data-_exus-500p="background-position:3% 12em;" data-_exus-3400p=""></div>
+
+  <!-- Personagens -->
+  <div id="exu_cavalo" data-0p="display:none;" data-_exus--100p="display:block;background-position:0% 500%;" data-_exus-100p="background-position:0% 100%;" data-_exus-500p="background-position:10% 110%;" data-_exus-700p="background-position:30% 100%;" data-_exus-900p="background-position:90% 110%;"></div>
+  <div id="exu_familia" data-0p="display:none;" data-_exus--100p="display:block;background-position:0% 500%;" data-_exus-100p="background-position:0% 100%;" data-_exus-500p="background-position:10% 105%;" data-_exus-700p="background-position:30% 100%;" data-_exus-900p="background-position:70% 110%;"></div>
+  <div id="exu_irmaos" data-0p="display:none;" data-_exus--100p="display:block;background-position:0% 500%;" data-_exus-100p="background-position:0% 100%;" data-_exus-500p="background-position:10% 115%;" data-_exus-700p="background-position:30% 100%;" data-_exus-900p="background-position:70% 105%;"></div>
+  <div id="exu_prego" data-0p="display:none;" data-_exus--100p="display:block;background-position:0% 500%;" data-_exus-100p="background-position:0% 120%;" data-_exus-700p="background-position:10% 130%;" data-_exus-900p="background-position:30% 120%;" data-_exus-1100p="background-position:70% 125%;"></div>
+
+  <!-- Textos -->
+  <div id="exu_questiona" data-0p="display:none;" data-_exus--100p="display:block;right:-200%" data-_exus-500p="right:100%">
+    <h4> Exu andava preocupado, pois as pessoas não cultuavam mais os Orixás... </h4>
+  </div>
+  <div id="exu_resposta" data-0p="display:none;" data-_exus--100p="display:block;right:-200%" data-_exus-1000p="right:100%">
+    <h4> Exu partiu em busca de respostas... </h4>
+  </div>
+  <!-- Ceu Noite -->
+  <div id="exu_noite" data-0p="display:none;" data-_exus-500p="display:block; top:100%;" data-_exus-600p="top:0%"> </div>
+  <div id="exu_azul1" data-0p="display:none;" data-_exus-500p="display:block; background-position:0% 500%;" data-_exus-1000p="background-position:0% 130%;" data-_exus-1500p="background-position:0% 120%;" data-_exus-2000p="background-position:0% 130%;" data-_exus-2500p="background-position:0% 120%;" data-_exus-3000p="background-position:0% 130%;"> </div>
+  <div id="exu_azul2" data-0p="display:none;" data-_exus-500p="display:block; background-position:0% 500%;" data-_exus-1100p="background-position:0% 120%;" data-_exus-1600p="background-position:0% 110%;" data-_exus-2100p="background-position:0% 120%;" data-_exus-2600p="background-position:0% 110%;" data-_exus-3100p="background-position:0% 120%;"> </div>
+  <div id="exu_azul3" data-0p="display:none;" data-_exus-500p="display:block; background-position:0% 500%;" data-_exus-1200p="background-position:0% 110%;" data-_exus-1700p="background-position:0% 120%;" data-_exus-2200p="background-position:0% 110%;" data-_exus-2700p="background-position:0% 120%;" data-_exus-3200p="background-position:0% 110%;"> </div>
+  <div id="exu_azul4" data-0p="display:none;" data-_exus-500p="display:block; background-position:0% 500%;" data-_exus-1300p="background-position:0% 100%;" data-_exus-1800p="background-position:0% 110%;" data-_exus-2300p="background-position:0% 100%;" data-_exus-2800p="background-position:0% 110%;" data-_exus-3300p="background-position:0% 100%;"> </div>
+  <div id="exu_lua" data-0p="display:none;" data-_exus-500p="display:block; background-position:99% 600%;" data-_exus-1000p="" data-_exus-2000p="background-position:99% 90%;" data-_exus-3000p="background-position:90% -600%;" ></div>
+  <div id="exu_yemanja" data-0p="display:none;" data-_exus-1000p="display:block; background-position:120% 500%;" data-_exus-1500p="background-position:90% 120%;" data-3100p="" data-3700p="background-position:120% 500%;" ></div>
+  <div id="exu_encontra_yemanja" data-0p="display:none;" data-_exus-1100p="display:block;right:-200%" data-_exus-2000p="right:100%">
+    <h4> Ao encontrar Yemanjá, Exu perguntou como fazer as pessoas voltarem a respeitar os Orixás...  </h4>
+  </div>
+  <div id="yemanja_fala" data-0p="display:none;" data-_exus-1800p="display:block;top:100%" data-_exus-2500p="top:-150%">
+    <h4>
+     Não é fácil, meu filho,
+     Omolu e Xangô já aflingiram a humanidade
+     com doenças, relâmpagos e trovões,
+     mas as pessoas não vieram saudá-los...
+     <br><br><br>
+     As pessoas precisam de uma coisa tão boa
+     que elas sintam vontade de tê-la.
+    </h4>
+  </div>
+  <div id="exu_vermelho1" data-0p="display:none;opacity:0;" data-_exus-1000p="background-position:0% 500%;" data-_exus-1500p="display:block; background-position:0% 130%;opacity:0;" data-_exus-2000p="" data-_exus-2500p="opacity:1" data-_exus-3000p="background-position:0% 120%;" data-_exus-3500p="background-position:0% 130%;"> </div>
+  <div id="exu_vermelho2" data-0p="display:none;opacity:0;" data-_exus-1000p="background-position:0% 500%;" data-_exus-1550p="display:block; background-position:0% 120%;opacity:0;" data-_exus-2010p="" data-_exus-2450p="opacity:1" data-_exus-2900p="background-position:0% 110%;" data-_exus-3400p="background-position:0% 120%;"> </div>
+  <div id="exu_vermelho3" data-0p="display:none; opacity:0;" data-_exus-1000p="background-position:0% 500%;" data-_exus-1600p="display:block; background-position:0% 110%;opacity:0;" data-_exus-2200p="" data-_exus-2550p="opacity:1" data-_exus-3000p="background-position:0% 100%;" data-_exus-3500p="background-position:0% 110%;" data-_exus-3900p="background-position:0% 100%;"> </div>
+  <div id="exu_vermelho4" data-0p="display:none;opacity:0;" data-_exus-1000p="background-position:0% 500%;" data-_exus-1500p="display:block; background-position:0% 100%;opacity:0;" data-_exus-2200p="" data-_exus-2450p="opacity:1" data-_exus-2990p="background-position:0% 90%;" data-_exus-3300p="background-position:0% 100%;"> </div>
+  <div id="orunga_relampago1" data-0p="display:none;" data-_exus-2200p="display:block;top:-100%;" data-_exus-2500p="top:0%;" data-_exus-2600p="top:-30%;" data-_exus-2900p="top:-7%;" data-_exus-2930p="top:-30%;" data-_exus-2950p="top:-7%;" data-_exus-3030p="top:-30%;" data-_exus-3500p="top:-7%;"></div>
+  <div id="orunga_relampago2" data-0p="display:none;" data-_exus-2200p="display:block;top:-100%;" data-_exus-2500p="top:0%;" data-_exus-2530p="top:-20%;" data-_exus-2560p="top:-4%;" data-_exus-2630p="top:-20%;" data-_exus-2680p="top:-3%;" data-_exus-2850p="top:-20%;" data-_exus-3000p="top:-3%;"></div>
+  <div id="orunga_relampago3" data-0p="display:none;" data-_exus-2200p="display:block;top:-100%;" data-_exus-2500p="top:0%;" data-_exus-2700p="top:-40%;" data-_exus-2750p="top:-3%;" data-_exus-2830p="top:-40%;" data-_exus-2880p="top:-3%;" data-_exus-2950p="top:-40%;" data-_exus-3150p="top:-3%;"></div>
+  <div id="orunga_relampago4" data-0p="display:none;" data-_exus-2200p="display:block;top:-100%;" data-_exus-2550p="top:0%;" data-_exus-2580p="top:-10%;" data-_exus-2620p="top:0%;" data-_exus-2680p="top:-10%;" data-_exus-2710p="top:0%;" data-_exus-2800p="top:-10%;" data-_exus-2950p="top:0%;" ></div>
+  <div id="orunga" data-0p="display:none;" data-_exus-2600p="display:block;background-position:80% 1700%;" data-_exus-2700p="display:block;background-position:80% 100%;"></div>
+  <div id="orunga_conselho" data-0p="display:none;" data-_exus-2600p="display:block;right:-100%" data-_exus-2800p="right:100%" >
+    <h4>
+      Orungã, o ar, aconselha exu...
+    </h4>
+  </div>
+  <div id="orunga_fala" data-0p="display:none;" data-_exus-2700p="display:block;top:100%" data-_exus-3200p="top:-150%">
+    <h4>
+      Eu sei de uma coisa feita
+      com cocos de dendê.<br> 
+      Encontre 16 cocos e
+      entenda seu significado.
+    </h4>
+  </div>
+  <div id="exu_play" data-0p="display:none;" data-_exus-3000p="display:block;top:30%">
+    <h2 class="desc"> Pegue 16 cocos de dendê. Evite os ovos. </h2>
+    <a href="play.html"> <h2 class="play"> JOGAR </h2></a>
+  </div>
+
+</div>
+  <!-- Trilha -->
+  <div id="dsp_machado" class="audio"></div>
+  <div id="dsp_metal" class="audio"></div>
+  <div id="dsp_cocos" class="audio"></div>
+  <div id="dsp_raiz" class="audio"></div>
+  <div id="dsp_obami" class="audio"></div>
+  <div id="dsp_exu" class="audio"></div>
+
+ 
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.jplayer.min.js"></script>
+  <script src="js/skrollr.min.js"></script>
+  <script src="js/contosdeifa.js"></script>
+  <script src="js/okaranmeji.js"></script>
+
+   <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-54288413-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+</body>
+</html>
