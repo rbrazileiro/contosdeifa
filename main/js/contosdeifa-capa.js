@@ -8,18 +8,33 @@ $( document ).ready(function() {
         }
     });
     
-    
-    $("#scrolldown").mouseenter(function(){
-        var steps = $(document).scrollTop();
-        steps+=200;
-        s.animateTo(steps);
-    });
-    $("#scrollup").mouseenter(function(){
-        var steps = $(document).scrollTop();
-        steps-=200;
-        s.animateTo(steps);
-    });
+    // auto play
+    // $("#intro_setas").click(function(){
+    //     var steps = $(document).scrollTop();
+    //     steps+=200;
+    //     s.animateTo(steps);
+    // });
 
+
+    $("#intro_setas").each(function () {
+        var hovered = false;
+        var loop = window.setInterval(function () {
+            if (hovered) {
+                var steps = $(document).scrollTop();
+                steps+=200;
+                s.animateTo(steps);
+            }
+        }, 250);
+
+        $(this).hover(
+           function () {
+             hovered = true;
+           },
+           function () {
+             hovered = false;
+           }
+        );
+    });
 
 	// Trilha Sonora
 

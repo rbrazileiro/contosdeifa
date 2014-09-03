@@ -45,30 +45,25 @@
    $("#intro_setas").fadeIn(2000).fadeOut(500).fadeIn(1000).fadeOut(500).fadeIn(1000);
     });
   </script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $('[data-toggle=tooltip]').tooltip();
+    }); 
+  </script>
   <div id="beta"></div>
 
     <!-- Side Menu -->
-    <a id="menu-toggle" href="#" class="btn btn-lg toggle"><i class="fa fa-chevron-circle-left fa-6x"></i></a>
+    <a id="menu-toggle" href="#" class="btn btn-lg toggle" data-toggle="tooltip" data-placement="left" title="Menu"><i class="fa fa-chevron-circle-left fa-6x"></i></a>
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <div class="btn-group-vertical">
-            <a id="menu-close" href="#" class="btn btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <a id="menu-close" href="#" class="btn btn-lg pull-right toggle" data-toggle="tooltip" data-placement="bottom" title="Fechar"><i class="fa fa-times"></i></a>
             <!-- <a id="menu-close" href="#about" class="btn btn-lg pull-right toggle"><i class="fa fa-file-text-o"></i></a> -->
-            
-<!-- <<<<<<< HEAD -->
-            <a id="menu-close" href="#jogos" class="btn btn-lg pull-right toggle"><i class="fa fa-gamepad"></i></a>
-            <a id="menu-close" href="#sobre" class="btn btn-lg pull-right toggle"><i class="fa fa-info-circle"></i></a>
-            <a id="menu-close" href="#apoio" class="btn btn-lg pull-right toggle"><i class="fa fa-link"></i></a>
-            <a id="menu-close" href="#quemsomos" class="btn btn-lg pull-right toggle"><i class="fa fa-group"></i></a>
-            <a id="menu-close" href="#top" class="btn btn-lg pull-right toggle"><i class="fa fa-home"></i></a>
-<!-- ======= -->
-          <!--   <a id="menu-close" href="#portfolio" class="btn btn-lg pull-right toggle" data-toggle="tooltip" data-placement="left" title="Jogos"><i class="fa fa-gamepad"></i></a>
-            <a id="menu-close" href="#services" class="btn btn-lg pull-right toggle" data-toggle="tooltip" data-placement="left" title="Saiba mais"><i class="fa fa-info-circle"></i></a>
-            <a id="menu-close" href="#contact" class="btn btn-lg pull-right toggle" data-toggle="tooltip" data-placement="left" title="Realização e apoio"><i class="fa fa-link"></i></a>
-            <a id="menu-close" href="#quemsomos" class="btn btn-lg pull-right toggle" data-toggle="tooltip" data-placement="left" title="Quem somos"><i class="fa fa-group"></i></a>
-            <a id="menu-close" href="#top" class="btn btn-lg pull-right toggle" data-toggle="tooltip" data-placement="left" title="Início"><i class="fa fa-home"></i></a> -->
-
-<!-- >>>>>>> b84f2de0a92256f81a6e064381f92f8fb46ce8e3 -->
+            <a id="menu-close" href="#jogos" class="btn btn-lg pull-right toggle" data-toggle="tooltip" data-placement="top" title="Jogos"><i class="fa fa-gamepad"></i></a>
+            <a id="menu-close" href="#sobre" class="btn btn-lg pull-right toggle" data-toggle="tooltip" data-placement="top" title="Conheça"><i class="fa fa-info-circle"></i></a>
+            <a id="menu-close" href="#apoio" class="btn btn-lg pull-right toggle" data-toggle="tooltip" data-placement="top" title="Apoio"><i class="fa fa-link"></i></a>
+            <a id="menu-close" href="#quemsomos" class="btn btn-lg pull-right toggle" data-toggle="tooltip" data-placement="top" title="Equipe"><i class="fa fa-group"></i></a>
+            <a id="menu-close" href="#top" class="btn btn-lg pull-right toggle" data-toggle="tooltip" data-placement="top" title="Início"><i class="fa fa-home"></i></a>
            </div>
         </ul>
     </div>
@@ -77,12 +72,6 @@
     <!-- Full Page Image Header Area -->
     <!-- Setas -->
     <div id="intro_setas" data-0p="display:block;opacity:1;" data-20p="opacity:0;"> </div>
-    <div id="scrollup" data-0p="display:block;opacity:1;" data-20p="opacity:0;">
-        <img src="img/scrollup.png">
-    </div>
-    <div id="scrolldown" data-0p="display:block;opacity:1;" data-20p="opacity:0;"> 
-        <img src="img/scrolldown.png">
-    </div>
     <div id="top" data-0p="display:block;background-position:0% -300%;" data-100p="background-position:0% 40%;"></div>
 
      <div id="about" class="intro">
