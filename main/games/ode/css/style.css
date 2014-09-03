@@ -15,7 +15,7 @@ html, body {
     left:0;
     right:0;
     bottom:0;
-	background-color:#33ADFF; /* change if the mask should have another color then white */
+	background-color:#007900; /* change if the mask should have another color then white */
     z-index:9999; /* makes sure it stays on top */
 }
 
@@ -73,7 +73,7 @@ body {
 	font-family: "1550", sans-serif;
 	color: #FFF;
 	background-size: cover;
-	background-color: #33ADFF;
+	background-color: #007900;
 }
 
 .audio {
@@ -334,7 +334,7 @@ body {
 	z-index: 21;
 	color: #99FF79;
 	padding-left: 0px;
-	text-shadow: 2px 2px 23px #FFF;
+	text-shadow: 2px 2px 23px #33ADFF;
 }
 
 #pano_oxossi {
@@ -387,6 +387,7 @@ body {
 #ode_familia {
 	background-image: url('../imgs/ode/familia.png');
 	background-repeat: no-repeat;
+
 	background-position: 0% 0%;
 	background-size: 10%;
 	position: fixed;
