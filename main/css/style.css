@@ -438,7 +438,3 @@ i.scroll:hover {
   }
 
 }
-
-/*---all will happen in the fixed window-----*/
-#skrollr-body {width:100%; height:100%;}
-#skrollr-body  div {overflow:hidden; position:absolute; }
