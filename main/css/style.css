@@ -361,24 +361,6 @@ i.scroll:hover {
   color: #0a5175;
 }
 
-/* Responsive */
-
-@media (max-width: 768px) {
-	
-  .header {
-	background: url(../img/bg.jpg) no-repeat center center scroll; 
-  }
-
-  .callout {
-	background: url(../img/callout.jpg) repeat center center scroll; 
-  }
-
-  .map {
-	height: 75%;
-  background: url(../img/logos.png) no-repeat center center scroll;
-  }
-
-}
 
 #intro_setas {
     background-image: url('../img/scroll.png');
@@ -434,4 +416,23 @@ i.scroll:hover {
 
 #facebook {
   padding-top: 30px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  
+  .header {
+  background: url(../img/bg_768.jpg) no-repeat center center scroll; 
+  }
+
+  .callout {
+  background: url(../img/callout_768.jpg) repeat center center scroll; 
+  }
+
+  .map {
+  height: 75%;
+  background: url(../img/logos_768.png) no-repeat center center scroll;
+  }
+
 }
