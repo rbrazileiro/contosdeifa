@@ -7,14 +7,6 @@ $( document ).ready(function() {
             exus: 1000
         }
     });
-    
-    // auto play
-    // $("#intro_setas").click(function(){
-    //     var steps = $(document).scrollTop();
-    //     steps+=200;
-    //     s.animateTo(steps);
-    // });
-
 
     $("#intro_setas").each(function () {
         var hovered = false;
@@ -99,22 +91,4 @@ $( document ).ready(function() {
     }, function() {
         $(this).animate({"color":"#FFF","font-size":"1em"}, 1000);
     });
-
-
-
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-        $("#menu-toggle").fadeIn();
-    });
-
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-        $(this).fadeOut();
-    });
-
-
-
-
 });
