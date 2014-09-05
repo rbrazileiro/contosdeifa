@@ -9,9 +9,67 @@ $( document ).ready(function() {
 
         var play;
         var sec;
+        $("#preloader").hide();      
+    
+        // Trilha Sonora
+
+        $("#dsp_toada").jPlayer({
+            ready: function(event) {
+                $(this).jPlayer("setMedia", {
+                    mp3: "audio/toada_exu.mp3"
+                });
+            },
+            ended: function() { // The $.jPlayer.event.ended event
+                $(this).jPlayer("play");
+            },
+            swfPath: "/js",
+            supplied: "mp3, oga"
+        });
+
+        $("#dsp_mar").jPlayer({
+            ready: function(event) {
+                $(this).jPlayer("setMedia", {
+                    mp3: "audio/mar.mp3"
+                });
+            },
+            ended: function() { // The $.jPlayer.event.ended event
+            },
+            swfPath: "/js",
+            supplied: "mp3, oga"
+        });
+        $("#dsp_trovao").jPlayer({
+            ready: function(event) {
+                $(this).jPlayer("setMedia", {
+                    mp3: "audio/trovaocomaguastereo.mp3"
+                });
+            },
+            ended: function() { // The $.jPlayer.event.ended event
+
+            },
+            swfPath: "/js",
+            supplied: "mp3, oga"
+        });
+    
+
+
+        $("#menu-close").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+            $("#menu-toggle").fadeIn();
+        });
+
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+            $(this).fadeOut();
+        });
+
+
+
 
         $("#btnstart").click(function(){
             startplay();
+            $("#dsp_toada").jPlayer("play");
             $("#timer").fadeIn('fast');
             $("html, body").animate({ scrollTop: $(document).height() }, 10);
             $('body').css({'overflow':'hidden'});
