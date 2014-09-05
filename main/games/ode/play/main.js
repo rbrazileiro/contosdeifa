@@ -117,6 +117,7 @@ function init() {
 	// Set up "hurt" flash
 	$('body').append('<div id="hurt"></div>');
 	$('#hurt').css({width: WIDTH, height: HEIGHT,});
+	
 }
 
 // Helper function for browser frames

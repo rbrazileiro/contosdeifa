@@ -66,6 +66,26 @@
     
   </script>
 
+  <!-- Trilha -->
+  <div id="dsp_toada" class="audio"></div>
+  <div id="dsp_floresta" class="audio"></div>
+
   <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/jquery.jplayer.min.js"></script>
+  <script>
+  $("#dsp_floresta").jPlayer({
+      ready: function(event) {
+          $(this).jPlayer("setMedia", {
+              mp3: "../audio/floresta_ode.mp3"
+          }).jPlayer("play");
+      },
+      ended: function() { // The $.jPlayer.event.ended event
+        $(this).jPlayer("play");
+      },
+      swfPath: "/js",
+      supplied: "mp3, oga"
+  });
+  </script>
+
 </body>
 </html>
