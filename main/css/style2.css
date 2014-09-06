@@ -269,7 +269,7 @@ i.service-icon:hover {
 
 #jogos {
   padding: 70px 0;
-  background: url('../img/bg2.jpg');
+  background-color:; rgba(156, 125, 19, 0.5);
   background-repeat: repeat;
   background-position: center center;
   /*background-color: #000;*/
