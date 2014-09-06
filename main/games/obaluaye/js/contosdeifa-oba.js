@@ -35,7 +35,7 @@ $( document ).ready(function() {
   $("#dsp_toada").jPlayer({
       ready: function(event) {
           $(this).jPlayer("setMedia", {
-              mp3: "audio/toada_oba.mp3"
+              mp3: "audio/toada_obaluae.mp3"
           });
       },
       ended: function() { // The $.jPlayer.event.ended event
@@ -45,10 +45,10 @@ $( document ).ready(function() {
       supplied: "mp3, oga"
   });
 
-  $("#dsp_floresta").jPlayer({
+  $("#dsp_cocos").jPlayer({
       ready: function(event) {
           $(this).jPlayer("setMedia", {
-              mp3: "audio/floresta_ode.mp3"
+              mp3: "audio/cocos.mp3"
           });
       },
       ended: function() { // The $.jPlayer.event.ended event
@@ -62,6 +62,7 @@ $( document ).ready(function() {
     if ($(window).scrollTop() == 0){
       $("#dsp_toada").jPlayer("stop");
         $("#dsp_floresta").jPlayer("stop");
+        
       }
     if ($(window).scrollTop() < 10){
         $("#intro_setas").fadeIn(300).fadeOut(300).fadeIn(300).fadeIn(400).fadeOut(500).fadeIn(300);
@@ -69,9 +70,16 @@ $( document ).ready(function() {
     if ($(window).scrollTop() > 10){
       $("#dsp_toada").jPlayer("play");
     }
-    if ($(window).scrollTop() > 2000){
-        $("#dsp_floresta").jPlayer("play");
+    if ($(window).scrollTop() < 23500){
+        bigbang.stop();
+        $("#dsp_cocos").jPlayer("stop");
     }
+    if ($(window).scrollTop() > 23500){
+        bigbang.start();
+        $("#dsp_cocos").jPlayer("play");
+    }
+
+    
 
   });
 	$("#menu-close").click(function(e) {
@@ -85,4 +93,10 @@ $( document ).ready(function() {
       	$("#sidebar-wrapper").toggleClass("active");
       	$(this).fadeOut();
   	});
+
+    var bigbang = new particle_emitter({
+      image: ['imgs/pipoca.png'],
+      center: ['50%', '60%'], offset: [0, 0], radius: 0,
+      size: 36, velocity: 500, decay: 5000, rate: 100
+    });
 });

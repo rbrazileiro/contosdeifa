@@ -21,6 +21,7 @@
   
   <!-- Fast Click -->
   <script src="js/fastclick.js" type="text/javascript"></script>
+  <script src="js/particle.js" type="text/javascript"></script>
 
    <!-- final abertura -->
 </head>
@@ -58,8 +59,8 @@
             <div class="btn-group-vertical">
             <a id="menu-close" href="#" class="btn btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <a id="menu-close" href="index.html" class="btn btn-lg pull-right toggle"><i class="fa fa-file-text-o"></i></a>
-            <a id="menu-close" href="play/index.html" class="btn btn-lg pull-right toggle"><i class="fa fa-gamepad"></i></a>
-            <a id="menu-close" href="final.html" class="btn btn-lg pull-right toggle"><i class="fa fa-sign-in"></i></a>
+            <!-- <a id="menu-close" href="play/index.html" class="btn btn-lg pull-right toggle"><i class="fa fa-gamepad"></i></a>
+            <a id="menu-close" href="final.html" class="btn btn-lg pull-right toggle"><i class="fa fa-sign-in"></i></a> -->
             <a id="menu-close" href="../../index.html" class="btn btn-lg pull-right toggle"><i class="fa fa-home"></i></a>
            </div>
         </ul>
@@ -69,27 +70,18 @@
   <!-- Começo dos trabalhos -->
   <!-- Setas -->
   <div id="intro_setas" data-0p="display:block; opacity:1;" data-200p="opacity:0.5;"></div>
-  <div id="pano_obaluaye" data-0p="display:none;" data-_oba--80p="display:block;top:-100%;" data-_oba--60p="top:0%;" data-_oba-300p="" data-_oba-350p="top:-100%;">
+  <div id="pano_obaluaye" data-0p="display:none;" data-_oba--80p="display:block;top:-100%;" data-_oba--60p="top:0%;" data-_oba-300p="" data-_oba-350p="top:-100%;" data-_oba-3050p="" data-_oba-3100p="top:0%;">
   </div>
   <div id="maoX" data-0p="display:none;" data-_oba-0p="display:block;background-position: 300% 60%" data-_oba-100p="display:block;background-position: 100% 60%" data-_oba-150p="opacity:1;" data-_oba-200p="display:none;"></div>
   <div id="maoY" data-0p="display:none;background-position: 100% 60%;" data-_oba-100p="display:block;opacity:0;" data-_oba-199p="" data-_oba-200p="opacity:1;" data-_oba-205p="display:none;"></div>
   <div id="maoZ" data-0p="display:none;background-position: 100% 60%;" data-_oba-200p="display:block;opacity:0;" data-_oba-205p="" data-_oba-206p="opacity:1;" data-_exu-300p="" data-_oba-350p="background-position: 300% 60%"></div>
   <div id="buzios" data-0p="display:none;" data-_oba-200p="display:block;opacity:0;background-position: 84% 46%;" data-_oba-205p="" data-_oba-206p="opacity:1;transform:rotate(0deg)" data-_oba-250p="transform:rotate(10deg)" data-_oba-300p="background-position:84% 130%;transform:rotate(0deg)" data-_oba-350p="display:none;"></div>
-  <div id="buzios2" data-0p="display:none;" data-_oba-200p="display:block;opacity:0;background-position: 84% 75%;" data-_oba-205p="" data-_oba-206p="opacity:1;transform:rotate(0deg)" data-_oba-250p="transform:rotate(10deg)" data-_oba-300p="background-position:84% 130%;transform:rotate(0deg)" data-_oba-350p="display:none;"></div>
-  <!-- <div id="ifa" data-0p="display:none;" data-_oba-0p="display:block; transform:scale(1) rotate(0deg);left:-100%;" data-_oba-100p="left:38%;transform:scale(1) rotate(215deg);" data-_oba-200p="" data-_oba-250p="left:100%;"> -->
-    <!-- <img class="lazy" data-original="imgs/ifa/ifa.png" /> -->
-    <!-- <img src="imgs/ifa/ifa.png" /> -->
-  <!-- </div> -->
-  <!-- <div id="ifa_oba" data-0p="display:none;" data-_oba-100p="display:block;left:38%;transform:scale(1) rotate(215deg);opacity:0;" data-_oba-110p=="opacity:1;" data-_oba-200p="" data-_oba-250p="left:100%;"> -->
-    <!-- <img class="lazy" data-original="imgs/ifa/ifa_oxossi.png" /> -->
-    <!-- <img src="imgs/ifa/ifa_oxossi.png" /> -->
-  <!-- </div> -->
   <!-- Meji -->
   <div id="oba_txt" data-0p="display:none;" data-_oba-130p="display:block; opacity:0; top:8%;" data-_oba-150p="display:block; opacity:1;" data-_oba-270p="" data-_oba-300p="top:-100%;">
     <h2> Atotô! </h2>
     <h3> Obaluaiê tem sua feridas transformadas em pipoca</h3>
   </div>
-  <div id="oba_meji" data-0p="display:none;" data-_oba-270p="display:block; opacity:1; top:100%;" data-_oba-500p="display:block; opacity:0; top:-1500%;" data-_oba-510p="display:none;">
+  <div id="oba_meji" data-0p="display:none;" data-_oba-270p="display:block; opacity:1; top:100%;" data-_oba-500p="display:block; opacity:0; top:-300%;" data-_oba-510p="display:none;">
   <h4>ajuberú, obirí bará,</br>
     Xapanãm, oxé belé belé,</br>
     korô frankolim, </br>
@@ -112,31 +104,37 @@
   <div id="oba_abertura" data-0p="display:none;" data-_oba-300p="display:block;right:-200%" data-_oba-700p="right:100%">
     <h4> Certa vez, quando voltava para sua aldeia, Obaluaiê soube de uma grande festa com todos os Orixás.</h4>
   </div>
-  <div id="oba_explica" data-0p="display:none;" data-_oba-200p="display:block;top:100%;opacity:1;" data-_oba-700p=""data-_oba-1000p="top:-200%">
+  <div id="oba_explica" data-0p="display:none;" data-_oba-200p="display:block;top:100%;opacity:1;" data-_oba-900p=""data-_oba-1300p="top:-200%">
     <h4>
      Como seu corpo era coberto de feridas, </br>
      Ogum cobriu-o com uma roupa de palha</br>
-     que ocultava suas chagas e diminuía sua vergonha.</br>
+     que ocultava suas chagas e diminuía sua vergonha.</br></br>
      Obaluaiê foi, então, à festa<br><br><br>
-     Oyá acompanhou tudo com o olhar,</br>
-     compreendia a triste situação de Obaluaiê</br>
-     e dele se compadeceu.
+     
      <br><br><br>
     </h4>
   </div>
-  <div id="oba_missao" data-0p="display:none;" data-_oba-1000p="display:block;right:-200%" data-_oba-2000p="right:100%">
-    <h4> Ela esperou que ele chegasse bem no meio do salão, e soprou suas palhas. Então, as feridas de Obaluaiê pularam de seu corpo e se transformaram numa chuva de pipocas. </h4>
+  <div id="oba_missao" data-0p="display:none;" data-_oba-1400p="display:block;right:-200%" data-_oba-1900p="right:100%">
+    <h4> Oyá acompanhou tudo com o olhar,
+     compreendia a triste situação de Obaluaiê
+     e dele se compadeceu. </h4>
+  </div>
+  <div id="oba_missao" data-0p="display:none;" data-_oba-2000p="display:block;right:-200%" data-_oba-2400p="right:100%">
+    <h4> Ela esperou que ele chegasse bem no meio do salão, e soprou suas palhas. </h4>
+  </div>
+  <div id="oba_missao" data-0p="display:none;" data-_oba-2600p="display:block;right:-200%" data-_oba-3000p="right:100%">
+    <h4> Então, as feridas de Obaluaiê pularam de seu corpo e se transformaram numa chuva de pipocas. </h4>
   </div>
   
-  <div id="intro" data-0p="display:none;" data-_oba-2000p="display:block; opacity:0;" data-_oba-2160p="opacity:1;">
+  <div id="intro" data-0p="display:none;" data-_oba-3000p="display:block; opacity:0;" data-_oba-3300p="opacity:1;">
     <h4> Obaluaiê se transformou-se num jovem belo e encantador. </h4>
-    <h4> Obaluaiê e Oyá se tornaram grandes amigos</br>
+    <h4> Com a ajuda de Oyá se tornaram grandes amigos
     e reinaram juntos sobre o mundo dos espíritos! </h4>
   </div>
 
   <!-- Trilha -->
   <div id="dsp_toada" class="audio"></div>
-  <div id="dsp_floresta" class="audio"></div>
+  <div id="dsp_cocos" class="audio"></div>
   
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery.jplayer.min.js"></script>
