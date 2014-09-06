@@ -15,7 +15,7 @@ html, body {
     left:0;
     right:0;
     bottom:0;
-	background-color:#007900; /* change if the mask should have another color then white */
+	background-color:#FFF; /* change if the mask should have another color then white */
     z-index:9999; /* makes sure it stays on top */
 }
 
@@ -73,7 +73,7 @@ body {
 	font-family: "1550", sans-serif;
 	color: #FFF;
 	background-size: cover;
-	background-color: #007900;
+	background-color: #FFF;
 }
 
 .audio {
@@ -93,20 +93,8 @@ body {
 
 /* intro */
 
-/*#intro_setas {
-    background-image: url('../imgs/intro/scroll.png');
-    background-repeat: no-repeat;
-    position: fixed;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background-size: auto auto;
-    bottom: 0px;
-    background-position: 50% 105%;
-	z-index: 7;
-}*/
 #intro_setas {
-  background-image: url('../imgs/intro/scroll.png');
+  background-image: url('../imgs/scroll.png');
   background-repeat: no-repeat;
   position: fixed;
   left: 0px;
@@ -118,10 +106,10 @@ body {
   z-index: 9999;
 }
 
-#intro_mata {
-	background-image: url('../imgs/ode/bg2.jpg');
+#caminho {
+	background-image: url('../imgs/bg.jpg');
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: 150%;
 	background-position: 0% 0%;
 	position: fixed;
 	top: 0;
@@ -131,8 +119,8 @@ body {
 	z-index: 1;
 }
 
-#planta01 {
-	background-image: url('../imgs/ode/planta01.png');
+#folha01 {
+	background-image: url('../imgs/folha_topo_direita.png');
 	background-repeat: no-repeat;
 	background-position: 0% 200%;
 	background-size: 48%;
@@ -144,8 +132,8 @@ body {
 	height: 100%;
 }
 
-#planta02 {
-	background-image: url('../imgs/ode/planta02.png');
+#folha02 {
+	background-image: url('../imgs/folha_topo_esquerda.png');
 	background-repeat: no-repeat;
 	background-position: 21% 350%;
 	background-size: 50%;
@@ -157,61 +145,24 @@ body {
 	height: 100%;
 }
 
-#planta03 {
-	background-image: url('../imgs/ode/planta03.png');
-	background-repeat: no-repeat;
-	background-position: 81% 350%;
-	background-size: 50%;
-	position: fixed;
-	z-index: 3;
-	/*top:0%;
-	left: 7%;*/
-	width: 100%;
-	height: 100%;
-}
 
-#planta04 {
-	background-image: url('../imgs/ode/planta04.png');
+#obaluaye {
+	background-image: url('../imgs/obaluaye.png');
 	background-repeat: no-repeat;
-	background-position: 91% 300%;
-	background-size: 50%;
-	position: fixed;
-	z-index: 4;
-	/*top:0%;
-	left: 7%;*/
-	width: 100%;
-	height: 100%;
-}
-#planta05 {
-	background-image: url('../imgs/ode/planta05.png');
-	background-repeat: no-repeat;
-	background-position: 110% 100%;
+	background-position: 10% 60%;
 	background-size: 30%;
 	position: fixed;
-	z-index: 3;
+	z-index: 2;
 	/*top:0%;
 	left: 7%;*/
 	width: 100%;
 	height: 100%;
 }
 
-#planta06 {
-	background-image: url('../imgs/ode/planta06.png');
+#oya {
+	background-image: url('../imgs/oya.png');
 	background-repeat: no-repeat;
-	background-position: -10% 100%;
-	background-size: 20%;
-	position: fixed;
-	z-index: 3;
-	/*top:0%;
-	left: 7%;*/
-	width: 100%;
-	height: 100%;
-}
-
-#oxossi {
-	background-image: url('../imgs/ode/oxossi.png');
-	background-repeat: no-repeat;
-	background-position: 100% 60%;
+	background-position: 10% 60%;
 	background-size: 16%;
 	position: fixed;
 	z-index: 2;
@@ -234,11 +185,11 @@ body {
 	height: 100%;
 }
 
-#passaro {
-	background-image: url('../imgs/ode/passaro.png');
+#arvore {
+	background-image: url('../imgs/arvore_frente.png');
 	background-repeat: no-repeat;
-	background-position: 100% 60%;
-	background-size: 14%;
+	background-position: 260% 105%;
+	background-size: 70%;
 	position: fixed;
 	z-index: 1;
 	/*top:0%;
@@ -247,7 +198,7 @@ body {
 	height: 100%;
 }
 
-#ode_abertura {
+#oba_abertura {
 	font-size: 3.5em;
 	width: 200%;
 	margin: 0 auto;
@@ -260,7 +211,7 @@ body {
 	text-shadow: 2px 2px 23px #000000;
 }
 
-#ode_missao {
+#oba_missao {
 	font-size: 3.5em;
 	width: 200%;
 	margin: 0 auto;
@@ -273,7 +224,7 @@ body {
 	text-shadow: 2px 2px 23px #000000;
 }
 
-#ode_explica {
+#oba_explica {
 	font-size: 3.5em;
 	width: 75%;
 	margin: 0px auto;
@@ -287,16 +238,16 @@ body {
 	text-shadow: 2px 2px 23px #000;
 }
 
-#intro_game {
-	background-image: url('../play/images/screenshot.jpg');
-	background-repeat: no-repeat;
+#festa {
+	background-image: url('../imgs/bg_orixas.png');
+	background-repeat: repeat;
 	background-position: 0% 0%;
 	position: fixed;
 	top: 0px;
-	left: 0px;
+	right: 0px;
 	width: 100%;
 	height: 100%;
-	z-index: 3;
+	z-index: 1;
 	background-size: cover;
 }
 
@@ -317,15 +268,15 @@ body {
 #intro {
 	color: #FFF;
 	cursor: pointer;
-	font-size: 32px;
+	font-size: 3.5em;
 	opacity: 1;
 	padding: 120px;
 	text-align: center;
-	z-index: 99;
+	z-index: 9999;
 	width: 100%;
 	height: 100%;
 	position: fixed;
-	text-shadow: 3px 6px 3px #04B5C3;
+	text-shadow: 3px 6px 3px rgba(255, 107, 107, 0.76); 
 }
 #intro h2, h3 {
   opacity:1;
@@ -350,20 +301,20 @@ body {
 	text-shadow: 2px 2px 23px #33ADFF;
 }
 
-#pano_oxossi {
+#pano_obaluaye {
 	width: 100%;
 	height: 100%;
 	position: fixed;
 	top: -100%;
 	left: 0px;
-	background-image: url('../imgs/bg/bg_oxossi.jpg');
+	background-image: url('../imgs/bg_omolu.jpg');
 	background-repeat: repeat;
 	background-position: 0px 0px;
-	z-index: 2;
+	z-index: 3;
 }
 
 #maoX {
-	background-image: url('../imgs/ifa/mao/mao1.png');
+	background-image: url('../imgs/mao/mao1.png');
 	background-repeat: no-repeat;
 	background-position: 100% 60%;
 	background-size: auto;
@@ -376,7 +327,7 @@ body {
 }
 
 #maoY {
-	background-image: url('../imgs/ifa/mao/mao2.png');
+	background-image: url('../imgs/mao/mao2.png');
 	background-repeat: no-repeat;
 	background-position: 100% 60%;
 	background-size: auto;
@@ -388,7 +339,7 @@ body {
 	height: 100%;
 }
 #maoZ {
-	background-image: url('../imgs/ifa/mao/mao3.png');
+	background-image: url('../imgs/mao/mao3.png');
 	background-repeat: no-repeat;
 	background-position: 100% 60%;
 	background-size: auto;
@@ -401,7 +352,7 @@ body {
 }
 
 #buzios {
-	background-image: url('../imgs/ifa/buzios/aberto3.png');
+	background-image: url('../imgs/buzios/aberto2.png');
 	background-repeat: no-repeat;
 	background-position: 84% 87%;
 	background-size: auto auto;
@@ -412,19 +363,7 @@ body {
 	width: 100%;
 	height: 100%;
 }
-#buzios2 {
-	background-image: url('../imgs/ifa/buzios/aberto3.png');
-	background-repeat: no-repeat;
-	background-position: 84% 87%;
-	background-size: auto auto;
-	position: fixed;
-	z-index: 21;
-	top: 0%;
-	left: 0%;
-	width: 100%;
-	height: 100%;
-}
-#ode_txt {
+#oba_txt {
 	font-size: 2.5em;
 	width: 75%;
 	margin: 0px auto;
@@ -434,16 +373,16 @@ body {
 	z-index: 22;
 	padding-left: 20px;
 }
-#ode_txt h2 {
-	text-shadow: 8px 10px 15px #00B998;
+#oba_txt h2 {
+	text-shadow: 8px 10px 15px rgba(191, 191, 191, 1); 
 	margin-top: 0.5em;
 }
 
-#ode_txt h3 {
-	text-shadow: 2px 2px 23px #00B998;
+#oba_txt h3 {
+	text-shadow: 2px 2px 23px #FFF;
 }
 
-#ode_meji {
+#oba_meji {
 	font-size: 3em;
 	width: 50%;
 	margin: 0 auto;
@@ -454,7 +393,7 @@ body {
 	padding-left: 20px;
 }
 
-#ode_meji h4 {
+#oba_meji h4 {
 	text-shadow: 2px 2px 23px #000000;
 }
 
