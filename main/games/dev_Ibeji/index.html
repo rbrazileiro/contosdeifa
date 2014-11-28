@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kill V1.2</title>
+	<link rel="stylesheet" href="css/kill.css" />
+</head>
+
+<body onload="init()">
+
+	<div id="warning">2 Player Mode still has many bugs but playable</div>
+	<section>
+		<canvas id="game" width="575" height="800" class="menuScreen"></canvas>
+		<canvas id="homingmissile" width="575" height="800"></canvas>
+		<canvas id="enemy" width="575" height="800"></canvas>
+		<canvas id="HUD" width="575" height="800"></canvas>
+
+		<div id="score"></div>
+	</section>
+
+	<audio id="bulletPlayer1"
+		<source src="audio/coco.mp3" />
+	</audio>
+
+	<audio id="explosion">
+		<source src="audio/coco.mp3" />
+	</audio>
+
+	<audio id="menuSong">
+		<source src="audio/Battlefield 1942 Intro Main Theme [HD].mp3" />
+	</audio>
+
+	<audio id="gameSong">
+		<source src="audio/floresta.mp3" />
+	</audio>
+	<script src="js/jquery.js"></script>
+	<script src="js/classes.js"></script>
+	<script src="js/variables.js"></script>	
+	<script src="js/2player.js"></script>
+	<script src="js/killLibrary.js"></script>	
+	<script src="js/kill.js"></script>
+</body>
+
+</html>
