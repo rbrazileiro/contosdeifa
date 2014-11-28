@@ -338,16 +338,16 @@ body {
 
 #ode_falafinal {
 	font-size: 3.5em;
-	width: 50%;
+	width: 80%;
 	margin: 0 auto;
 	top: 100%;
-	right: 24%;
+	right: 10%;
 	text-align: center;
 	position: fixed;
 	z-index: 21;
 	color: rgba(15, 249, 0, 1);
 	padding-left: 0px;
-	text-shadow: 2px 2px 23px #33ADFF;
+	text-shadow: 2px 2px 5px #003003;
 }
 
 #pano_oxossi {

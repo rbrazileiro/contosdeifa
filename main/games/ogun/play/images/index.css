@@ -83,6 +83,7 @@ h4 {
 	background: transparent url(blank.gif) repeat 0 0;
 	cursor: default;
 	z-index: 20;
+
 }
 
 #extra{
@@ -112,6 +113,7 @@ h4 {
 
 #desc{
 	display: none;
+  z-index: 9999;
 }
 
 #desc a{
@@ -140,7 +142,7 @@ h4 {
   position: fixed;
   height: 103%;
   overflow-y: auto;
-  z-index: 9999;
+  z-index: 9998;
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
   -ms-transition: all 0.4s ease 0s;
@@ -226,15 +228,7 @@ h4 {
   color: #FFF;
 }
 
-#entrada {
-	position: relative;
-	text-align: center;
-	margin: 0 auto;
 
-}
-#entrada h2 {
-  color: #21048f;
-}
 #continuar {
 	position: fixed;
 	bottom: 2em;

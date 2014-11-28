@@ -13,7 +13,7 @@ $( document ).ready(function() {
         var loop = window.setInterval(function () {
             if (hovered) {
                 var steps = $(document).scrollTop();
-                steps+=200;
+                steps+=100;
                 s.animateTo(steps);
             }
         }, 350);

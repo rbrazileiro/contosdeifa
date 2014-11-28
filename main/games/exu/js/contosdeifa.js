@@ -3,8 +3,8 @@ $( document ).ready(function() {
 	var s = skrollr.init({
         forceHeight: true,
          constants: {
-            exu: 100,
-            exus: 1000
+            exu: 500,
+            exus: 5000
         }
 
     });
@@ -20,7 +20,7 @@ $( document ).ready(function() {
         var loop = window.setInterval(function () {
             if (hovered) {
                 var steps = $(document).scrollTop();
-                steps+=250;
+                steps+=70;
                 s.animateTo(steps);
             }
         }, 250);
