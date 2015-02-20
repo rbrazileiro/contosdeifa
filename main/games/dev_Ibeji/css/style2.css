@@ -1,0 +1,214 @@
+/** Contos de Ifá****/
+html {
+  overflow-y: hidden;
+}
+html, body {
+  line-height: 1;
+  min-height:100%;
+  overflow: visible;
+  cursor: auto;
+  background-image: url('../imgs/ode/bg2.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0% 0%;
+}
+
+/* tipos */
+@font-face {
+    font-family: "Epistolar";
+    src: url('../fonts/Epistolar/Epistolar.woff');
+    font-weight:400;
+}
+
+@font-face {
+    font-family: "1550";
+    src: url('../fonts/1550/1550.ttf');
+    font-weight:400;
+}
+
+@font-face {
+    font-family: "Fishfingers";
+    src: url('../fonts/fishfingers/Fishfingers.ttf');
+    font-weight:400;
+}
+
+@font-face {
+    font-family: "No_Color";
+    src: url('../fonts/no_color/No_Color.ttf');
+    font-weight:400;
+}
+
+/* formatação */
+h1 {
+  font-family: "Epistolar", sans-serif;
+  font-size: 5em;
+}
+
+h2 {
+  font-family: "No_Color", sans-serif;
+  font-size: 3em;
+  
+}
+
+h3 {
+  font-family: "Fishfingers", sans-serif;
+  font-size: 2em;
+  
+}
+
+h4 {
+  font-family: "1550", sans-serif;
+  font-size: 1em;
+  
+}
+
+/* game */
+#hud {
+  bottom: 10px;
+  position: absolute;
+  right: 10px;
+  z-index: 100;
+}
+#hud p {
+  display: inline-block;
+  margin: 0px;
+  padding: 5px;
+  font-family: Helvetica;
+  font-size: 2em;
+  color: #FFF;
+}
+#credits {
+  font-size: 12px;
+  position: absolute;
+  text-align: center;
+  top: 10px;
+  width: 100%;
+  z-index: 100;
+}
+#radar {
+  background-color: #EEEEEE;
+  /*border: 1px solid black;*/
+  bottom: 10px;
+  left: 10px;
+  position: absolute;
+  z-index: 100;
+}
+#intro {
+  background-color: #000000;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 32px;
+  opacity: 0.7;
+  padding: 120px;
+  text-align: center;
+  z-index: 1001;
+  width: 100%;
+  height: 100%;
+}
+#hurt {
+  background-color: red;
+  display: none;
+  left: 0;
+  opacity: 0.15;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  z-index: 1002;
+}
+
+/* Side Menu */
+
+#sidebar-wrapper {
+  margin-right: -60px;
+  right: 0;
+  width: 60px;
+  /*background: #000;*/
+  /*background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.22);*/
+    background: url('../../../img/help.png') no-repeat scroll 40% 95% rgba(0, 0, 0, 0.22);
+  position: fixed;
+  height: 103%;
+  overflow-y: auto;
+  z-index: 9999;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  -webkit-box-shadow: 3px 0px 36px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow:  3px 0px 36px -1px rgba(0,0,0,0.75);
+  box-shadow:  3px 0px 36px -1px rgba(0,0,0,0.75);
+}
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 60px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-nav li {
+  line-height: 40px;
+  text-indent: 20px;
+}
+
+.sidebar-nav li a {
+  color: #999999;
+  display: block;
+  text-decoration: none;
+}
+
+.sidebar-nav li a:hover {
+  color: #fff;
+  background: rgba(255,255,255,0.2);
+  text-decoration: none;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+  height: 55px;
+  line-height: 55px;
+  font-size: 18px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+  color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+#menu-toggle {
+  top: 0px;
+  right: 0px;
+  position: fixed;
+  z-index: 9998;
+  color: #FFF;
+  font-size: 3em;
+}
+
+#sidebar-wrapper.active {
+  right: 60px;
+  width: 60px;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.toggle {
+  margin: 5px 5px 0 0;
+}
+
+.btn-lg {
+    font-size: 2.3em;
+    color: #FFF;
+}

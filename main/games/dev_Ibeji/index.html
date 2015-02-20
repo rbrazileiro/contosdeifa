@@ -1,43 +1,147 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Kill V1.2</title>
-	<link rel="stylesheet" href="css/kill.css" />
+  <title>Contos de Ifá: Ibejis </title>
+  
+  <!-- abertura -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap styles -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <!-- Preloader -->
+   <script src="js/jquery.lazyload.js" type="text/javascript"></script>
+   <script src="js/jquery.queryloader2.js" type="text/javascript"></script>
+   <script src="js/vacuo3.js" type="text/javascript"></script>
+  
+  <!-- Fast Click -->
+  <script src="js/fastclick.js" type="text/javascript"></script>
+
+   <!-- final abertura -->
 </head>
+<body>
+  <script>
+  $(window).load(function() {
+   $("#intro_setas").fadeIn(2000).fadeOut(500).fadeIn(1000).fadeOut(500).fadeIn(1000);
+    });
+  </script>
+  <div id="preloader"></div>
+  <!-- Fast Click -->
+  <script>
+  $(function() {
+      FastClick.attach(document.body);
+  });
+  </script>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1&appId=511616418947615";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 
-<body onload="init()">
+    <!-- Side Menu -->
+    <a id="menu-toggle" href="#" class="btn btn-lg toggle"><i class="fa fa-chevron-circle-left fa-6x"></i></a>
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <div class="btn-group-vertical">
+            <a id="menu-close" href="#" class="btn btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <a id="menu-close" href="index.html" class="btn btn-lg pull-right toggle"><i class="fa fa-file-text-o"></i></a>
+            <a id="menu-close" href="play/index.html" class="btn btn-lg pull-right toggle"><i class="fa fa-gamepad"></i></a>
+            <a id="menu-close" href="final.html" class="btn btn-lg pull-right toggle"><i class="fa fa-sign-in"></i></a>
+            <a id="menu-close" href="../../index.html" class="btn btn-lg pull-right toggle"><i class="fa fa-home"></i></a>
+           </div>
+        </ul>
+    </div>
+    <!-- /Side Menu -->
 
-	<div id="warning">2 Player Mode still has many bugs but playable</div>
-	<section>
-		<canvas id="game" width="575" height="800" class="menuScreen"></canvas>
-		<canvas id="homingmissile" width="575" height="800"></canvas>
-		<canvas id="enemy" width="575" height="800"></canvas>
-		<canvas id="HUD" width="575" height="800"></canvas>
+  <!-- Começo dos trabalhos -->
+  <!-- Setas -->
+  <div id="intro_setas" data-0p="display:block; opacity:1;" data-200p="opacity:0.5;"></div>
+  <div id="pano_ibejis" data-0p="display:none;" data-_ibeji--80p="display:block;top:-100%;" data-_ibeji--60p="top:0%;" data-_ibeji-300p="" data-_ibeji-350p=="top:-100%;">
+  </div>
+  <div id="maoX" data-0p="display:none;" data-_ibeji-0p="display:block;background-position: 300% 60%" data-_ibeji-100p="display:block;background-position: 100% 60%" data-_ibeji-150p="opacity:1;" data-_ibeji-200p="display:none;"></div>
+  <div id="maoY" data-0p="display:none;background-position: 100% 60%;" data-_ibeji-100p="display:block;opacity:0;" data-_ibeji-199p="" data-_ibeji-200p="opacity:1;" data-_ibeji-205p="display:none;"></div>
+  <div id="maoZ" data-0p="display:none;background-position: 100% 60%;" data-_ibeji-200p="display:block;opacity:0;" data-_ibeji-205p="" data-_ibeji-206p="opacity:1;" data-_exu-300p="" data-_ibeji-350p="background-position: 300% 60%;opacity:0;"></div>
+  <div id="buzios" data-0p="display:none;" data-_ibeji-200p="display:block;opacity:0;background-position: 84% 46%;" data-_ibeji-205p="" data-_ibeji-206p="opacity:1;transform:rotate(0deg)" data-_ibeji-250p="transform:rotate(10deg)" data-_ibeji-300p="background-position:84% 130%;transform:rotate(0deg)" data-_ibeji-350p="display:none;"></div>
+  <div id="buzios2" data-0p="display:none;" data-_ibeji-200p="display:block;opacity:0;background-position: 84% 75%;" data-_ibeji-205p="" data-_ibeji-206p="opacity:1;transform:rotate(0deg)" data-_ibeji-250p="transform:rotate(10deg)" data-_ibeji-300p="background-position:84% 130%;transform:rotate(0deg)" data-_ibeji-350p="display:none;"></div>
+  <!-- Meji -->
+  <div id="ibeji_txt" data-0p="display:none;" data-_ibeji-130p="display:block; opacity:0; top:8%;" data-_ibeji-150p="display:block; opacity:1;" data-_ibeji-270p="" data-_ibeji-300p="top:-100%;">
+    <h2> Kaynde Taywo! </h2>
+    <h3> Ibejis ensinam ao fazendeiro a respeitar a natureza</h3>
+  </div>
+  <div id="ibeji_meji" data-0p="display:none;" data-_ibeji-270p="display:block; opacity:1; top:100%;" data-_ibeji-800p="display:block; opacity:0; top:-1500%;" data-_ibeji-810p="display:none;">
+  <h4>Odé Orilé,</br>
+    Odé Irokô,</br>
+    babá Onibô, ará andú</br>
+    Odé golonim,</br> 
+    Odéokokê ou
+  </h4>
+  </div>
 
-		<div id="score"></div>
-	</section>
+  <!-- Mata -->
+  <div id="intro_mata" data-0p="display:none;" data-_ibeji--70p="display:block; opacity:0;" data-_ibeji-230p="" data-_ibeji-260p="opacity:1;"></div>
+  <!-- Plantas -->
+  <div id="planta01" data-0p="display:none;" data-_ibeji--60p="display:block; background-position: 0% 200%;" data-_ibeji--50p="background-position: 0% 180%;" data-_ibeji--30p="background-position: 0% 200%;" data-_ibeji-35p="background-position: 0% 190%;" data-_ibeji-225p="background-position: 0% 210%;" data-_ibeji-660p="background-position: 0% 180%;" data-_ibeji-900p="background-position: 0% 200%;" data-_ibeji-1555p="background-position: 0% 210%;" data-_ibeji-1789p="background-position: 0% 190%;" data-_ibeji-1825p="background-position: 0% 200%;" data-_ibeji-2030p="background-position: 0% 210%;" ></div>
+  <div id="planta02" data-0p="display:none;" data-_ibeji--60p="display:block; background-position: 21% 350%;" data-_ibeji--55p="background-position: 21% 390%;" data-_ibeji-100p="background-position: 21% 350%;" data-_ibeji-200p="background-position: 21% 370%;" data-_ibeji-585p="background-position: 21% 340%;" data-_ibeji--920p="background-position: 21% 350%;" data-_ibeji-1305p="background-position: 21% 320%;" data-_ibeji-1700p="background-position: 21% 370%;" data-_ibeji-1800p="background-position: 21% 340%;" data-_ibeji-1900p=="background-position: 21% 350%;" data-_ibeji-1930p="background-position: 21% 330%;"></div>
+  <div id="planta03" data-0p="display:none;" data-40p="display:block; background-position: 81% 350%;" data-55p="background-position: 81% 320%;" data-70p="background-position: 81% 350%;" data-385p="background-position: 81% 310%;" data-795p="background-position: 81% 350%;" data-1405p="background-position: 81% 330%;" data-120p="background-position: 81% 310%;" data-1900p="background-position: 81% 350%;"></div>
+  <div id="planta04" data-0p="display:none;" data-_ibeji--60p="display:block; background-position: 91% 300%;" data-_ibeji--42p="background-position: 91% 320%;" data-_ibeji--30p="background-position: 91% 300%;" data-_ibeji-20p="background-position: 91% 330%;" data-_ibeji-115p="background-position: 91% 290%;" data-_ibeji-400p="background-position: 91% 330%;" data-_ibeji-610p="background-position: 91% 300%;" data-_ibeji-820p="background-position: 91% 340%;" data-_ibeji-2030p="background-position: 91% 290%;" ></div>
+  <div id="planta05" data-0p="display:none;" data-_ibeji--60p="display:block; background-position: 110% 100%;" data-_ibeji--52p="background-position: 115% 100%;" data-_ibeji--30p="background-position: 110% 100%;" data-_ibeji--25p="background-position: 112% 100%;" data-_ibeji--15p="background-position: 105% 100%;" data-_ibeji--5p="background-position: 110% 100%;" data-_ibeji-5p="background-position: 111% 100%;" data-_ibeji-15p="background-position: 105% 100%;" data-_ibeji-30p="background-position: 110% 100%;"></div>
+  <div id="planta06" data-0p="display:none;" data-_ibeji--60p="display:block; background-position: -10% 100%;" data-_ibeji--52p="background-position: -12% 100%;" data-_ibeji--30p="background-position: -10% 100%;" data-_ibeji--27p="background-position: -11% 100%;" data-_ibeji--20p="background-position: -9% 100%;" data-_ibeji--12p="background-position: -11% 100%;" data-_ibeji--1p="background-position: -10% 100%;" data-_ibeji-10p="background-position: -11% 100%;" data-_ibeji-30p="background-position: -9% 100%;"></div>
+  <!-- Arvore -->
+  <div id="arvore" data-0p="display:none;" data-_ibeji-320p="display:block; background-position: -70% 100%;" data-_ibeji-310p="background-position: -10% 100%;" data-_ibeji-330p="background-position: -10% 100%;" data-_ibeji-1000p=""></div>
+  <div id="arvore2" data-0p="display:none;" data-_ibeji-320p="display:block; background-position: -70% 100%;" data-_ibeji-310p="background-position: -10% 100%;" data-_ibeji-330p="background-position: 80% 100%;" data-_ibeji-1000p=""></div>
+  <!-- Ogun -->
+  <div id="ogun" data-0p="display:none;" data-_ibeji--10p="display:block; background-position: -50% 250%; " data-_ibeji-0p="background-position: -20% 220%;" data-_ibeji-10p="background-position: 0% 200%;" data-_ibeji-320p="background-position: 5% 150%;" data-_ibeji-420p="background-position: 20% 140%;"></div>
+  <div id="passaro" data-0p="display:none;" data-_ibeji-800p="display:block;background-position: 100% -80%;" data-_ibeji-900p="background-position: 90% 0%;" data-_ibeji-1000p="background-position: 70% 10%;" data-_ibeji-1300p="background-position: 40% 30%;" data-_ibeji-1700p="background-position: 70% 20%;" data-_ibeji-1800p="background-position: 30% 10%;" data-_ibeji-1900p="background-position: 50% 60%;" data-_ibeji-2000p="background-position: -80% 20%;"></div>
 
-	<audio id="bulletPlayer1"
-		<source src="audio/coco.mp3" />
-	</audio>
+  <div id="ode_abertura" data-0p="display:none;" data-_ibeji-300p="display:block;right:-200%" data-_ibeji-700p="right:100%">
+    <h4> Certo dia, Orunmilá pediu a seus filhos um pássaro muito raro.</h4>
+  </div>
+  <div id="ode_explica" data-0p="display:none;" data-_ibeji-200p="display:block;top:100%;opacity:1;" data-_ibeji-700p=""data-_ibeji-1000p="top:-200%">
+    <h4>
+     Ogun e Odé</br>
+     foram para a mata</br>
+     mas não encontraram nada por muitos dias.</br>
+     <br><br><br>
+     Numa manhã, porém, Odé viu a ave</br>
+     mas percebeu que só lhe restava uma flecha!</br>
+     <br><br><br>
+    </h4>
+  </div>
+  <div id="ode_missao" data-0p="display:none;" data-_ibeji-1000p="display:block;right:-200%" data-_ibeji-2000p="right:100%">
+    <h4> Ele mirou com precisão.... </h4>
+  </div>
+  <div id="intro_game" data-0p="display:none;" data-_ibeji-1500p="display:block; opacity:0;" data-_ibeji-2160p="opacity:1;"></div>
+  <div id="intro" data-0p="display:none;" data-_ibeji-2000p="display:block; opacity:0;" data-_ibeji-2160p="opacity:1;">
+    <h2> <a href="play/index.html">Acerte o pássaro </a></h2>
+    <h3> Use o mouse e as setas para se movimentar. </h3>
+  </div>
 
-	<audio id="explosion">
-		<source src="audio/coco.mp3" />
-	</audio>
+  <!-- Trilha -->
+  <div id="dsp_toada" class="audio"></div>
+  <div id="dsp_floresta" class="audio"></div>
+  
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.jplayer.min.js"></script>
+  <script src="js/skrollr.min.js"></script>
+  <script src="js/contosdeifa-ode.js"></script>
 
-	<audio id="menuSong">
-		<source src="audio/Battlefield 1942 Intro Main Theme [HD].mp3" />
-	</audio>
+   <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	<audio id="gameSong">
-		<source src="audio/floresta.mp3" />
-	</audio>
-	<script src="js/jquery.js"></script>
-	<script src="js/classes.js"></script>
-	<script src="js/variables.js"></script>	
-	<script src="js/2player.js"></script>
-	<script src="js/killLibrary.js"></script>	
-	<script src="js/kill.js"></script>
+      ga('create', 'UA-54288413-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
 </body>
-
 </html>

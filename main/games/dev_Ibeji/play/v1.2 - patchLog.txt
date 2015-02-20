@@ -1,0 +1,5 @@
+Patch Log V1.2
+
+-  Cleaner Code
+-  Try Again works better now
+- Split Java Script files
