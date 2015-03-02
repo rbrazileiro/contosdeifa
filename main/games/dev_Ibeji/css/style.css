@@ -212,9 +212,9 @@ body {
 	background-image: url('../imgs/ibejis/Arvore.png');
 	background-repeat: no-repeat;
 	background-position: 0% 60%;
-	background-size: 50%;
+	background-size: 40%;
 	position: fixed;
-	z-index: 2;
+	z-index: 1;
 	/*top:0%;
 	left: 7%;*/
 	width: 100%;
@@ -225,7 +225,71 @@ body {
 	background-image: url('../imgs/ibejis/Arvore2.png');
 	background-repeat: no-repeat;
 	background-position: 0% 60%;
-	background-size: 80%;
+	background-size: 60%;
+	position: fixed;
+	z-index: 1;
+	/*top:0%;
+	left: 7%;*/
+	width: 100%;
+	height: 100%;
+}
+
+#banana {
+	background-image: url('../imgs/ibejis/banana.png');
+	background-repeat: no-repeat;
+	background-position: 0% 60%;
+	background-size: 7%;
+	position: fixed;
+	z-index: 1;
+	/*top:0%;
+	left: 7%;*/
+	width: 100%;
+	height: 100%;
+}
+
+#banana2 {
+	background-image: url('../imgs/ibejis/banana.png');
+	background-repeat: no-repeat;
+	background-position: 0% 60%;
+	background-size: 7%;
+	position: fixed;
+	z-index: 1;
+	/*top:0%;
+	left: 7%;*/
+	width: 100%;
+	height: 100%;
+}
+
+#banana3 {
+	background-image: url('../imgs/ibejis/banana.png');
+	background-repeat: no-repeat;
+	background-position: 0% 60%;
+	background-size: 7%;
+	position: fixed;
+	z-index: 1;
+	/*top:0%;
+	left: 7%;*/
+	width: 100%;
+	height: 100%;
+}
+
+#manga {
+	background-image: url('../imgs/ibejis/Manga.png');
+	background-repeat: no-repeat;
+	background-position: 0% 60%;
+	background-size: 5%;
+	position: fixed;
+	z-index: 2;
+	/*top:0%;
+	left: 7%;*/
+	width: 100%;
+	height: 100%;
+}
+#manga2 {
+	background-image: url('../imgs/ibejis/Manga.png');
+	background-repeat: no-repeat;
+	background-position: 0% 60%;
+	background-size: 5%;
 	position: fixed;
 	z-index: 2;
 	/*top:0%;
@@ -234,6 +298,44 @@ body {
 	height: 100%;
 }
 
+#manga3 {
+	background-image: url('../imgs/ibejis/Manga.png');
+	background-repeat: no-repeat;
+	background-position: 0% 60%;
+	background-size: 5%;
+	position: fixed;
+	z-index: 2;
+	/*top:0%;
+	left: 7%;*/
+	width: 100%;
+	height: 100%;
+}
+
+#macaco {
+	background-image: url('../imgs/ibejis/macaco3.png');
+	background-repeat: no-repeat;
+	background-position: 0% 60%;
+	background-size: 20%;
+	position: fixed;
+	z-index: 2;
+	/*top:0%;
+	left: 7%;*/
+	width: 100%;
+	height: 100%;
+}
+
+#macaco2 {
+	background-image: url('../imgs/ibejis/macaco4.png');
+	background-repeat: no-repeat;
+	background-position: 0% 60%;
+	background-size: 17%;
+	position: fixed;
+	z-index: 2;
+	/*top:0%;
+	left: 7%;*/
+	width: 100%;
+	height: 100%;
+}
 
 #ogun {
 	background-image: url('../imgs/ode/ogun.png');
@@ -503,26 +605,6 @@ body {
 	z-index: 3;
 	width: 100%;
 	height: 100%;
-}
-
-
-
-#macaco {
-	background-image: url('../imgs/exu/macaco.png');
-	background-repeat: no-repeat;
-	background-position: 0% 0%;
-	background-size: 10%;
-	position: fixed;
-	z-index: 2;
-	/*top:0%;
-	left: 7%;*/
-	width: 100%;
-	height: 100%;
-	-webkit-transform:scaleX(-1);
-    -moz-transform:scaleX(-1);
-    -ms-transform:scaleX(-1);
-    -o-transform:scaleX(-1);
-    transform:scaleX(-1);
 }
 
 #chamada_macaco {
