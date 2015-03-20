@@ -40,9 +40,9 @@ function initialization(){
 
 function init() {	
 	game.state = game.STATE_STARTING_SCREEN;
-	document.removeEventListener('click', playGame1Player, false);
+	//document.removeEventListener('click', playGame1Player, false);
 	document.removeEventListener('click', playGame2Player, false);
-	document.addEventListener('click', menuScreen2, false);	
+	document.addEventListener('click', playGame1Player, false);	
 	document.addEventListener('click', helpScreen, false);
 
 	introSound.loop = true;
@@ -68,14 +68,23 @@ function helpScreenOne() {
 	document.addEventListener('click', backHelp, false);
 }
 
-function Dead() {
-	$('#game').addClass('deadScreen');
+function Dead(boolean) {
+	if(boolean)
+	{
+		$('#game').addClass('deadScreen');
+	}else{
+		$('#game').addClass('winScreen');
+	}
 	ctxGame.clearRect(0,0, width, height);
 	//ctxPlayer1.clearRect(0,0, width, height);
 	ctxHUD.clearRect(0,0, width, height);
 	initialization();	
 	document.addEventListener('click', tryAgain, false);
 	document.addEventListener('click', mainMenu, false);
+	if(!boolean)
+	{
+		document.addEventListener('click', continueGame, false);
+	}
 }
 
 function checkIfDead() {
@@ -86,7 +95,7 @@ function checkIfDead() {
 	if(timer <= 2)
 	{
 		game.state = game.STATE_DEAD_SCREEN;
-		Dead();
+		Dead(true);
 		clearInterval(drawInterval);
 		clearInterval(updateInterval);
 		isPlaying = false;
@@ -95,6 +104,19 @@ function checkIfDead() {
 	if(!dead)
 	{
 		timer = 7;
+	}
+}
+
+
+function checkIfWin() {
+	if(score > 320)
+	{
+		healthBarList.length = 1
+		game.state = game.STATE_DEAD_SCREEN;
+		Dead(false);
+		clearInterval(drawInterval);
+		clearInterval(updateInterval);
+		isPlaying = false;
 	}
 }
 
@@ -124,6 +146,7 @@ function Update() {
 	updateHealthBar();
 	checkPlayerHit();
 	checkIfDead();
+	checkIfWin();
 }
 
 function Draw() {
@@ -438,19 +461,19 @@ function drawBackgrounds() {
 }
 //Player1 Functions
 function plane1Movement() {
-	if(pressedKeys[KEY.D])
+	if(pressedKeys[KEY.RIGHT])
 	{
 		player1.drawX += spd;
 	}
-	if(pressedKeys[KEY.A])
+	if(pressedKeys[KEY.LEFT])
 	{
 		player1.drawX -= spd;
 	}
-	if(pressedKeys[KEY.W])
+	if(pressedKeys[KEY.UP])
 	{
 		player1.drawY -= spd;
 	}
-	if(pressedKeys[KEY.S])
+	if(pressedKeys[KEY.DOWN])
 	{
 		player1.drawY += spd;
 	}
@@ -469,8 +492,8 @@ function drawPlayer1(){
 	{
 		player1.draw();
 	}
-
-	if(pressedKeys[KEY.D])
+	/*
+	if(pressedKeys[KEY.RIGHT])
 	{
 		player1.srcY = 0;
 		frameCount++;
@@ -481,14 +504,14 @@ function drawPlayer1(){
 	        frameCount = 1;
 	    }    
 	}
-	
-	if((!pressedKeys[KEY.D]) && (!pressedKeys[KEY.A]))
+	*/
+	if((!pressedKeys[KEY.C]))
 	{
 		frameCount = 0;
 		player1.srcX = (frameCount * player1.width);
 	}
-
-	if(pressedKeys[KEY.A])
+	
+	if(pressedKeys[KEY.C])
 	{
 		frameCount++;
 
@@ -498,8 +521,9 @@ function drawPlayer1(){
 	        frameCount = 1;
 	    }
 
-	    player1.srcY = 64;
+	    player1.srcY = 128;
 	}
+	
 }
 
 function player1ScreenBoundary() {
@@ -933,9 +957,9 @@ function playGame1Player(e) {
 	mouseY = e.pageY - bgCanvas.offsetTop;	
 	if(!isPlaying)
 	{
-		if(player1Button.ButtonClicked())
+		if(playButton.ButtonClicked())
 		{
-			if(game.state == game.STATE_STARTING_SCREEN2)
+			if(game.state == game.STATE_STARTING_SCREEN)
 			{			
 				game.state = game.STATE_PLAYING;
 				$('#game').removeClass();
@@ -999,6 +1023,23 @@ function tryAgain(e) {
 				gameSound.loop = true;
 				gameSound.play();
 				isPlaying = true;
+			}		
+		}
+	}
+}
+
+function continueGame(e) {
+	var bgCanvas = document.getElementById('game');
+	mouseX = e.pageX - bgCanvas.offsetLeft;
+	mouseY = e.pageY - bgCanvas.offsetTop;	
+
+	if(!isPlaying)
+	{
+		if(continueButton.ButtonClicked())
+		{
+			if(game.state == game.STATE_DEAD_SCREEN)
+			{			
+				alert("Continue Buttton!!");
 			}		
 		}
 	}

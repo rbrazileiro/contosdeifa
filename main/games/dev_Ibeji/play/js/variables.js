@@ -29,10 +29,10 @@ var KEY = {
 	SPACE: 32,
 	C: 67,
 
-	UP: 104,
-	LEFT: 100,
-	RIGHT: 102,
-	DOWN: 101,
+	UP: 38,
+	LEFT: 37,
+	RIGHT: 39,
+	DOWN: 40,
 	ZERO: 96
 };
 
@@ -157,6 +157,7 @@ var helpButton = new Button(205, 410, 450, 550);
 var backHelpButton = new Button(435, 560, 740, 780);
 var player1Button = new Button(145, 455, 200, 305);
 var player2Button = new Button(130, 485, 325, 415);
+var continueButton = new Button(160, 390, 590, 625);
 var tryAgainButton = new Button(160, 390, 670, 705);
 var mainMenuButton = new Button(160, 390, 750, 785);
 

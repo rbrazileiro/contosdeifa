@@ -1,8 +1,8 @@
 function Player() {
 	this.srcX = 0;
     this.srcY = 0;
-    this.width = 44;
-    this.height = 64;
+    this.width = 88;
+    this.height = 128;
     this.drawX = 0;
     this.drawY = 0;
     this.img = planeImage1;

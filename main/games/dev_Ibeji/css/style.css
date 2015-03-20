@@ -119,7 +119,7 @@ body {
 }
 
 #intro_mata {
-	background-image: url('../imgs/ibejis/bg.jpg');
+	background-image: url('../imgs/ibejis/3.jpg');
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-position: 0% 0%;
@@ -326,6 +326,45 @@ body {
 
 #macaco2 {
 	background-image: url('../imgs/ibejis/macaco4.png');
+	background-repeat: no-repeat;
+	background-position: 0% 60%;
+	background-size: 17%;
+	position: fixed;
+	z-index: 2;
+	/*top:0%;
+	left: 7%;*/
+	width: 100%;
+	height: 100%;
+}
+
+#macaco3 {
+	background-image: url('../imgs/ibejis/macacoMorto.png');
+	background-repeat: no-repeat;
+	background-position: 0% 60%;
+	background-size: 17%;
+	position: fixed;
+	z-index: 2;
+	/*top:0%;
+	left: 7%;*/
+	width: 100%;
+	height: 100%;
+}
+
+#fazendeiro {
+	background-image: url('../imgs/ibejis/b.png');
+	background-repeat: no-repeat;
+	background-position: 0% 60%;
+	background-size: 17%;
+	position: fixed;
+	z-index: 2;
+	/*top:0%;
+	left: 7%;*/
+	width: 100%;
+	height: 100%;
+}
+
+#fazendeiro2 {
+	background-image: url('../imgs/ibejis/b2.png');
 	background-repeat: no-repeat;
 	background-position: 0% 60%;
 	background-size: 17%;
