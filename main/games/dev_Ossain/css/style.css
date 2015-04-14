@@ -73,7 +73,7 @@ body {
 	font-family: "1550", sans-serif;
 	color: #FFF;
 	background-size: cover;
-	background-color: #6AAB1A;
+	background-color: #b1ffac;
 }
 
 .audio {
@@ -119,7 +119,20 @@ body {
 }
 
 #intro_mata {
-	background-image: url('../imgs/ossain/bg_intro.jpg');
+	background-image: url('../imgs/ossain/bg_intro2.png');
+	background-repeat: no-repeat;
+	background-position: 0% 28%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-size: cover;
+}
+
+#pedreira {
+	background-image: url('../imgs/ossain/pedreira.png');
 	background-repeat: no-repeat;
 	background-position: 0% 28%;
 	position: fixed;
@@ -209,7 +222,7 @@ body {
 }
 
 #arvore {
-	background-image: url('../imgs/ibejis/Arvore.png');
+	background-image: url('../imgs/ossain/pombatratada.png');
 	background-repeat: no-repeat;
 	background-position: 0% 60%;
 	background-size: 40%;
@@ -390,10 +403,10 @@ body {
 }
 
 #passaro {
-	background-image: url('../imgs/ode/passaro.png');
+	background-image: url('../imgs/ossain/pombatratada.png');
 	background-repeat: no-repeat;
-	background-position: 100% 60%;
-	background-size: 14%;
+	background-position: 170% 100%;
+	background-size: 40%;
 	position: fixed;
 	z-index: 1;
 	/*top:0%;
@@ -401,12 +414,131 @@ body {
 	width: 100%;
 	height: 100%;
 }
-
-#ode_abertura {
+#passarovoltando {
+	background-image: url('../imgs/ossain/pombatratada2.png');
+	background-repeat: no-repeat;
+	background-position: 170% 100%;
+	background-size: 40%;
+	position: fixed;
+	z-index: 1;
+	/*top:0%;
+	left: 7%;*/
+	width: 100%;
+	height: 100%;
+}
+#cesta {
+	background-image: url('../imgs/ossain/cestocomfolhas.png');
+	background-repeat: no-repeat;
+	background-position: 170% 100%;
+	background-size: 29%;
+	position: fixed;
+	z-index: 1;
+	/*top:0%;
+	left: 7%;*/
+	width: 100%;
+	height: 100%;
+}
+#cabaca {
+	background-image: url('../imgs/ossain/cabaça.png');
+	background-repeat: no-repeat;
+	background-position: -20% 100%;
+	background-size: 16%;
+	position: fixed;
+	z-index: 1;
+	/*top:0%;
+	left: 7%;*/
+	width: 100%;
+	height: 100%;
+}
+#espada {
+	background-image: url('../imgs/ossain/espada2.png');
+	background-repeat: no-repeat;
+	background-position: -20% 100%;
+	background-size: 15%;
+	position: fixed;
+	z-index: 1;
+	/*top:0%;
+	left: 7%;*/
+	width: 100%;
+	height: 100%;
+}
+#eruxim {
+	background-image: url('../imgs/ossain/eruxim.png');
+	background-repeat: no-repeat;
+	background-position: -20% 100%;
+	background-size: 26%;
+	position: fixed;
+	z-index: 1;
+	/*top:0%;
+	left: 7%;*/
+	width: 100%;
+	height: 100%;
+}
+#furacao {
+	background-image: url('../imgs/ossain/furacão.png');
+	background-repeat: no-repeat;
+	background-position: -20% 100%;
+	background-size: 80%;
+	position: fixed;
+	z-index: 1;
+	/*top:0%;
+	left: 7%;*/
+	width: 100%;
+	height: 100%;
+}
+#machado {
+	background-image: url('../imgs/ossain/adamaxeri.png');
+	background-repeat: no-repeat;
+	background-position: -20% 100%;
+	background-size: 30%;
+	position: fixed;
+	z-index: 2;
+	/*top:0%;
+	left: 7%;*/
+	width: 100%;
+	height: 100%;
+}
+#sol {
+	background-image: url('../imgs/ossain/sol.png');
+	background-repeat: no-repeat;
+	background-position: -20% 100%;
+	background-size: 20%;
+	position: fixed;
+	z-index: 0;
+	/*top:0%;
+	left: 7%;*/
+	width: 100%;
+	height: 100%;
+}
+#ossain_abertura {
 	font-size: 3.5em;
-	width: 200%;
+	width: 300%;
 	margin: 0 auto;
 	top: 8%;
+	right: -100%;
+	text-align: center;
+	position: fixed;
+	z-index: 21;
+	padding-left: 20px;
+	text-shadow: 2px 2px 23px #000000;
+}
+#ossain_xango {
+	font-size: 3.5em;
+	width: 300%;
+	margin: 0 auto;
+	top: 55%;
+	right: -100%;
+	text-align: center;
+	position: fixed;
+	z-index: 21;
+	padding-left: 20px;
+	text-shadow: 2px 2px 23px #000000;
+}
+#ossain_fala {
+	font-size: 3.5em;
+	width: 300%;
+	margin: 0 auto;
+	top: 55%;
 	right: -100%;
 	text-align: center;
 	position: fixed;
@@ -862,25 +994,14 @@ body {
 	height: 100%;
 }
 
-#cabaca {
-	background-image: url('../imgs/ogum/cabaca.png');
-	background-repeat: no-repeat;
-	background-position: 0% 0%;
-	background-size: 10%;
-	position: fixed;
-	z-index: 2;
-	top:0%;
-	left: 0%;
-	width: 100%;
-	height: 100%;
-}
+
 
 
 #peixe {
 	background-image: url('../imgs/ogum/peixe_principal.png');
 	background-repeat: no-repeat;
 	background-position: 0% 0%;
-	background-size: 22%;
+	background-size: 16%;
 	position: fixed;
 	z-index: 2;
 	top:0%;
