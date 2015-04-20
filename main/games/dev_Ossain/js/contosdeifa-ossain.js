@@ -16,7 +16,7 @@ $( document ).ready(function() {
                 steps+=100;
                 s.animateTo(steps);
             }
-        }, 350);
+        }, 450);
 
         $(this).hover(
            function () {

@@ -131,6 +131,19 @@ body {
 	background-size: cover;
 }
 
+#florestaseca {
+	background-image: url('../imgs/ossain/cenarioseco.png');
+	background-repeat: no-repeat;
+	background-position: 0% 28%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-size: cover;
+}
+
 #pedreira {
 	background-image: url('../imgs/ossain/pedreira.png');
 	background-repeat: no-repeat;
@@ -406,9 +419,9 @@ body {
 	background-image: url('../imgs/ossain/pombatratada.png');
 	background-repeat: no-repeat;
 	background-position: 170% 100%;
-	background-size: 40%;
+	background-size: 40% 40%;
 	position: fixed;
-	z-index: 1;
+	z-index: 3;
 	/*top:0%;
 	left: 7%;*/
 	width: 100%;
@@ -430,9 +443,31 @@ body {
 	background-image: url('../imgs/ossain/cestocomfolhas.png');
 	background-repeat: no-repeat;
 	background-position: 170% 100%;
-	background-size: 29%;
+	background-size: 29% 29%;
 	position: fixed;
 	z-index: 1;
+	/*top:0%;
+	left: 7%;*/
+	width: 100%;
+	height: 100%;
+}
+
+#cestaseca {
+	background-image: url('../imgs/ossain/cesta.png');
+	background-repeat: no-repeat;
+	background-position: 25% 100%;
+	background-size: 29% 29%;
+	position: fixed;
+	z-index: 1;
+	/*top:0%;
+	left: 7%;*/
+	width: 100%;
+	height: 100%;
+}
+#ceuescuro {
+	background-color: #FFA303;
+	position: fixed;
+	z-index: 0;
 	/*top:0%;
 	left: 7%;*/
 	width: 100%;
@@ -492,7 +527,7 @@ body {
 	background-position: -20% 100%;
 	background-size: 30%;
 	position: fixed;
-	z-index: 2;
+	z-index: 1;
 	/*top:0%;
 	left: 7%;*/
 	width: 100%;
@@ -522,9 +557,21 @@ body {
 	padding-left: 20px;
 	text-shadow: 2px 2px 23px #000000;
 }
+#ossain_abertura2 {
+	font-size: 3.5em;
+	width: 200%;
+	margin: 0 auto;
+	top: 8%;
+	right: -100%;
+	text-align: center;
+	position: fixed;
+	z-index: 21;
+	padding-left: 20px;
+	text-shadow: 2px 2px 23px #000000;
+}
 #ossain_xango {
 	font-size: 3.5em;
-	width: 300%;
+	width: 200%;
 	margin: 0 auto;
 	top: 55%;
 	right: -100%;
@@ -535,6 +582,18 @@ body {
 	text-shadow: 2px 2px 23px #000000;
 }
 #ossain_fala {
+	font-size: 3.5em;
+	width: 200%;
+	margin: 0 auto;
+	top: 55%;
+	right: -100%;
+	text-align: center;
+	position: fixed;
+	z-index: 21;
+	padding-left: 20px;
+	text-shadow: 2px 2px 23px #000000;
+}
+#ossain_fala2 {
 	font-size: 3.5em;
 	width: 300%;
 	margin: 0 auto;
@@ -612,7 +671,8 @@ body {
 	width: 100%;
 	height: 100%;
 	position: fixed;
-	text-shadow: 3px 6px 3px #04B5C3;
+	top: -10%;
+	text-shadow: 3px 6px 3px #C30404;
 }
 #intro h2, h3 {
   opacity:1;
